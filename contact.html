@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt | Kwiaciarnia Magia Kwiatów MM</title>
+  <meta name="description" content="Skontaktuj się z Kwiaciarnią Magia Kwiatów MM. Adres: ul. Wańkowicza 1/U3, Kabaty, Warszawa. Tel: +48 22 648 65 02">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav id="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Magia Kwiatów MM</a>
+    <ul class="nav-links">
+      <li><a href="index.html#o-nas">O nas</a></li>
+      <li><a href="index.html#oferta">Oferta</a></li>
+      <li><a href="gallery.html">Galeria</a></li>
+      <li><a href="contact.html" class="nav-cta">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-hero" style="padding-top:80px">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?w=1400&q=80&auto=format&fit=crop')"></div>
+  <div class="container">
+    <span class="section-label">Odwiedź nas</span>
+    <h1>Kontakt</h1>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- FORM -->
+      <div>
+        <span class="section-label">Zapytaj o bukiet</span>
+        <h2 class="section-title" style="margin-bottom:2rem">Wyślij wiadomość</h2>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Imię i nazwisko *</label>
+            <input type="text" id="name" name="name" placeholder="Anna Kowalska" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone" placeholder="+48 600 000 000">
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" placeholder="anna@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="occasion">Okazja</label>
+            <select id="occasion" name="occasion">
+              <option value="">Wybierz okazję...</option>
+              <option>Ślub / Wesele</option>
+              <option>Urodziny / Imieniny</option>
+              <option>Rocznica</option>
+              <option>Kondolencje / Pogrzeb</option>
+              <option>Dzień Kobiet / Walentynki</option>
+              <option>Inne</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Wiadomość *</label>
+            <textarea id="message" name="message" placeholder="Opisz, jakiego bukietu szukasz — okazja, kolory, budżet..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;padding:1rem;font-size:0.95rem">
+            Wyślij zapytanie
+          </button>
+        </form>
+        <div class="form-success" id="form-success">
+          ✅ Dziękujemy za wiadomość! Odezwiemy się wkrótce pod Twój numer lub e-mail.
+        </div>
+      </div>
+
+      <!-- INFO -->
+      <div class="contact-info-block">
+        <div>
+          <span class="section-label">Dane kontaktowe</span>
+          <h2 class="section-title" style="margin-bottom:2rem">Jak do nas trafić</h2>
+        </div>
+
+        <div class="contact-info-item reveal">
+          <div class="contact-info-icon">📍</div>
+          <div>
+            <h4>Adres</h4>
+            <p>ul. Melchiora Wańkowicza 1/U3<br>02-798 Warszawa (Kabaty, Ursynów)<br>
+            <em style="font-size:0.82rem;color:#999">Blok u zbiegu al. KEN i ul. Wąwozowej,<br>tuż przy wyjściu z metra Kabaty 🚇</em></p>
+          </div>
+        </div>
+
+        <div class="contact-info-item reveal">
+          <div class="contact-info-icon">📞</div>
+          <div>
+            <h4>Telefon</h4>
+            <a href="tel:+48226486502" style="font-size:1.1rem;font-weight:600;color:var(--terracotta)">+48 22 648 65 02</a>
+            <p style="font-size:0.82rem;color:#999;margin-top:0.2rem">Zapraszamy do dzwonienia w godzinach otwarcia</p>
+          </div>
+        </div>
+
+        <div class="contact-info-item reveal">
+          <div class="contact-info-icon">🕐</div>
+          <div>
+            <h4>Godziny otwarcia</h4>
+            <table class="hours-table">
+              <tr><td>Poniedziałek – Piątek</td><td>8:00 – 21:00</td></tr>
+              <tr><td>Sobota</td><td>10:00 – 20:00</td></tr>
+              <tr><td>Niedziela</td><td>10:00 – 19:00</td></tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="contact-info-item reveal">
+          <div class="contact-info-icon">🚇</div>
+          <div>
+            <h4>Jak dojechać</h4>
+            <p>Metro linii M1 — stacja <strong>Kabaty</strong> (ostatnia stacja)<br>
+            Autobus: linie 139, 189, 504, 519</p>
+          </div>
+        </div>
+
+        <!-- WhatsApp CTA -->
+        <a href="https://wa.me/48226486502" target="_blank" rel="noopener" class="btn btn-primary" style="background:#25d366;display:flex;align-items:center;gap:0.75rem;justify-content:center">
+          <span style="font-size:1.2rem">💬</span> Napisz na WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <!-- MAP -->
+    <div class="map-embed reveal">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2446.8!2d21.03!3d52.124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47192d8be8e0e4ad%3A0x6f57fe8fb04b10f9!2sKwiaciarnia+Magia+Kwiat%C3%B3w+MM!5e0!3m2!1spl!2spl!4v1718000000000!5m2!1spl!2spl"
+        width="100%" height="380" style="border:0;display:block;" allowfullscreen
+        loading="lazy" title="Mapa — Kwiaciarnia Magia Kwiatów MM, Kabaty Warszawa">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Magia Kwiatów MM</h3>
+        <p>Twoja kwiaciarnia przy metrze Kabaty — Ursynów, Warszawa.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Strony</h4>
+        <ul>
+          <li><a href="index.html">Strona główna</a></li>
+          <li><a href="gallery.html">Galeria</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Oferta</h4>
+        <ul>
+          <li>Kwiaty cięte</li>
+          <li>Florystyka ślubna</li>
+          <li>Rośliny doniczkowe</li>
+          <li>Florystyka żałobna</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Kwiaciarnia Magia Kwiatów MM · Warszawa</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
