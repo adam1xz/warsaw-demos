@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt i Rezerwacja | Janeczka Salon Fryzjer & Barber | Targówek, Warszawa</title>
+  <meta name="description" content="Skontaktuj się z Salonikiem Janeczka lub zarezerwuj wizytę online. Ul. Św. Wincentego 18/2, Targówek, Warszawa. Tel: 504 047 703.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo"><em>Janeczka</em> <span>·</span></a>
+        <ul class="nav-links">
+          <li><a href="index.html">Strona główna</a></li>
+          <li><a href="gallery.html">Galeria</a></li>
+          <li><a href="contact.html" class="active">Kontakt</a></li>
+        </ul>
+        <a href="#booking" class="btn btn-primary nav-book">Umów wizytę</a>
+        <button class="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="section-label">Jesteśmy tu dla Ciebie</div>
+      <h1>Kontakt</h1>
+      <div class="divider center"></div>
+      <p style="color: rgba(245,239,230,0.6); max-width: 500px; margin: 0 auto;">Targówek, Warszawa — zadzwoń lub wypełnij formularz rezerwacji.</p>
+    </div>
+  </div>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div>
+          <div class="section-label">Gdzie nas znajdziesz</div>
+          <h3>Dane kontaktowe</h3>
+          <div class="divider"></div>
+
+          <div class="contact-item fade-in">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-item-label">Adres</div>
+              <div class="contact-item-value">ul. Świętego Wincentego 18, Lok. 2<br>03-505 Warszawa, Targówek</div>
+            </div>
+          </div>
+
+          <div class="contact-item fade-in">
+            <div class="contact-icon">📞</div>
+            <div>
+              <div class="contact-item-label">Telefon</div>
+              <div class="contact-item-value"><a href="tel:+48504047703">504 047 703</a></div>
+            </div>
+          </div>
+
+          <div class="contact-item fade-in">
+            <div class="contact-icon">🕐</div>
+            <div>
+              <div class="contact-item-label">Godziny otwarcia</div>
+              <div class="contact-hours-grid" style="margin-top:0.5rem;">
+                <div class="hours-row"><span class="hours-day">Poniedziałek</span><span class="hours-time">9:00–20:00</span></div>
+                <div class="hours-row"><span class="hours-day">Wtorek</span><span class="hours-time">9:00–20:00</span></div>
+                <div class="hours-row"><span class="hours-day">Środa</span><span class="hours-time">9:00–20:00</span></div>
+                <div class="hours-row"><span class="hours-day">Czwartek</span><span class="hours-time">9:00–20:00</span></div>
+                <div class="hours-row"><span class="hours-day">Piątek</span><span class="hours-time">9:00–20:00</span></div>
+                <div class="hours-row"><span class="hours-day">Sobota</span><span class="hours-time">9:00–18:00</span></div>
+                <div class="hours-row"><span class="hours-day">Niedziela</span><span class="hours-time">Nieczynne</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-item fade-in">
+            <div class="contact-icon">🌐</div>
+            <div>
+              <div class="contact-item-label">Rezerwacja online</div>
+              <div class="contact-item-value">
+                <a href="https://booksy.com/pl-pl/81693_salonik-fryzjer-barber-janeczka_fryzjer_3_warszawa" target="_blank">Booksy — umów wizytę 24/7</a>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <div class="section-label">Dojazd</div>
+            <p style="color: rgba(245,239,230,0.6); font-size: 0.95rem; line-height: 1.7;">
+              Salon znajduje się przy ul. Świętego Wincentego 18, lokal 2, w dzielnicy Targówek.<br><br>
+              <strong style="color:var(--cream);">Tramwaj:</strong> Linie 6, 26 — przystanek Świętego Wincentego<br>
+              <strong style="color:var(--cream);">Bus:</strong> Linie 111, 147, 302 — przystanek Targówek<br>
+              <strong style="color:var(--cream);">Parking:</strong> Miejsca parkingowe dostępne przy ulicy
+            </p>
+          </div>
+        </div>
+
+        <!-- Booking Form -->
+        <div id="booking">
+          <div class="booking-form fade-in-right">
+            <h3>Zarezerwuj wizytę</h3>
+            <p>Wypełnij formularz, a my potwierdzimy termin telefonicznie w ciągu kilku godzin. Alternatywnie — zadzwoń na <a href="tel:+48504047703">504 047 703</a>.</p>
+
+            <form id="bookingForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Imię i nazwisko *</label>
+                  <input type="text" id="name" name="name" placeholder="Jan Kowalski" autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label for="phone">Numer telefonu *</label>
+                  <input type="tel" id="phone" name="phone" placeholder="504 047 703" autocomplete="tel">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="service">Rodzaj usługi *</label>
+                <select id="service" name="service">
+                  <option value="">— Wybierz usługę —</option>
+                  <optgroup label="Usługi dla Panów">
+                    <option value="men-classic">Strzyżenie męskie klasyczne (90 zł)</option>
+                    <option value="men-combo">Szybkie combo — strzyżenie + broda (130 zł)</option>
+                    <option value="men-beard">Strzyżenie brody + konturowanie (80 zł)</option>
+                    <option value="men-long">Strzyżenie męskie długie włosy (130 zł)</option>
+                    <option value="men-color">Farbowanie + strzyżenie (300 zł)</option>
+                  </optgroup>
+                  <optgroup label="Usługi dla Pań">
+                    <option value="women-short">Strzyżenie damskie krótkie/średnie (120 zł)</option>
+                    <option value="women-long">Strzyżenie damskie długie włosy (160 zł)</option>
+                    <option value="women-color">Koloryzacja jeden kolor (300 zł)</option>
+                    <option value="women-mask">Maska regenerująca (120 zł)</option>
+                    <option value="women-event">Czesanie okolicznościowe (320 zł)</option>
+                  </optgroup>
+                  <optgroup label="Usługi dla Dzieci">
+                    <option value="kids-boy">Strzyżenie chłopca 2–8 lat (70 zł)</option>
+                    <option value="kids-girl">Strzyżenie dziewczynki 2–8 lat (90 zł)</option>
+                    <option value="kids-older">Strzyżenie dziecka 8–12 lat (120 zł)</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="date">Preferowana data *</label>
+                  <input type="date" id="date" name="date">
+                </div>
+                <div class="form-group">
+                  <label for="time">Preferowana godzina</label>
+                  <select id="time" name="time">
+                    <option value="">— Dowolna —</option>
+                    <option>9:00</option>
+                    <option>10:00</option>
+                    <option>11:00</option>
+                    <option>12:00</option>
+                    <option>13:00</option>
+                    <option>14:00</option>
+                    <option>15:00</option>
+                    <option>16:00</option>
+                    <option>17:00</option>
+                    <option>18:00</option>
+                    <option>19:00</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="notes">Dodatkowe informacje</label>
+                <textarea id="notes" name="notes" placeholder="Np. typ włosów, specjalne życzenia, pytania..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%; font-size:0.85rem; padding:1rem;">
+                Wyślij prośbę o rezerwację
+              </button>
+            </form>
+
+            <div id="formSuccess" class="form-success">
+              <div style="font-size:2rem; margin-bottom:1rem;">✓</div>
+              <strong>Dziękujemy za rezerwację!</strong><br>
+              Skontaktujemy się z Tobą telefonicznie w ciągu kilku godzin, aby potwierdzić termin.<br>
+              <span style="font-size:0.85rem; margin-top:0.5rem; display:block; color:rgba(201,169,74,0.7);">W pilnych sprawach zadzwoń: 504 047 703</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="map-section">
+    <div class="container">
+      <div class="map-wrap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2442.1234567890!2d21.04068984858273!3d52.26968668110003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc2215242bdb%3A0x1758667270354b3a!2s%C5%9Bw.%20Wincentego%2018%2C%2003-505%20Warszawa!5e0!3m2!1spl!2spl!4v1234567890"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Lokalizacja Salonik Janeczka Warszawa Targówek">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3><em>Janeczka</em> <span>Salon</span></h3>
+          <p>Fryzjer & Barber na Targówku. Ponad 50 lat tradycji, nowoczesne techniki, rodzinna atmosfera.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" title="Facebook">f</a>
+            <a href="#" class="social-btn" title="Instagram">✦</a>
+            <a href="https://booksy.com/pl-pl/81693_salonik-fryzjer-barber-janeczka_fryzjer_3_warszawa" class="social-btn" title="Booksy" target="_blank">B</a>
+          </div>
+        </div>
+        <nav class="footer-nav">
+          <h4>Nawigacja</h4>
+          <ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="gallery.html">Galeria</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="#booking">Rezerwacja</a></li>
+          </ul>
+        </nav>
+        <div class="footer-hours">
+          <h4>Godziny otwarcia</h4>
+          <p><strong>Pon – Pią</strong></p>
+          <p>9:00 – 20:00</p>
+          <p style="margin-top:0.8rem;"><strong>Sobota</strong></p>
+          <p>9:00 – 18:00</p>
+          <p style="margin-top:0.8rem;"><strong>Niedziela</strong></p>
+          <p>Nieczynne</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Salonik Fryzjer & Barber Janeczka · Targówek, Warszawa</span>
+        <span>ul. Św. Wincentego 18/2, 03-505 Warszawa</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/48504047703" class="whatsapp-float" title="Napisz na WhatsApp" target="_blank">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
