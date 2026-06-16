@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt i Rezerwacja — Respect Barber Shop Warszawa</title>
+  <meta name="description" content="Umów wizytę w Respect Barber Shop. Targowa 35, Praga-Północ, Warszawa. Tel: 788 630 082. Pon–Pt 9:00–20:00, Sob 9:00–17:00.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="scrolled">
+    <a href="index.html" class="nav-logo">RESPECT</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="index.html#uslugi">Usługi</a></li>
+      <li><a href="gallery.html">Galeria</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+      <li><a href="contact.html#rezerwacja" class="nav-cta">Umów wizytę</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <span class="section-label">Jesteśmy tu dla Ciebie</span>
+    <h1>Kontakt<br><span class="gold">i Rezerwacja</span></h1>
+    <p class="section-subtitle" style="margin: 1rem auto 0;">Zarezerwuj wizytę online lub skontaktuj się z nami bezpośrednio.</p>
+  </div>
+
+  <!-- CONTACT + FORM -->
+  <section id="rezerwacja">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- INFO -->
+        <div>
+          <div class="fade-up">
+            <h3>Informacje kontaktowe</h3>
+            <br>
+            <div class="contact-item">
+              <span class="contact-item-icon">📍</span>
+              <div class="contact-item-text">
+                <strong>Adres</strong>
+                <a href="https://maps.google.com/?q=Targowa+35+Warszawa" target="_blank">Targowa 35, 03-728 Warszawa<br>Praga-Północ</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-item-icon">📞</span>
+              <div class="contact-item-text">
+                <strong>Telefon</strong>
+                <a href="tel:788630082">788 630 082</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-item-icon">📱</span>
+              <div class="contact-item-text">
+                <strong>Instagram</strong>
+                <a href="https://www.instagram.com/respect_barber_shop_/" target="_blank" rel="noopener">@respect_barber_shop_</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-item-icon">💬</span>
+              <div class="contact-item-text">
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/48788630082" target="_blank" rel="noopener">Napisz do nas</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="fade-up" style="margin-top: 2.5rem;">
+            <h3 style="color: var(--gold); margin-bottom: 0.5rem; font-size: 1rem; letter-spacing: 0.1em; text-transform: uppercase; font-family: var(--font-body);">Godziny otwarcia</h3>
+            <table class="hours-table">
+              <tr><td>Poniedziałek</td><td>9:00 – 20:00</td></tr>
+              <tr><td>Wtorek</td><td>9:00 – 20:00</td></tr>
+              <tr><td>Środa</td><td>9:00 – 20:00</td></tr>
+              <tr><td>Czwartek</td><td>9:00 – 20:00</td></tr>
+              <tr><td>Piątek</td><td>9:00 – 20:00</td></tr>
+              <tr><td>Sobota</td><td>9:00 – 17:00</td></tr>
+              <tr><td>Niedziela</td><td style="color: var(--gray);">Zamknięte</td></tr>
+            </table>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <div class="fade-up">
+          <h3 style="margin-bottom: 1.75rem;">Zarezerwuj termin</h3>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div>
+              <label for="name">Imię i Nazwisko *</label>
+              <input type="text" id="name" name="name" placeholder="Jan Kowalski" required>
+            </div>
+            <div>
+              <label for="phone">Numer telefonu *</label>
+              <input type="tel" id="phone" name="phone" placeholder="+48 000 000 000" required>
+            </div>
+            <div>
+              <label for="service">Usługa *</label>
+              <select id="service" name="service" required>
+                <option value="">-- Wybierz usługę --</option>
+                <option value="strzyzenie">Strzyżenie i stylizacja — 70 zł</option>
+                <option value="broda">Strzyżenie brody — 60 zł</option>
+                <option value="kombo">Kombo: Włosy + Broda — 110 zł</option>
+                <option value="strzyzenie-mycie">Strzyżenie z myciem — 80 zł</option>
+                <option value="farbowanie">Farbowanie włosów — 70 zł</option>
+                <option value="nalyso">Na łyso lub jedna długość — 40 zł</option>
+                <option value="kombo-mycie">Kombo + Mycie — 120 zł</option>
+              </select>
+            </div>
+            <div>
+              <label for="barber">Preferowany barber</label>
+              <select id="barber" name="barber">
+                <option value="">Bez preferencji</option>
+                <option value="husejn">Husejn</option>
+                <option value="freed">Freed</option>
+              </select>
+            </div>
+            <div>
+              <label for="date">Preferowana data *</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div>
+              <label for="time">Preferowana godzina *</label>
+              <select id="time" name="time" required>
+                <option value="">-- Wybierz godzinę --</option>
+                <option>9:00</option>
+                <option>9:30</option>
+                <option>10:00</option>
+                <option>10:30</option>
+                <option>11:00</option>
+                <option>11:30</option>
+                <option>12:00</option>
+                <option>12:30</option>
+                <option>13:00</option>
+                <option>13:30</option>
+                <option>14:00</option>
+                <option>14:30</option>
+                <option>15:00</option>
+                <option>15:30</option>
+                <option>16:00</option>
+                <option>16:30</option>
+                <option>17:00</option>
+                <option>17:30</option>
+                <option>18:00</option>
+                <option>18:30</option>
+                <option>19:00</option>
+                <option>19:30</option>
+              </select>
+            </div>
+            <div>
+              <label for="notes">Dodatkowe uwagi</label>
+              <textarea id="notes" name="notes" placeholder="Jeśli masz jakieś preferencje dotyczące fryzury lub inne uwagi, wpisz je tutaj..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold" style="width: 100%; font-size: 0.9rem;">Wyślij prośbę o rezerwację</button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <strong>✓ Dziękujemy za kontakt!</strong><br>
+            Odezwiemy się do Ciebie w ciągu kilku godzin, aby potwierdzić termin. Do zobaczenia!
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MAP -->
+      <div class="map-wrap fade-up">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.5823788847!2d21.0378!3d52.2549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc3a8bc07a51%3A0x0!2sTargowa%2035%2C%2003-728%20Warszawa!5e0!3m2!1spl!2spl!4v1718500000000"
+          loading="lazy"
+          allowfullscreen
+          title="Respect Barber Shop na mapie"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">RESPECT</a>
+        <p>Profesjonalny barber shop w Warszawie. Tradycja rzemiosła w nowoczesnym wydaniu.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Nawigacja</h4>
+        <ul>
+          <li><a href="index.html">Strona główna</a></li>
+          <li><a href="index.html#uslugi">Usługi</a></li>
+          <li><a href="gallery.html">Galeria</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="tel:788630082">788 630 082</a></li>
+          <li><a href="#">Targowa 35, Warszawa</a></li>
+          <li><a href="https://www.instagram.com/respect_barber_shop_/" target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Respect Barber Shop. Wszelkie prawa zastrzeżone.</span>
+      <span>Praga-Północ, Warszawa</span>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/48788630082?text=Dzień+dobry%2C+chciałbym+umówić+wizytę" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+  <script src="js/main.js"></script>
+  <script>
+    const dateInput = document.getElementById('date');
+    if (dateInput) {
+      const today = new Date();
+      const minDate = today.toISOString().split('T')[0];
+      dateInput.min = minDate;
+      const maxDate = new Date(today.setMonth(today.getMonth() + 3)).toISOString().split('T')[0];
+      dateInput.max = maxDate;
+    }
+  </script>
+</body>
+</html>
