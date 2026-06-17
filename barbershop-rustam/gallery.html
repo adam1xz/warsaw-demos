@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria — Barbershop Rustam Warszawa</title>
+  <meta name="description" content="Galeria prac Barbershop Rustam — strzyżenia, brody, stylizacje. Chmielna 106, Warszawa Wola.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.95);
+      z-index: 500;
+      align-items: center;
+      justify-content: center;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox img {
+      max-width: 90vw;
+      max-height: 90vh;
+      object-fit: contain;
+      border: 1px solid rgba(0,212,255,0.4);
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 24px; right: 32px;
+      font-size: 2rem;
+      color: var(--blue);
+      cursor: pointer;
+      font-family: 'Orbitron', sans-serif;
+      background: none;
+      border: none;
+      text-shadow: 0 0 15px var(--blue);
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">RUSTAM</a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">O nas</a></li>
+    <li><a href="index.html#services">Usługi</a></li>
+    <li><a href="gallery.html">Galeria</a></li>
+    <li><a href="contact.html">Kontakt</a></li>
+  </ul>
+  <a href="contact.html#booking" class="nav-cta">Zarezerwuj</a>
+</nav>
+
+<div class="page-header">
+  <h1>Nasza <span>Galeria</span></h1>
+  <p>Strzyżenia, stylizacje i modelowanie brody — każda fryzura to indywidualny projekt</p>
+</div>
+
+<div class="gallery-page-grid">
+  <div class="gallery-page-item fade-in" onclick="openLightbox(this)">
+    <img src="https://d375139ucebi94.cloudfront.net/region2/pl/150332/inspiration/835a9353823040519b1a0226dcdcc8-barbershop-rustam-inspiration-66f5ffec3b6f4e1cbb3e09aaf4d12e-booksy.jpeg" alt="Barbershop Rustam portfolio 1">
+  </div>
+  <div class="gallery-page-item fade-in" onclick="openLightbox(this)">
+    <img src="https://d375139ucebi94.cloudfront.net/region2/pl/150332/inspiration/d64ae02e73d44d1b93b25f2327e7fc-barbershop-rustam-inspiration-6aa8f97d5cc84d4ebca003de63ab67-booksy.jpeg" alt="Barbershop Rustam portfolio 2">
+  </div>
+  <div class="gallery-page-item fade-in" onclick="openLightbox(this)">
+    <img src="https://d375139ucebi94.cloudfront.net/region2/pl/150332/inspiration/89b220c7f680429ab1c3b836e8f2b4-barbershop-rustam-inspiration-994e40d8b56146e8b886320993b577-booksy.jpeg" alt="Barbershop Rustam portfolio 3">
+  </div>
+  <div class="gallery-page-item fade-in" onclick="openLightbox(this)">
+    <img src="https://d375139ucebi94.cloudfront.net/region2/pl/150332/inspiration/21ccd0de533f4550a437e339d39a2d-barbershop-rustam-inspiration-9af9a913983a4b3aa3745fdadc4c38-booksy.jpeg" alt="Barbershop Rustam portfolio 4">
+  </div>
+  <div class="gallery-page-item fade-in" onclick="openLightbox(this)">
+    <img src="https://d375139ucebi94.cloudfront.net/region2/pl/150332/inspiration/01bcce21df8d44049cb5b101a68a2b-barbershop-rustam-inspiration-cf029f6f0592465c9f29b4d981762a-booksy.jpeg" alt="Barbershop Rustam portfolio 5">
+  </div>
+  <div class="gallery-page-item fade-in" onclick="openLightbox(this)">
+    <img src="https://d375139ucebi94.cloudfront.net/region2/pl/150332/inspiration/486ac3181d6745149d2b84ec42ef1d-barbershop-rustam-inspiration-03e3ef41ff544b01a1a46d8dea2717-booksy.jpeg" alt="Barbershop Rustam portfolio 6">
+  </div>
+  <div class="gallery-page-item fade-in" onclick="openLightbox(this)">
+    <img src="https://d375139ucebi94.cloudfront.net/region2/pl/150332/service_photos/fa82d23bfe414723bb3538475e1e72f4.jpeg" alt="Strzyżenie męskie">
+  </div>
+  <div class="gallery-page-item fade-in" onclick="openLightbox(this)">
+    <img src="https://d375139ucebi94.cloudfront.net/region2/pl/150332/service_photos/e7345b9263ba4f42ad7561626f4b64e8.jpeg" alt="Fade cut">
+  </div>
+  <div class="gallery-page-item fade-in" onclick="openLightbox(this)">
+    <img src="https://d375139ucebi94.cloudfront.net/region2/pl/150332/service_photos/e9c30b8eb4b9405aa22135c241380738.jpeg" alt="Stylizacja">
+  </div>
+  <div class="gallery-page-item fade-in" onclick="openLightbox(this)">
+    <img src="https://d375139ucebi94.cloudfront.net/region2/pl/150332/service_photos/e5af0fc235164dafab90c195b7bbcbb9.jpeg" alt="Koloryzacja">
+  </div>
+  <div class="gallery-page-item fade-in" onclick="openLightbox(this)">
+    <img src="https://d375139ucebi94.cloudfront.net/region2/pl/150332/service_photos/6e5b683acc474ad980c83f6694342da7.jpeg" alt="Broda">
+  </div>
+  <div class="gallery-page-item fade-in" onclick="openLightbox(this)">
+    <img src="https://d375139ucebi94.cloudfront.net/region2/pl/150332/service_photos/c1fe3e7b0b864fb99c65e898bcb07bd5.jpeg" alt="Koloryzacja 2">
+  </div>
+  <div class="gallery-page-item fade-in" onclick="openLightbox(this)">
+    <img src="https://static.where-e.com/Poland/Warszawa/Warszawa/Barbershop-Rustam_083bf4a3a782e42d82247806caeee060.jpg" alt="Barbershop wnętrze">
+  </div>
+  <div class="gallery-page-item fade-in" onclick="openLightbox(this)">
+    <img src="https://static.where-e.com/Poland/Warszawa/Warszawa/Barbershop-Rustam_794aa702bbfe6d8a019a62a493021843.jpg" alt="Barbershop 2">
+  </div>
+  <div class="gallery-page-item fade-in" onclick="openLightbox(this)">
+    <img src="https://static.where-e.com/Poland/Warszawa/Warszawa/Barbershop-Rustam_35d483b6f68c47d38616432d272db6a8.jpg" alt="Barbershop 3">
+  </div>
+  <div class="gallery-page-item fade-in" onclick="openLightbox(this)">
+    <img src="https://static.where-e.com/Poland/Warszawa/Warszawa/Barbershop-Rustam_ca4157f57d701429ad05e5d92e495cc9.jpg" alt="Barbershop 4">
+  </div>
+  <div class="gallery-page-item fade-in" onclick="openLightbox(this)">
+    <img src="https://static.where-e.com/Poland/Warszawa/Warszawa/Barbershop-Rustam_2235d2429af51f8973515eaabe3cf6a3.jpg" alt="Barbershop 5">
+  </div>
+  <div class="gallery-page-item fade-in" onclick="openLightbox(this)">
+    <img src="https://d375139ucebi94.cloudfront.net/region2/pl/150332/biz_photo/fb5784ee67d340b09baa59c5209f13-barbershop-rustam-biz-photo-43a6d1115d2a4ebbb81710c3da1d95-booksy.jpeg" alt="Barbershop Rustam main">
+  </div>
+  <div class="gallery-page-item fade-in" onclick="openLightbox(this)">
+    <img src="https://d375139ucebi94.cloudfront.net/region2/pl/150332/service_photos/605b67e02d8a4edfa8e32cf48a9aad7c.jpeg" alt="Koloryzacja 3">
+  </div>
+</div>
+
+<div style="text-align:center; padding: 60px 40px;">
+  <a href="contact.html#booking" class="btn-primary">Zarezerwuj wizytę</a>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo">RUSTAM</span>
+      <p>Profesjonalny barbershop w sercu Warszawy.</p>
+    </div>
+    <div>
+      <h4>Nawigacja</h4>
+      <ul>
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="index.html#services">Usługi</a></li>
+        <li><a href="gallery.html">Galeria</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Kontakt</h4>
+      <ul>
+        <li>Chmielna 106, U1, Warszawa Wola</li>
+        <li><a href="tel:+48780040752">+48 780 040 752</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Barbershop Rustam. Warszawa.</span>
+    <span>5.0★ · 875 opinii</span>
+  </div>
+</footer>
+
+<a href="https://wa.me/48780040752" class="wa-float" title="WhatsApp" target="_blank" rel="noopener">💬</a>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script src="js/main.js"></script>
+<script>
+function openLightbox(el) {
+  const src = el.querySelector('img').src;
+  document.getElementById('lightboxImg').src = src;
+  document.getElementById('lightbox').classList.add('open');
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.getElementById('lightboxImg').src = '';
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+</script>
+</body>
+</html>
