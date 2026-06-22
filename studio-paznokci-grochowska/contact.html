@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt — Studio Pielęgnacji Paznokci</title>
+<meta name="description" content="Skontaktuj się ze Studio Pielęgnacji Paznokci, ul. Grochowska 250, Warszawa. Telefon: 22 610 27 40.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">Studio<span> Paznokci</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#about">O nas</a></li>
+      <li><a href="index.html#services">Usługi</a></li>
+      <li><a href="gallery.html">Galeria</a></li>
+      <li><a href="index.html#booking">Rezerwacja</a></li>
+      <li><a href="contact.html" class="active">Kontakt</a></li>
+    </ul>
+    <div class="nav-burger" id="navBurger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="hero-blob blob-2"></div>
+  <div class="container">
+    <span class="section-tag reveal">Kontakt</span>
+    <h1 class="reveal">Odwiedź nas na Grochowie</h1>
+    <p class="reveal">Masz pytanie albo chcesz dopytać o termin? Napisz do nas lub zadzwoń — odpowiadamy szybko.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container contact-grid">
+    <div class="contact-info reveal">
+      <div class="info-item">
+        <div class="info-icon"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div><h4>Adres</h4><p>ul. Grochowska 250<br>04-388 Warszawa, Praga-Południe</p></div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.81.3 1.6.54 2.37a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.71-1.11a2 2 0 0 1 2.11-.45c.77.24 1.56.42 2.37.54A2 2 0 0 1 22 16.92z"/></svg></div>
+        <div><h4>Telefon</h4><a href="tel:+48226102740">22 610 27 40</a></div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon"><svg viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <div><h4>Godziny otwarcia</h4><p>Poniedziałek – Piątek: 9:00–20:00<br>Sobota: tylko po wcześniejszym umówieniu<br>Niedziela: zamknięte</p></div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon"><svg viewBox="0 0 24 24" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+        <div><h4>Rezerwacja</h4><p>Najszybciej zadzwoń lub wypełnij <a href="index.html#booking">formularz rezerwacji</a> na stronie głównej.</p></div>
+      </div>
+    </div>
+
+    <iframe class="map-frame reveal" src="https://www.google.com/maps?q=ul.+Grochowska+250,+04-388+Warszawa&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+<section class="services-bg">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="section-tag">Napisz do nas</span>
+      <h2>Formularz kontaktowy</h2>
+    </div>
+    <form class="booking-card reveal" id="contactForm" novalidate style="box-shadow:0 20px 45px rgba(58,50,44,0.08)">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="cName">Imię i nazwisko</label>
+          <input type="text" id="cName" name="cName" placeholder="Twoje imię">
+          <span class="field-error" id="err-cName"></span>
+        </div>
+        <div class="form-group">
+          <label for="cEmail">E-mail</label>
+          <input type="email" id="cEmail" name="cEmail" placeholder="ty@example.com">
+          <span class="field-error" id="err-cEmail"></span>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group full">
+          <label for="cMessage">Wiadomość</label>
+          <textarea id="cMessage" name="cMessage" rows="5" placeholder="W czym możemy pomóc?"></textarea>
+          <span class="field-error" id="err-cMessage"></span>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%">Wyślij wiadomość</button>
+      <div class="form-success" id="contactSuccess">Dziękujemy za wiadomość! Odpowiemy najszybciej, jak będzie to możliwe.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">Studio Paznokci</div>
+        <p>ul. Grochowska 250<br>04-388 Warszawa</p>
+      </div>
+      <div class="footer-col">
+        <h5>Kontakt</h5>
+        <a href="tel:+48226102740">22 610 27 40</a>
+        <a href="contact.html">Formularz kontaktowy</a>
+      </div>
+      <div class="footer-col">
+        <h5>Godziny</h5>
+        <p>Pon–Pt: 9:00–20:00</p>
+        <p>Sob: tylko po wcześniejszym umówieniu</p>
+      </div>
+      <div class="footer-col">
+        <h5>Śledź nas</h5>
+        <div class="social-row">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M14 9h3V6h-3c-2 0-3 1.3-3 3v2H8v3h3v6h3v-6h3l1-3h-4V9z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Studio Pielęgnacji Paznokci. Wszelkie prawa zastrzeżone.</div>
+  </div>
+</footer>
+
+<a href="tel:+48226102740" class="float-btn" aria-label="Zadzwoń"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.81.3 1.6.54 2.37a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.71-1.11a2 2 0 0 1 2.11-.45c.77.24 1.56.42 2.37.54A2 2 0 0 1 22 16.92z"/></svg></a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
