@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt — Kicia Kocia</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav__logo">KICIA<span>KOCIA</span></a>
+  <div class="nav__links">
+    <a href="index.html#about">O nas</a>
+    <a href="index.html#offer">Oferta</a>
+    <a href="index.html#events">Wydarzenia</a>
+    <a href="gallery.html">Atmosfera</a>
+    <a href="contact.html">Kontakt</a>
+  </div>
+  <button class="nav__toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<header class="page-header">
+  <div class="hero__eyebrow mono">Kontakt</div>
+  <h1>ZNAJDŹ NAS<br>NA GROCHOWIE</h1>
+  <p>Aleja Stanów Zjednoczonych 68 — kilka minut od ronda Wiatraczna, blisko przystanków tramwajowych i autobusowych.</p>
+</header>
+
+<div class="contact-grid">
+  <div class="contact-info">
+    <div class="row">
+      <div class="k mono">Adres</div>
+      <div class="v">Al. Stanów Zjednoczonych 68<br><small>04-036 Warszawa, Grochów</small></div>
+    </div>
+    <div class="row">
+      <div class="k mono">Telefon</div>
+      <div class="v"><a href="tel:+48501595386">+48 501 595 386</a></div>
+    </div>
+    <div class="row">
+      <div class="k mono">E-mail</div>
+      <div class="v"><a href="mailto:klubkiciakocia@gmail.com">klubkiciakocia@gmail.com</a></div>
+    </div>
+    <div class="row">
+      <div class="k mono">Godziny otwarcia</div>
+      <div class="v">
+        <small>Poniedziałek — 17:00–23:00</small>
+        <small>Wtorek — zamknięte</small>
+        <small>Środa–Czwartek — 17:00–24:00</small>
+        <small>Piątek — 18:00–24:00</small>
+        <small>Sobota — 14:00–02:00</small>
+        <small>Niedziela — 12:00–22:00</small>
+      </div>
+    </div>
+    <div class="row">
+      <div class="k mono">Social</div>
+      <div class="v"><a href="https://www.facebook.com/KlubKiciaKocia/" target="_blank" rel="noopener">facebook.com/KlubKiciaKocia</a></div>
+    </div>
+  </div>
+  <div class="map-wrap">
+    <iframe
+      src="https://www.google.com/maps?q=Aleja+Stan%C3%B3w+Zjednoczonych+68,+04-036+Warszawa&output=embed"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Mapa — Klubokawiarnia Kicia Kocia">
+    </iframe>
+  </div>
+</div>
+
+<section>
+  <div class="section-label">
+    <span>Napisz do nas</span>
+    <span class="mono">06 / 06</span>
+  </div>
+  <div class="form-wrap">
+    <form id="contact-form" novalidate style="max-width:640px;">
+      <div class="field">
+        <label for="c-name">Imię i nazwisko</label>
+        <input type="text" id="c-name" name="c-name" placeholder="Jan Kowalski">
+        <div class="error-msg">Podaj swoje imię i nazwisko.</div>
+      </div>
+      <div class="field">
+        <label for="c-email">E-mail</label>
+        <input type="email" id="c-email" name="c-email" placeholder="jan@przyklad.pl">
+        <div class="error-msg">Podaj prawidłowy adres e-mail.</div>
+      </div>
+      <div class="field">
+        <label for="c-message">Wiadomość</label>
+        <textarea id="c-message" name="c-message" rows="5" placeholder="Napisz, w czym możemy pomóc..."></textarea>
+        <div class="error-msg">Wiadomość jest zbyt krótka.</div>
+      </div>
+      <button type="submit" class="btn">Wyślij wiadomość</button>
+      <div class="success-box" id="contact-success"></div>
+    </form>
+  </div>
+</section>
+
+<a href="https://wa.me/48501595386" class="float-cta" target="_blank" rel="noopener">WhatsApp →</a>
+
+<footer>
+  <div>
+    <div class="foot__name">Kicia Kocia</div>
+    <div class="mono">Al. Stanów Zjednoczonych 68, 04-036 Warszawa</div>
+  </div>
+  <div class="foot__links">
+    <a href="https://www.facebook.com/KlubKiciaKocia/" target="_blank" rel="noopener">Facebook</a>
+    <a href="tel:+48501595386">+48 501 595 386</a>
+    <a href="contact.html">Kontakt</a>
+  </div>
+  <div class="mono">© 2026 Klubokawiarnia Kicia Kocia</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
