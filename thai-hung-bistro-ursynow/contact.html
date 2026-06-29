@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt — Thai Hung Bistro</title>
+<meta name="description" content="Skontaktuj się z Thai Hung Bistro na Ursynowie — adres, telefon, godziny otwarcia i mapa.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header id="site-header" class="scrolled">
+  <nav class="wide container">
+    <a href="index.html" class="logo">Thai Hung <span>Bistro</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html#about">O nas</a>
+      <a href="index.html#menu">Menu</a>
+      <a href="gallery.html">Galeria</a>
+      <a href="index.html#book">Rezerwacja</a>
+      <a href="contact.html">Kontakt</a>
+    </div>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <span class="hero-eyebrow" style="opacity:1;">Kontakt</span>
+  <h1>Znajdź nas na Ursynowie</h1>
+  <p>ul. Pelikanów 51, 02-843 Warszawa</p>
+</section>
+
+<section>
+  <div class="container wide">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <span class="section-label" style="text-align:left;">Dane kontaktowe</span>
+        <h2 style="text-align:left;">Odwiedź lub zadzwoń</h2>
+        <dl>
+          <dt>Adres</dt>
+          <dd>ul. Pelikanów 51, 02-843 Warszawa (Ursynów)</dd>
+          <dt>Telefon</dt>
+          <dd><a href="tel:+48600529791">+48 600 529 791</a></dd>
+          <dt>E-mail</dt>
+          <dd><a href="mailto:thaihung.warszawa@gmail.com">thaihung.warszawa@gmail.com</a></dd>
+          <dt>Godziny otwarcia</dt>
+          <dd>Pon&ndash;Sob: 11:00 &ndash; 21:00<br>Niedziela: 11:00 &ndash; 19:00</dd>
+          <dt>Dostawa</dt>
+          <dd>Zamówienia online przez Pyszne.pl i telefonicznie</dd>
+        </dl>
+        <div class="chevron-row" style="justify-content:flex-start;margin-left:0;">
+          <svg viewBox="0 0 14 14"><path d="M2 2l5 5-5 5"/></svg>
+          <svg viewBox="0 0 14 14"><path d="M2 2l5 5-5 5"/></svg>
+          <svg viewBox="0 0 14 14"><path d="M2 2l5 5-5 5"/></svg>
+        </div>
+      </div>
+      <div class="reveal">
+        <iframe class="map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=ul.+Pelikan%C3%B3w+51,+02-843+Warszawa&output=embed">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider">
+  <svg viewBox="0 0 160 24"><line x1="0" y1="12" x2="60" y2="12"/><polygon class="diamond" points="80,4 88,12 80,20 72,12"/><line x1="100" y1="12" x2="160" y2="12"/></svg>
+</div>
+
+<section class="dark-bg">
+  <div class="container">
+    <span class="section-label">Napisz do nas</span>
+    <h2 style="text-align:center;">Masz pytanie? Skontaktuj się z nami</h2>
+    <p class="section-sub">Odpowiadamy najczęściej tego samego dnia</p>
+    <form id="contactForm" novalidate>
+      <div class="row2">
+        <div class="field">
+          <label for="c-name">Imię i nazwisko</label>
+          <input type="text" id="c-name" name="name" placeholder="Twoje imię" required>
+          <div class="field-error">Proszę podać imię i nazwisko.</div>
+        </div>
+        <div class="field">
+          <label for="c-email">E-mail</label>
+          <input type="email" id="c-email" name="email" placeholder="ty@email.com" required>
+          <div class="field-error">Proszę podać prawidłowy adres e-mail.</div>
+        </div>
+      </div>
+      <div class="field">
+        <label for="c-subject">Temat</label>
+        <select id="c-subject" name="subject">
+          <option>Rezerwacja grupowa</option>
+          <option>Zamówienie cateringowe</option>
+          <option>Pytanie o menu / alergeny</option>
+          <option>Inne</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="c-message">Wiadomość</label>
+        <textarea id="c-message" name="message" rows="4" placeholder="W czym możemy pomóc?" required></textarea>
+        <div class="field-error">Proszę wpisać treść wiadomości.</div>
+      </div>
+      <button type="submit" class="btn btn-solid">Wyślij wiadomość</button>
+      <div class="form-msg" id="contactMsg">Dziękujemy za wiadomość! Odpowiemy najszybciej, jak to możliwe.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <a href="index.html" class="logo">Thai Hung <span>Bistro</span></a>
+  <div class="footer-links">
+    <a href="index.html#about">O nas</a>
+    <a href="index.html#menu">Menu</a>
+    <a href="gallery.html">Galeria</a>
+    <a href="contact.html">Kontakt</a>
+  </div>
+  <div class="footer-social">
+    <a href="#" aria-label="Facebook">f</a>
+    <a href="#" aria-label="Instagram">ig</a>
+  </div>
+  <small>&copy; 2026 Thai Hung Bistro &middot; ul. Pelikanów 51, Ursynów, Warszawa</small>
+</footer>
+
+<div class="wa-float" id="waFloat" title="Napisz do nas na WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.8.9 5.4 2.5 7.6L4 29l5.9-1.7c2.1 1.3 4.5 2 7 2 7 0 12.7-5.7 12.7-12.7C29.6 8.7 23 3 16 3zm0 23c-2.2 0-4.3-.6-6.1-1.8l-.4-.3-3.5 1 1-3.4-.3-.4c-1.3-2-2-4.3-2-6.7C4.7 9.5 9.7 4.5 16 4.5s11.3 5 11.3 11.3S22.3 26 16 26zm6.2-8.5c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.3-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.2.5-.6.7-.9.2-.3.1-.5 0-.7-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 1.9 2.9 4.6 4 2.7 1.1 2.7.7 3.2.7.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.4z"/></svg>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
