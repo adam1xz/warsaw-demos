@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WineTu Winebar &amp; Shop — Winiarnia &amp; Tapas Bar, Stary Żoliborz</title>
+<meta name="description" content="WineTu Winebar & Shop — winiarnia i hiszpański tapas bar w sercu Starego Żoliborza. Ponad 150 win z Hiszpanii i Włoch, autorskie tapas i kameralny ogródek.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header id="site-header">
+  <nav class="wide container">
+    <a href="index.html" class="logo">Wine<span>Tu</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html#about">O nas</a>
+      <a href="index.html#menu">Karta win &amp; Tapas</a>
+      <a href="gallery.html">Galeria</a>
+      <a href="index.html#book">Rezerwacja</a>
+      <a href="contact.html">Kontakt</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <span class="hero-eyebrow">Stary Żoliborz &middot; Warszawa</span>
+  <h1>Wine<em>Tu</em></h1>
+  <p class="tagline">Winiarnia i hiszpański tapas bar w sercu Żoliborza. Ponad 150 win z Hiszpanii i Włoch, kameralny ogródek i wieczory, które chce się przedłużać kieliszek po kieliszku.</p>
+  <a href="#menu" class="btn">Karta win i tapas</a>
+  <div class="hero-scroll">&darr; Przewiń</div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <span class="section-label">Nasza historia</span>
+    <h2 style="text-align:center;">Mała winiarnia z wielkim charakterem</h2>
+    <div class="divider">
+      <svg viewBox="0 0 160 24"><line x1="0" y1="12" x2="60" y2="12"/><polygon class="diamond" points="80,4 88,12 80,20 72,12"/><line x1="100" y1="12" x2="160" y2="12"/></svg>
+    </div>
+    <div class="about-grid">
+      <p class="dropcap">WineTu działa przy ulicy Stefana Czarnieckiego na Starym Żoliborzu — tuż obok Parku Żeromskiego, w jednej z najbardziej klimatycznych części dzielnicy. To miejsce, gdzie winiarnia spotyka się z hiszpańskim tapas barem: z jednej strony półki pełne starannie wyselekcjonowanych butelek, z drugiej kuchnia serwująca chorizo duszone w białym winie, krokiety z szynką Serrano czy kalmary z aioli kaparowym.</p>
+      <p>Sercem WineTu jest zespół, który zna każde wino na karcie z imienia — i z przyjemnością pomoże dobrać butelkę do nastroju wieczoru. Latem życie przenosi się do kameralnego ogródka, zimą — do wnętrza pachnącego korkiem i prażonym czosnkiem. Miejsce psom przyjazne, dla sąsiadów stałe, a dla gości z innych dzielnic — warte specjalnej podróży na Żoliborz.</p>
+    </div>
+    <blockquote class="pull-quote">
+      "Obsługa zna się na winie i naprawdę chce pomóc dobrać butelkę. Bezowy sernik baskijski to obowiązkowy deser na koniec wieczoru."
+      <cite>— Gość WineTu, recenzja Google</cite>
+    </blockquote>
+  </div>
+</section>
+
+<section class="dark-bg">
+  <div class="container wide">
+    <span class="section-label">WineTu w liczbach</span>
+    <h2 style="text-align:center;">Żoliborz pokochał to miejsce</h2>
+    <div class="stats">
+      <div class="stat reveal"><div class="num">150+</div><div class="label">Win na karcie</div></div>
+      <div class="stat reveal"><div class="num">4.6</div><div class="label">Ocena gości</div></div>
+      <div class="stat reveal"><div class="num">393</div><div class="label">Recenzji online</div></div>
+      <div class="stat reveal"><div class="num">2022</div><div class="label">Rok otwarcia</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="container wide">
+    <span class="section-label">Karta</span>
+    <h2 style="text-align:center;">Wina &amp; Tapas</h2>
+    <p class="section-sub">Pełna karta dostępna na miejscu &mdash; ceny w złotych, ok. 60&ndash;80 zł na osobę</p>
+
+    <div class="tabs" id="menuTabs">
+      <button class="tab-btn active" data-tab="tapas-zimne">Tapas Zimne</button>
+      <button class="tab-btn" data-tab="tapas-cieple">Tapas Ciepłe</button>
+      <button class="tab-btn" data-tab="wina">Wina</button>
+      <button class="tab-btn" data-tab="desery">Desery</button>
+    </div>
+
+    <div class="menu-panel active" id="panel-tapas-zimne">
+      <div class="menu-item"><div><span class="mi-name">Oliwki marynowane</span><span class="mi-desc">Oliwki z ziołami i skórką cytrusową, oliwa z pierwszego tłoczenia</span></div><span class="mi-price">18 zł</span></div>
+      <div class="menu-item"><div><span class="mi-name">Gazpacho andaluzyjskie</span><span class="mi-desc">Zimna zupa pomidorowa z papryką, ogórkiem i czosnkiem</span></div><span class="mi-price">22 zł</span></div>
+      <div class="menu-item"><div><span class="mi-name">Bocadillo z szynką Serrano</span><span class="mi-desc">Chrupiąca bagietka, szynka Serrano, pomidor, oliwa</span></div><span class="mi-price">28 zł</span></div>
+      <div class="menu-item"><div><span class="mi-name">Ośmiornica po galicyjsku</span><span class="mi-desc">Pulpo, papryka wędzona, oliwa, sól morska</span></div><span class="mi-price">42 zł</span></div>
+    </div>
+
+    <div class="menu-panel" id="panel-tapas-cieple">
+      <div class="menu-item"><div><span class="mi-name">Chorizo w białym winie</span><span class="mi-desc">Kiełbasa chorizo duszona na winie z karty</span></div><span class="mi-price">26 zł</span></div>
+      <div class="menu-item"><div><span class="mi-name">Krokiety z szynką Serrano</span><span class="mi-desc">Domowe krokiety, beszamel, chrupiąca panierka</span></div><span class="mi-price">24 zł</span></div>
+      <div class="menu-item"><div><span class="mi-name">Kalmary z aioli kaparowym</span><span class="mi-desc">Smażone kalmary, sos aioli z kaparami i cytryną</span></div><span class="mi-price">34 zł</span></div>
+      <div class="menu-item"><div><span class="mi-name">Boczniaki z rozmarynem i czosnkiem</span><span class="mi-desc">Pieczone boczniaki, masło czosnkowe, świeży rozmaryn</span></div><span class="mi-price">24 zł</span></div>
+    </div>
+
+    <div class="menu-panel" id="panel-wina">
+      <div class="menu-item"><div><span class="mi-name">Rioja Crianza, Hiszpania</span><span class="mi-desc">Czerwone, pełne taninów, nuty wanilii i czarnej wiśni</span></div><span class="mi-price">32 zł / kieliszek</span></div>
+      <div class="menu-item"><div><span class="mi-name">Albariño, Rías Baixas</span><span class="mi-desc">Białe, mineralne, cytrusowe, idealne do owoców morza</span></div><span class="mi-price">30 zł / kieliszek</span></div>
+      <div class="menu-item"><div><span class="mi-name">Chianti Classico, Toskania</span><span class="mi-desc">Czerwone włoskie, wiśniowe nuty, ziołowy finisz</span></div><span class="mi-price">34 zł / kieliszek</span></div>
+      <div class="menu-item"><div><span class="mi-name">Cava Brut Nature</span><span class="mi-desc">Wytrawne wino musujące z Katalonii</span></div><span class="mi-price">28 zł / kieliszek</span></div>
+    </div>
+
+    <div class="menu-panel" id="panel-desery">
+      <div class="menu-item"><div><span class="mi-name">Sernik baskijski</span><span class="mi-desc">Słynna tarta de queso &mdash; przypieczona na wierzchu, kremowa w środku</span></div><span class="mi-price">22 zł</span></div>
+      <div class="menu-item"><div><span class="mi-name">Crema catalana</span><span class="mi-desc">Hiszpański krem z karmelizowaną skórką</span></div><span class="mi-price">20 zł</span></div>
+    </div>
+
+    <p style="text-align:center;margin-top:40px;"><a href="contact.html" class="btn">Zapytaj o rezerwację</a></p>
+  </div>
+</section>
+
+<div class="divider">
+  <svg viewBox="0 0 160 24"><line x1="0" y1="12" x2="60" y2="12"/><polygon class="diamond" points="80,4 88,12 80,20 72,12"/><line x1="100" y1="12" x2="160" y2="12"/></svg>
+</div>
+
+<section>
+  <div class="container wide">
+    <span class="section-label">Galeria</span>
+    <h2 style="text-align:center;">Zajrzyj do środka</h2>
+    <p class="section-sub">Pełna galeria dostępna <a href="gallery.html" style="color:var(--gold);border-bottom:1px solid var(--gold);">tutaj &rarr;</a></p>
+    <div class="gallery-grid">
+      <figure data-caption="Kieliszek Rioja"><svg viewBox="0 0 64 64" stroke="#c9a84c" stroke-width="1.4" fill="none"><path d="M22 8h20l-3 22c-1 8-13 8-14 0L22 8z"/><line x1="32" y1="36" x2="32" y2="54"/><line x1="22" y1="54" x2="42" y2="54"/></svg><figcaption>Kieliszek Rioja</figcaption></figure>
+      <figure data-caption="Ogródek na Czarnieckiego"><svg viewBox="0 0 64 64" stroke="#c9a84c" stroke-width="1.4" fill="none"><rect x="12" y="28" width="40" height="24"/><line x1="12" y1="28" x2="32" y2="10"/><line x1="52" y1="28" x2="32" y2="10"/></svg><figcaption>Ogródek</figcaption></figure>
+      <figure data-caption="Półki z winem"><svg viewBox="0 0 64 64" stroke="#c9a84c" stroke-width="1.4" fill="none"><rect x="10" y="10" width="44" height="44"/><line x1="10" y1="24" x2="54" y2="24"/><line x1="10" y1="38" x2="54" y2="38"/></svg><figcaption>Półki z winem</figcaption></figure>
+      <figure data-caption="Tapas wieczorem"><svg viewBox="0 0 64 64" stroke="#c9a84c" stroke-width="1.4" fill="none"><circle cx="32" cy="32" r="18"/><circle cx="32" cy="32" r="6"/></svg><figcaption>Tapas</figcaption></figure>
+      <figure data-caption="Sernik baskijski"><svg viewBox="0 0 64 64" stroke="#c9a84c" stroke-width="1.4" fill="none"><path d="M14 44a18 10 0 0 0 36 0z"/><path d="M14 44V30a18 10 0 0 1 36 0v14"/></svg><figcaption>Sernik baskijski</figcaption></figure>
+      <figure data-caption="Wnętrze WineTu"><svg viewBox="0 0 64 64" stroke="#c9a84c" stroke-width="1.4" fill="none"><circle cx="32" cy="22" r="7"/><line x1="32" y1="29" x2="32" y2="50"/></svg><figcaption>Wieczorne światło</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="dark-bg">
+  <div class="container wide">
+    <span class="section-label">Opinie gości</span>
+    <h2 style="text-align:center;">Co mówią nasi goście</h2>
+    <div class="reviews">
+      <div class="review-card reveal">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Wybór win robi wrażenie, a obsługa naprawdę zna się na rzeczy i pomoże dobrać butelkę do nastroju. Ogródek latem to najlepsze miejsce na Żoliborzu na lampkę wina.</p>
+        <cite>Recenzja Google</cite>
+      </div>
+      <div class="review-card reveal">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Krokiety z szynką Serrano i kieliszek Albariño &mdash; idealne na wieczór we dwoje. Klimatyczne wnętrze, bez pośpiechu.</p>
+        <cite>Stała klientka</cite>
+      </div>
+      <div class="review-card reveal">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Sernik baskijski jest legendarny &mdash; przyjeżdżamy tu specjalnie z drugiego końca miasta. Świetne miejsce na spotkanie ze znajomymi.</p>
+        <cite>Gość z Mokotowa</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="book">
+  <div class="container wide">
+    <span class="section-label">Rezerwacja stolika</span>
+    <h2 style="text-align:center;">Zarezerwuj swój wieczór</h2>
+    <p class="section-sub">Wypełnij formularz, a my potwierdzimy rezerwację telefonicznie</p>
+    <div style="max-width:560px;margin:0 auto;">
+      <form id="bookingForm" novalidate style="width:100%;">
+        <div class="row2">
+          <div class="field">
+            <label for="b-name">Imię i nazwisko</label>
+            <input type="text" id="b-name" name="name" placeholder="Jan Kowalski" required>
+            <div class="field-error">Proszę podać imię i nazwisko.</div>
+          </div>
+          <div class="field">
+            <label for="b-phone">Telefon</label>
+            <input type="tel" id="b-phone" name="phone" placeholder="+48 600 000 000" required>
+            <div class="field-error">Proszę podać numer telefonu.</div>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="b-date">Data</label>
+            <input type="date" id="b-date" name="date" required>
+            <div class="field-error">Wybierz datę rezerwacji.</div>
+          </div>
+          <div class="field">
+            <label for="b-time">Godzina</label>
+            <input type="time" id="b-time" name="time" required>
+            <div class="field-error">Wybierz godzinę.</div>
+          </div>
+        </div>
+        <div class="field">
+          <label for="b-guests">Liczba gości</label>
+          <select id="b-guests" name="guests">
+            <option>1 osoba</option>
+            <option selected>2 osoby</option>
+            <option>3 osoby</option>
+            <option>4 osoby</option>
+            <option>5+ osób</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="b-notes">Uwagi (opcjonalnie)</label>
+          <textarea id="b-notes" name="notes" rows="3" placeholder="Np. preferencje win, ogródek czy wnętrze"></textarea>
+        </div>
+        <button type="submit" class="btn btn-solid">Zarezerwuj stolik</button>
+        <div class="form-msg" id="bookingMsg">Dziękujemy! Twoja rezerwacja została przyjęta &mdash; zadzwonimy, aby potwierdzić termin.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <a href="index.html" class="logo">Wine<span>Tu</span></a>
+  <div class="footer-links">
+    <a href="index.html#about">O nas</a>
+    <a href="index.html#menu">Karta</a>
+    <a href="gallery.html">Galeria</a>
+    <a href="contact.html">Kontakt</a>
+  </div>
+  <div class="footer-social">
+    <a href="#" aria-label="Facebook">f</a>
+    <a href="#" aria-label="Instagram">ig</a>
+  </div>
+  <small>&copy; 2026 WineTu Winebar &amp; Shop &middot; ul. Stefana Czarnieckiego 65, Stary Żoliborz, Warszawa</small>
+</footer>
+
+<a class="wa-float" id="waFloat" title="Napisz do nas na WhatsApp" href="https://wa.me/48690312633" target="_blank" rel="noopener">
+  <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.8.9 5.4 2.5 7.6L4 29l5.9-1.7c2.1 1.3 4.5 2 7 2 7 0 12.7-5.7 12.7-12.7C29.6 8.7 23 3 16 3zm0 23c-2.2 0-4.3-.6-6.1-1.8l-.4-.3-3.5 1 1-3.4-.3-.4c-1.3-2-2-4.3-2-6.7C4.7 9.5 9.7 4.5 16 4.5s11.3 5 11.3 11.3S22.3 26 16 26zm6.2-8.5c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.3-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.2.5-.6.7-.9.2-.3.1-.5 0-.7-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 1.9 2.9 4.6 4 2.7 1.1 2.7.7 3.2.7.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.4z"/></svg>
+</a>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <svg viewBox="0 0 64 64" stroke="#c9a84c" stroke-width="1.4" fill="none"><path d="M22 8h20l-3 22c-1 8-13 8-14 0L22 8z"/><line x1="32" y1="36" x2="32" y2="54"/><line x1="22" y1="54" x2="42" y2="54"/></svg>
+    <h3 id="lightboxTitle">Kieliszek Rioja</h3>
+    <p>Zdjęcie z WineTu &mdash; pełną galerię znajdziesz na stronie Galeria.</p>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
