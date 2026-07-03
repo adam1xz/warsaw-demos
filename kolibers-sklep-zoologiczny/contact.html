@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt — Kolibers Sklep Zoologiczny</title>
+<meta name="description" content="Skontaktuj się z Kolibers Sklep Zoologiczny na Ochocie — zapytaj o dostępność karmy, adres i godziny otwarcia.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">KOLI<span>BERS</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="index.html#oferta">Oferta</a></li>
+      <li><a href="gallery.html">Asortyment</a></li>
+      <li><a href="index.html#opinie">Opinie</a></li>
+      <li><a href="contact.html" class="active">Kontakt</a></li>
+    </ul>
+    <a href="tel:+48226685400" class="nav-cta">22 668 54 00</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <span class="watermark" style="top:-1rem; right:-2rem;">06</span>
+  <div class="wrap">
+    <p class="breadcrumb">Kontakt</p>
+    <h1>Zapytaj<br>o dostępność</h1>
+    <p style="max-width:56ch; margin-top:1.2rem; font-size:1.1rem; position:relative; z-index:1;">Szukasz konkretnej karmy lub chcesz sprawdzić, czy mamy coś na stanie? Zadzwoń albo wyślij wiadomość — odpowiadamy szybko.</p>
+  </div>
+</header>
+
+<section class="contact-section" style="padding-top:3.5rem;">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Dane kontaktowe</h3>
+        <div class="contact-row">
+          <div class="label">Adres</div>
+          <div class="value">ul. Słupecka 4, lok. 91<br>02-309 Warszawa, Ochota</div>
+        </div>
+        <div class="contact-row">
+          <div class="label">Telefon</div>
+          <div class="value"><a href="tel:+48226685400">22 668 54 00</a></div>
+        </div>
+        <div class="contact-row">
+          <div class="label">Godziny otwarcia</div>
+          <div class="value">Pon–Pt: 10:00–19:00<br>Sob: 10:00–14:00<br>Niedz: nieczynne<br><small>Godziny mogą się różnić — prosimy o telefon.</small></div>
+        </div>
+        <div class="contact-row">
+          <div class="label">Dzielnica</div>
+          <div class="value">Stara Ochota, Warszawa</div>
+        </div>
+      </div>
+      <div class="map-embed">
+        <iframe src="https://www.google.com/maps?q=Słupecka%204%2C%2002-309%20Warszawa&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa - Kolibers Sklep Zoologiczny"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="form-section">
+  <div class="wrap">
+    <div class="section-head" style="grid-template-columns: 1fr;">
+      <span class="index">07 / FORMULARZ</span>
+      <h2>Zapytaj o produkt</h2>
+    </div>
+
+    <form class="brutal" id="inquiryForm" novalidate>
+      <div class="field">
+        <label for="name">Imię i nazwisko *</label>
+        <input type="text" id="name" name="name" placeholder="Jan Kowalski">
+        <div class="error-msg">Podaj imię i nazwisko.</div>
+      </div>
+      <div class="field">
+        <label for="phone">Telefon *</label>
+        <input type="tel" id="phone" name="phone" placeholder="+48 600 000 000">
+        <div class="error-msg">Podaj poprawny numer telefonu.</div>
+      </div>
+      <div class="field">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="jan@przyklad.pl">
+        <div class="error-msg">Podaj poprawny adres e-mail.</div>
+      </div>
+      <div class="field">
+        <label for="pet">Rodzaj zwierzaka</label>
+        <select id="pet" name="pet">
+          <option value="pies">Pies</option>
+          <option value="kot">Kot</option>
+          <option value="gryzon">Gryzoń / mały ssak</option>
+          <option value="ptak">Ptak</option>
+          <option value="inne">Inne</option>
+        </select>
+      </div>
+      <div class="field full">
+        <label for="category">Czego szukasz?</label>
+        <select id="category" name="category">
+          <option value="karma-sucha">Karma sucha</option>
+          <option value="karma-mokra">Karma mokra</option>
+          <option value="karma-specjalistyczna">Karma specjalistyczna / wet</option>
+          <option value="akcesoria">Akcesoria</option>
+          <option value="inne">Inne / nie wiem</option>
+        </select>
+      </div>
+      <div class="field full">
+        <label for="message">Wiadomość *</label>
+        <textarea id="message" name="message" placeholder="Np. Czy macie na stanie karmę hipoalergiczną dla psa 15 kg?"></textarea>
+        <div class="error-msg">Napisz kilka słów wiadomości.</div>
+      </div>
+      <div class="full submit-row">
+        <button type="submit" class="btn btn-primary" style="background:var(--red); border-color:var(--red); cursor:pointer;">Wyślij zapytanie</button>
+        <span style="font-size:0.9rem; color:#555;">Odpowiadamy zwykle tego samego dnia.</span>
+      </div>
+      <div class="full form-success" id="formSuccess">Dziękujemy! Twoje zapytanie zostało wysłane — odezwiemy się wkrótce telefonicznie lub mailowo.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Kolibers</h4>
+        <p>Sklep zoologiczny na Starej Ochocie. Karma dla psów i kotów, produkty specjalistyczne i doradztwo od lat zaufane przez sąsiadów.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 9h3V5h-3c-2 0-3.5 1.5-3.5 3.5V11H8v4h2.5v6H14v-6h2.7l.5-4H14V8.8c0-.5.3-.8.7-.8Z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Nawigacja</h4>
+        <ul>
+          <li><a href="index.html">Start</a></li>
+          <li><a href="index.html#oferta">Oferta</a></li>
+          <li><a href="gallery.html">Asortyment</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li>ul. Słupecka 4, lok. 91</li>
+          <li>02-309 Warszawa, Ochota</li>
+          <li><a href="tel:+48226685400">22 668 54 00</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Kolibers Sklep Zoologiczny. Wszelkie prawa zastrzeżone.</span>
+      <span>Stara Ochota, Warszawa</span>
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp-fab" href="https://wa.me/48226685400" target="_blank" rel="noopener" aria-label="Napisz na WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.6.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 2-1.4.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3 .8.8-2.9-.2-.3a8.2 8.2 0 1 1 7.1 3.8Z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
