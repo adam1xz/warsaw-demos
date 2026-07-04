@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt | SARAY Restauracja Turecka</title>
+<meta name="description" content="Odwiedź SARAY na ul. Wandy 16 na Saskiej Kępie w Warszawie. Adres, telefon, godziny otwarcia i mapa dojazdu.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav scrolled" id="siteNav">
+  <div class="container nav-inner">
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
+    <ul class="nav-links nav-links-left">
+      <li><a href="index.html#about">O nas</a></li>
+      <li><a href="index.html#menu">Menu</a></li>
+    </ul>
+    <div class="nav-brand">SARAY</div>
+    <ul class="nav-links nav-links-right">
+      <li><a href="gallery.html">Galeria</a></li>
+      <li><a href="index.html#reserve">Rezerwacja</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+    <ul class="nav-links-mobile" id="navLinksMobile">
+      <li><a href="index.html#about">O nas</a></li>
+      <li><a href="index.html#menu">Menu</a></li>
+      <li><a href="gallery.html">Galeria</a></li>
+      <li><a href="index.html#reserve">Rezerwacja</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <div class="section-eyebrow">Kontakt</div>
+    <h1>Odwiedź SARAY</h1>
+    <p>Znajdziesz nas na ulicy Wandy, w samym sercu Saskiej Kępy.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container contact-hero-grid">
+    <div class="contact-card reveal">
+      <h3>Dane Kontaktowe</h3>
+      <div class="info-line">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <div><strong>Adres</strong>ul. Wandy 16, 03-949 Warszawa (Saska Kępa)</div>
+      </div>
+      <div class="info-line">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8.1 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.9 2.2z"/></svg>
+        <div><strong>Telefon</strong><a href="tel:+48570557797">+48 570 557 797</a></div>
+      </div>
+      <div class="info-line">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        <div><strong>Rezerwacje</strong><a href="tel:+48690833109">+48 690 833 109</a></div>
+      </div>
+      <div class="info-line">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        <div>
+          <strong>Godziny Otwarcia</strong>
+          <table class="hours-table">
+            <tr><td>Poniedziałek – Piątek</td><td>11:00 – 22:00</td></tr>
+            <tr><td>Sobota</td><td>12:00 – 22:00</td></tr>
+            <tr><td>Niedziela</td><td>12:00 – 21:00</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="map-embed reveal">
+      <iframe src="https://www.google.com/maps?q=ul.%20Wandy%2016%2C%2003-949%20Warszawa&output=embed" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">Napisz do Nas</div>
+      <h2>Masz Pytanie?</h2>
+      <p>Wypełnij formularz — odpowiemy najszybciej, jak to możliwe.</p>
+    </div>
+    <div class="reserve-wrap reveal">
+      <form id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="field" id="c-f-name">
+            <label for="c-name">Imię i Nazwisko</label>
+            <input type="text" id="c-name" name="name" placeholder="Jan Kowalski">
+            <div class="err-msg">Podaj imię i nazwisko.</div>
+          </div>
+          <div class="field" id="c-f-email">
+            <label for="c-email">E-mail</label>
+            <input type="email" id="c-email" name="email" placeholder="jan@przyklad.pl">
+            <div class="err-msg">Podaj poprawny adres e-mail.</div>
+          </div>
+        </div>
+        <div class="form-row single">
+          <div class="field" id="c-f-subject">
+            <label for="c-subject">Temat</label>
+            <input type="text" id="c-subject" name="subject" placeholder="Np. Zapytanie o catering">
+            <div class="err-msg">Podaj temat wiadomości.</div>
+          </div>
+        </div>
+        <div class="form-row single">
+          <div class="field" id="c-f-message">
+            <label for="c-message">Wiadomość</label>
+            <textarea id="c-message" name="message" rows="4" placeholder="Twoja wiadomość..."></textarea>
+            <div class="err-msg">Wiadomość nie może być pusta.</div>
+          </div>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn btn-solid">Wyślij Wiadomość</button>
+        </div>
+        <div class="form-success" id="contactSuccess">Dziękujemy za wiadomość! Odezwiemy się najszybciej, jak to możliwe.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-brand">SARAY</div>
+    <p class="footer-tag">Restauracja Turecka &middot; Saska Kępa, Warszawa</p>
+    <div class="footer-links">
+      <a href="index.html">Strona Główna</a>
+      <a href="gallery.html">Galeria</a>
+      <a href="contact.html">Kontakt</a>
+    </div>
+    <div class="footer-bottom">&copy; 2026 SARAY Restauracja Turecka &middot; ul. Wandy 16, Saska Kępa, Warszawa</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/48570557797" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.1 8.1 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3a8.2 8.2 0 1 1 7 3.9zm4.5-6.1c-.2-.1-1.4-.7-1.7-.8s-.4-.1-.6.1-.7.8-.9 1-.3.2-.6.1a6.7 6.7 0 0 1-2-1.2 7.4 7.4 0 0 1-1.4-1.7c-.1-.2 0-.4.1-.5s.2-.3.4-.4.2-.2.3-.4a.5.5 0 0 0 0-.5c-.1-.1-.6-1.4-.8-1.9s-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c.6.3 1.1.4 1.5.6a3.6 3.6 0 0 0 1.7.1 2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>

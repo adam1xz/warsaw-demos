@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SARAY Restauracja Turecka | Saska Kępa, Warszawa</title>
+<meta name="description" content="SARAY — autentyczna kuchnia turecka na Saskiej Kępie. Kebaby, mezze, lahmacun i baklava przygotowywane codziennie ze świeżych składników.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav" id="siteNav">
+  <div class="container nav-inner">
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
+    <ul class="nav-links nav-links-left">
+      <li><a href="index.html#about">O nas</a></li>
+      <li><a href="index.html#menu">Menu</a></li>
+    </ul>
+    <div class="nav-brand">SARAY</div>
+    <ul class="nav-links nav-links-right">
+      <li><a href="gallery.html">Galeria</a></li>
+      <li><a href="index.html#reserve">Rezerwacja</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+    <ul class="nav-links-mobile" id="navLinksMobile">
+      <li><a href="index.html#about">O nas</a></li>
+      <li><a href="index.html#menu">Menu</a></li>
+      <li><a href="gallery.html">Galeria</a></li>
+      <li><a href="index.html#reserve">Rezerwacja</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-frame"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Saska Kępa &middot; Warszawa</div>
+    <h1>SARAY<br><span>Restauracja Turecka</span></h1>
+    <p class="hero-sub">Smaki Anatolii w sercu Saskiej Kępy — kebaby z rożna, świeże mezze i domowa baklava, serwowane każdego dnia z pasją.</p>
+    <div class="deco-divider" style="margin-bottom:2.2rem;">
+      <span class="line"></span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="1"><path d="M12 2 L22 12 L12 22 L2 12 Z"/></svg>
+      <span class="line right"></span>
+    </div>
+    <a href="#reserve" class="btn">Zarezerwuj Stolik</a>
+  </div>
+  <div class="scroll-cue"><span></span>PRZEWIŃ</div>
+</header>
+
+<div class="chevron-band"></div>
+
+<section id="about">
+  <div class="container about-inner reveal">
+    <div class="section-eyebrow">Nasza Historia</div>
+    <h2>Prawdziwy Smak Turcji</h2>
+    <p class="about-text">SARAY powstało z tęsknoty za smakami Stambułu i Antalyi — miejscem, gdzie mięso z rożna piecze się powoli, a przyprawy dobiera się tak, jak robiły to babcie w Anatolii. Każdego dnia przygotowujemy kebaby z jagnięciny i wołowiny, pieczemy cienki lahmacun i podajemy mezze prosto ze świeżych warzyw i ziół. Na Saskiej Kępie stworzyliśmy miejsce, w którym można poczuć gościnność tureckiego domu — głośno, ciepło i sycąco.</p>
+    <div class="about-stats">
+      <div class="stat"><span class="num">100%</span><span class="label">Świeże Mięso</span></div>
+      <div class="stat"><span class="num">4.0★</span><span class="label">Ocena Google</span></div>
+      <div class="stat"><span class="num">7/7</span><span class="label">Dni w Tygodniu</span></div>
+      <div class="stat"><span class="num">2024</span><span class="label">Rok Otwarcia</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="section-dark">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">Menu</div>
+      <h2>Wybrane Dania</h2>
+      <p>Kuchnia turecka w wydaniu klasycznym — od dymiących kebabów po chłodne mezze i słodką baklavę na deser.</p>
+    </div>
+    <div class="menu-tabs reveal">
+      <button class="menu-tab active" data-tab="kebaby">Kebaby &amp; Dania Główne</button>
+      <button class="menu-tab" data-tab="mezze">Mezze &amp; Przystawki</button>
+      <button class="menu-tab" data-tab="desery">Desery &amp; Napoje</button>
+    </div>
+
+    <div class="menu-panel active" id="panel-kebaby">
+      <div class="menu-grid">
+        <div class="menu-item"><div><h4>Kebab Jagnięcy z Rożna</h4><p>Cienko krojona jagnięcina, marynowana przez 24h, podawana z ryżem i grillowanymi warzywami.</p></div><span class="price">42 zł</span></div>
+        <div class="menu-item"><div><h4>Adana Kebab</h4><p>Pikantne kotleciki z mielonej jagnięciny i wołowiny, pieczone na rożnie w stylu Adany.</p></div><span class="price">39 zł</span></div>
+        <div class="menu-item"><div><h4>Iskender Kebab</h4><p>Kebab wołowy na pieczywie pita, polany masłem i sosem pomidorowym, z jogurtem.</p></div><span class="price">45 zł</span></div>
+        <div class="menu-item"><div><h4>Köfte z Grilla</h4><p>Domowe kotleciki z przyprawami — kminem, sumakiem i świeżą pietruszką.</p></div><span class="price">36 zł</span></div>
+        <div class="menu-item"><div><h4>Lahmacun</h4><p>Cienkie tureckie "pizza" z mięsem mielonym, papryką i cytryną — pieczone na kamieniu.</p></div><span class="price">24 zł</span></div>
+        <div class="menu-item"><div><h4>Roladki Jagnięce</h4><p>Rolowana jagnięcina nadziewana ziołami, pieczona powoli do miękkości.</p></div><span class="price">48 zł</span></div>
+      </div>
+    </div>
+
+    <div class="menu-panel" id="panel-mezze">
+      <div class="menu-grid">
+        <div class="menu-item"><div><h4>Haydari</h4><p>Gęsty jogurt z czosnkiem, koperkiem i oliwą z pierwszego tłoczenia.</p></div><span class="price">16 zł</span></div>
+        <div class="menu-item"><div><h4>Ezme</h4><p>Ostra sałatka z pomidorów, papryki i cebuli, doprawiona sokiem z granatu.</p></div><span class="price">16 zł</span></div>
+        <div class="menu-item"><div><h4>Tarator</h4><p>Chłodnik ogórkowo-jogurtowy z orzechami włoskimi i miętą.</p></div><span class="price">15 zł</span></div>
+        <div class="menu-item"><div><h4>Sigara Böreği</h4><p>Chrupiące rulony z ciasta filo nadziewane serem feta i natką pietruszki.</p></div><span class="price">19 zł</span></div>
+        <div class="menu-item"><div><h4>Hummus Domowy</h4><p>Kremowe puree z ciecierzycy, tahini i cytryny, podawane z ciepłym pieczywem.</p></div><span class="price">18 zł</span></div>
+        <div class="menu-item"><div><h4>Sałatka Çoban</h4><p>Pomidory, ogórki, cebula i papryka w oliwie z oregano.</p></div><span class="price">17 zł</span></div>
+      </div>
+    </div>
+
+    <div class="menu-panel" id="panel-desery">
+      <div class="menu-grid">
+        <div class="menu-item"><div><h4>Baklava Orzechowa</h4><p>Domowa baklava z orzechami pistacjowymi, moczona w syropie miodowym.</p></div><span class="price">18 zł</span></div>
+        <div class="menu-item"><div><h4>Künefe</h4><p>Ciepły deser z ciasta kadayif i sera, podawany z syropem i pistacjami.</p></div><span class="price">22 zł</span></div>
+        <div class="menu-item"><div><h4>Herbata Turecka</h4><p>Parzona w tradycyjnym czajniku çaydanlık, podawana w szklance tulipan.</p></div><span class="price">8 zł</span></div>
+        <div class="menu-item"><div><h4>Kawa po Turecku</h4><p>Drobno mielona kawa gotowana w cezve, podawana z wodą i lokum.</p></div><span class="price">11 zł</span></div>
+        <div class="menu-item"><div><h4>Ayran</h4><p>Orzeźwiający napój jogurtowy — klasyczne uzupełnienie kebabu.</p></div><span class="price">9 zł</span></div>
+        <div class="menu-item"><div><h4>Sok z Granatu</h4><p>Świeżo wyciskany, bez dodatku cukru.</p></div><span class="price">13 zł</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="chevron-band dark"></div>
+
+<section id="gallery-preview">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">Galeria</div>
+      <h2>Chwile przy Naszym Stole</h2>
+      <p>Zajrzyj do wnętrza SARAY i zobacz, jak powstają nasze dania.</p>
+    </div>
+    <div class="gallery-grid reveal">
+      <div class="g-tile"><div class="ph" style="background:linear-gradient(150deg,#7a2e0b,#0b1426);">Kebab z rożna</div><div class="cap">Jagnięcina prosto z rożna</div></div>
+      <div class="g-tile"><div class="ph" style="background:linear-gradient(150deg,#a5872e,#0b1426);">Wnętrze restauracji</div><div class="cap">Sala główna SARAY</div></div>
+      <div class="g-tile"><div class="ph" style="background:linear-gradient(150deg,#5a4322,#0b1426);">Mezze i przystawki</div><div class="cap">Zestaw tureckich mezze</div></div>
+      <div class="g-tile"><div class="ph" style="background:linear-gradient(150deg,#8c1f14,#0b1426);">Baklava</div><div class="cap">Domowa baklava pistacjowa</div></div>
+    </div>
+    <div class="center-cta reveal"><a href="gallery.html" class="btn">Zobacz Pełną Galerię</a></div>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">Opinie Gości</div>
+      <h2>Co Mówią Nasi Klienci</h2>
+    </div>
+    <div class="testimonial-row reveal">
+      <div class="testimonial"><p>Mięso jagnięce dosłownie rozpływało się w ustach. Porcje ogromne, a lawasz świeżo pieczony na miejscu.</p><div class="who">— Klient Google, Saska Kępa</div></div>
+      <div class="testimonial"><p>Baklava jak u babci w Stambule. Wracamy tu regularnie od otwarcia, zawsze świeżo i smacznie.</p><div class="who">— Stały Gość</div></div>
+      <div class="testimonial"><p>Adana kebab z odpowiednim ostrym kopem i idealnie przyprawiony. Miejsce warte polecenia w tej okolicy.</p><div class="who">— Klient Google</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="reserve">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">Rezerwacja</div>
+      <h2>Zarezerwuj Stolik</h2>
+      <p>Wypełnij formularz, a potwierdzimy rezerwację telefonicznie w ciągu kilku godzin.</p>
+    </div>
+    <div class="reserve-wrap reveal">
+      <form id="reserveForm" novalidate>
+        <div class="form-row">
+          <div class="field" id="f-name">
+            <label for="r-name">Imię i Nazwisko</label>
+            <input type="text" id="r-name" name="name" placeholder="Jan Kowalski">
+            <div class="err-msg">Podaj imię i nazwisko.</div>
+          </div>
+          <div class="field" id="f-phone">
+            <label for="r-phone">Telefon</label>
+            <input type="tel" id="r-phone" name="phone" placeholder="+48 570 557 797">
+            <div class="err-msg">Podaj poprawny numer telefonu.</div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field" id="f-date">
+            <label for="r-date">Data</label>
+            <input type="date" id="r-date" name="date">
+            <div class="err-msg">Wybierz datę rezerwacji.</div>
+          </div>
+          <div class="field" id="f-time">
+            <label for="r-time">Godzina</label>
+            <select id="r-time" name="time">
+              <option value="">Wybierz godzinę</option>
+              <option>12:00</option><option>13:00</option><option>14:00</option>
+              <option>17:00</option><option>18:00</option><option>19:00</option>
+              <option>20:00</option><option>21:00</option>
+            </select>
+            <div class="err-msg">Wybierz godzinę.</div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field" id="f-guests">
+            <label for="r-guests">Liczba Gości</label>
+            <select id="r-guests" name="guests">
+              <option value="">Liczba osób</option>
+              <option>1 osoba</option><option>2 osoby</option><option>3 osoby</option>
+              <option>4 osoby</option><option>5–6 osób</option><option>7+ osób</option>
+            </select>
+            <div class="err-msg">Wybierz liczbę gości.</div>
+          </div>
+          <div class="field" id="f-email">
+            <label for="r-email">E-mail</label>
+            <input type="email" id="r-email" name="email" placeholder="jan@przyklad.pl">
+            <div class="err-msg">Podaj poprawny adres e-mail.</div>
+          </div>
+        </div>
+        <div class="form-row single">
+          <div class="field">
+            <label for="r-notes">Uwagi (opcjonalnie)</label>
+            <textarea id="r-notes" name="notes" rows="3" placeholder="Np. stolik przy oknie, alergie pokarmowe..."></textarea>
+          </div>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn btn-solid">Wyślij Rezerwację</button>
+        </div>
+        <div class="form-success" id="formSuccess">Dziękujemy! Twoja rezerwacja została przyjęta — skontaktujemy się telefonicznie, aby ją potwierdzić.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-brand">SARAY</div>
+    <p class="footer-tag">Restauracja Turecka &middot; Saska Kępa, Warszawa</p>
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/saray_warszawa/" aria-label="Instagram" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+      <a href="https://www.facebook.com/p/Saray-Restauracja-Turecka-61568779860350/" aria-label="Facebook" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 4h-2a4 4 0 0 0-4 4v3H7v4h2v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3z"/></svg></a>
+      <a href="tel:+48570557797" aria-label="Telefon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8.1 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.9 2.2z"/></svg></a>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Strona Główna</a>
+      <a href="gallery.html">Galeria</a>
+      <a href="contact.html">Kontakt</a>
+    </div>
+    <div class="footer-bottom">&copy; 2026 SARAY Restauracja Turecka &middot; ul. Wandy 16, Saska Kępa, Warszawa</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/48570557797" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.1 8.1 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3a8.2 8.2 0 1 1 7 3.9zm4.5-6.1c-.2-.1-1.4-.7-1.7-.8s-.4-.1-.6.1-.7.8-.9 1-.3.2-.6.1a6.7 6.7 0 0 1-2-1.2 7.4 7.4 0 0 1-1.4-1.7c-.1-.2 0-.4.1-.5s.2-.3.4-.4.2-.2.3-.4a.5.5 0 0 0 0-.5c-.1-.1-.6-1.4-.8-1.9s-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c.6.3 1.1.4 1.5.6a3.6 3.6 0 0 0 1.7.1 2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
