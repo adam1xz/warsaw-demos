@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt i Rezerwacje — Koreana | Warszawa Ochota</title>
+<meta name="description" content="Skontaktuj się z restauracją Koreana — ul. Filtrowa 62, Warszawa. Telefon, godziny otwarcia, mapa dojazdu i formularz rezerwacji.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="logo">KOREANA</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  <ul id="navList">
+    <li><a href="index.html">Start</a></li>
+    <li><a href="index.html#about">O nas</a></li>
+    <li><a href="index.html#menu">Menu</a></li>
+    <li><a href="gallery.html">Galeria</a></li>
+    <li><a href="contact.html" class="active">Kontakt</a></li>
+  </ul>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <h1>Kontakt</h1>
+    <p>Odwiedź nas na Filtrowej 62 lub zarezerwuj stolik online</p>
+  </div>
+</header>
+
+<section class="section-white">
+  <div class="container contact-grid">
+    <div class="reveal">
+      <div class="contact-info-card">
+        <h4>Adres</h4>
+        <p>ul. Filtrowa 62<br>02-057 Warszawa, Stara Ochota</p>
+      </div>
+      <div class="contact-info-card">
+        <h4>Telefon</h4>
+        <p><a href="tel:+48224156681">+48 22 415 66 81</a></p>
+      </div>
+      <div class="contact-info-card">
+        <h4>Godziny otwarcia</h4>
+        <p>Poniedziałek – Sobota: 12:00 – 22:00<br>Niedziela: 12:00 – 21:00</p>
+      </div>
+      <div class="contact-info-card">
+        <h4>Dojazd</h4>
+        <p>2 minuty pieszo od przystanku tramwajowego Filtrowa, w pobliżu Parku Szczęśliwickiego. Dostępny parking uliczny.</p>
+      </div>
+    </div>
+    <div class="map-wrap reveal">
+      <iframe
+        src="https://www.google.com/maps?q=Filtrowa+62,+02-057+Warszawa&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Mapa dojazdu — Koreana, ul. Filtrowa 62, Warszawa">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<section class="reserve" id="reserve">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">Rezerwacja stolika</span>
+      <h2>Umów wizytę</h2>
+      <p>Wypełnij formularz — potwierdzimy rezerwację telefonicznie w ciągu godziny roboczej.</p>
+    </div>
+    <form class="reserve-form reveal" id="reserveForm" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="r-name">Imię i nazwisko</label>
+          <input type="text" id="r-name" name="name" placeholder="Jan Kowalski">
+          <span class="form-error" id="err-name"></span>
+        </div>
+        <div class="form-group">
+          <label for="r-email">E-mail</label>
+          <input type="email" id="r-email" name="email" placeholder="jan@przyklad.pl">
+          <span class="form-error" id="err-email"></span>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="r-phone">Telefon</label>
+          <input type="tel" id="r-phone" name="phone" placeholder="+48 600 000 000">
+          <span class="form-error" id="err-phone"></span>
+        </div>
+        <div class="form-group">
+          <label for="r-guests">Liczba gości</label>
+          <select id="r-guests" name="guests">
+            <option value="">Wybierz liczbę osób</option>
+            <option>1 osoba</option><option>2 osoby</option><option>3 osoby</option>
+            <option>4 osoby</option><option>5-6 osób</option><option>7+ osób</option>
+          </select>
+          <span class="form-error" id="err-guests"></span>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="r-date">Data</label>
+          <input type="date" id="r-date" name="date">
+          <span class="form-error" id="err-date"></span>
+        </div>
+        <div class="form-group">
+          <label for="r-time">Godzina</label>
+          <input type="time" id="r-time" name="time" min="12:00" max="22:00">
+          <span class="form-error" id="err-time"></span>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group full">
+          <label for="r-notes">Uwagi (opcjonalnie)</label>
+          <textarea id="r-notes" name="notes" placeholder="Np. alergie, prośba o stolik przy oknie..."></textarea>
+        </div>
+      </div>
+      <div class="form-submit">
+        <button type="submit" class="btn btn-primary">Wyślij rezerwację</button>
+      </div>
+      <div class="form-success" id="formSuccess">✓ Dziękujemy! Twoja rezerwacja została przyjęta — zadzwonimy, aby potwierdzić szczegóły.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <span class="footer-logo">KOREANA</span>
+        <p>Autentyczna restauracja koreańska na warszawskiej Ochocie. Rodzinne receptury, świeże składniki, gościnna atmosfera — od 2015 roku.</p>
+        <div class="socials"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">ig</a></div>
+      </div>
+      <div>
+        <h4>Godziny otwarcia</h4>
+        <ul><li>Pon–Sob: 12:00–22:00</li><li>Niedziela: 12:00–21:00</li></ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li>ul. Filtrowa 62, 02-057 Warszawa</li>
+          <li><a href="tel:+48224156681">+48 22 415 66 81</a></li>
+          <li><a href="contact.html">Mapa i formularz →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Koreana — Restauracja Koreańska, Warszawa. Wszelkie prawa zastrzeżone.</div>
+  </div>
+</footer>
+
+<a href="tel:+48224156681" class="float-call" aria-label="Zadzwoń do nas">
+  <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1l-2.3 2.3z"></path></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
