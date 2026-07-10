@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontakt — KENOPSIA Studio Tatuażu i Piercingu</title>
+<meta name="description" content="Skontaktuj się z KENOPSIA — Plac Konstytucji 3/59 (wejście od ul. Śniadeckich), Śródmieście, Warszawa. Telefon, Instagram, formularz konsultacji.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="brand">KEN<span>O</span>PSIA</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="index.html#o-nas">O studiu</a></li>
+      <li><a href="index.html#uslugi">Usługi</a></li>
+      <li><a href="gallery.html">Realizacje</a></li>
+      <li><a href="contact.html" class="active">Kontakt</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Kontakt</span>
+    <h1>Umów wizytę</h1>
+  </div>
+</header>
+
+<section>
+  <div class="container contact-grid">
+
+    <div class="reveal">
+      <div class="info-block">
+        <h4>Adres</h4>
+        <p>Plac Konstytucji 3/59<br>wejście od ul. Śniadeckich<br>00-647 Warszawa, Śródmieście</p>
+      </div>
+      <div class="info-block">
+        <h4>Telefon i e-mail</h4>
+        <p><a href="tel:+48501702304">+48 501 702 304</a><br><a href="mailto:drespunk@gmail.com">drespunk@gmail.com</a></p>
+      </div>
+      <div class="info-block">
+        <h4>Instagram</h4>
+        <p><a href="https://www.instagram.com/kenopsia.tattoo/" target="_blank" rel="noopener">@kenopsia.tattoo</a> — najszybszy sposób na rezerwację terminu i podgląd wolnych sesji gościnnych.</p>
+      </div>
+      <div class="info-block">
+        <h4>Rezerwacje</h4>
+        <p>Wizyty umawiane są indywidualnie — telefonicznie lub przez DM na Instagramie. Studio przyjmuje również gości bez wcześniejszej rezerwacji, w miarę dostępności artystów.</p>
+      </div>
+      <div class="map-frame">
+        <iframe
+          src="https://www.google.com/maps?q=Plac+Konstytucji+3,+00-647+Warszawa&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa — Plac Konstytucji 3, Warszawa">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <span class="eyebrow">Formularz</span>
+      <h2>Zapytaj o termin</h2>
+      <p>Opisz swój pomysł na tatuaż lub piercing — oddzwonimy lub odpiszemy, by ustalić szczegóły i wolny termin.</p>
+
+      <form class="appt" novalidate>
+        <div class="field">
+          <label for="name">Imię i nazwisko</label>
+          <input type="text" id="name" name="name" data-required placeholder="np. Anna Kowalska">
+          <span class="err-msg">Podaj imię i nazwisko.</span>
+        </div>
+
+        <div class="field">
+          <label for="phone">Telefon</label>
+          <input type="tel" id="phone" name="phone" data-required placeholder="np. 600 123 456">
+          <span class="err-msg">Podaj poprawny numer telefonu.</span>
+        </div>
+
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" data-required placeholder="np. anna@poczta.pl">
+          <span class="err-msg">Podaj poprawny adres e-mail.</span>
+        </div>
+
+        <div class="field">
+          <label for="service">Usługa</label>
+          <select id="service" name="service" data-required>
+            <option value="">Wybierz…</option>
+            <option value="tatuaz">Tatuaż autorski</option>
+            <option value="piercing">Piercing</option>
+            <option value="guest">Sesja gościnna / guest spot</option>
+            <option value="konsultacja">Konsultacja projektu</option>
+          </select>
+          <span class="err-msg">Wybierz usługę.</span>
+        </div>
+
+        <div class="field">
+          <label for="message">Opis pomysłu</label>
+          <textarea id="message" name="message" rows="4" data-required placeholder="Miejsce na ciele, rozmiar, styl, inspiracje…"></textarea>
+          <span class="err-msg">Napisz kilka słów o swoim pomyśle.</span>
+        </div>
+
+        <button type="submit" class="btn btn-solid">Wyślij zapytanie</button>
+
+        <div class="form-success">Dziękujemy! Twoje zapytanie zostało przygotowane do wysyłki — skontaktujemy się telefonicznie lub przez Instagram, aby potwierdzić termin.</div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand" style="font-size:1.6rem;">KEN<span>O</span>PSIA</a>
+        <p style="margin-top:1rem;max-width:340px;">Studio tatuażu i piercingu przy Placu Konstytucji 3/59 (wejście od ul. Śniadeckich), Śródmieście, Warszawa.</p>
+      </div>
+      <div>
+        <h4>Nawigacja</h4>
+        <ul>
+          <li><a href="index.html">Start</a></li>
+          <li><a href="gallery.html">Realizacje</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="tel:+48501702304">+48 501 702 304</a></li>
+          <li><a href="mailto:drespunk@gmail.com">drespunk@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/kenopsia.tattoo/" target="_blank" rel="noopener">@kenopsia.tattoo</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="hairline">
+    <div class="footer-bottom" style="margin-top:1.6rem;">
+      <span>© 2026 Kenopsia Studio Tatuażu i Piercingu</span>
+      <span>Plac Konstytucji 3/59, 00-647 Warszawa</span>
+    </div>
+  </div>
+</footer>
+
+<div class="fab-wrap">
+  <a class="fab-option" href="https://www.instagram.com/kenopsia.tattoo/" target="_blank" rel="noopener">Napisz na Instagramie</a>
+  <a class="fab-option" href="tel:+48501702304">Zadzwoń: 501 702 304</a>
+  <button class="fab-main" aria-label="Kontakt szybki">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0a0a0a" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+  </button>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
