@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt — Królewski Kebab 24h</title>
+<meta name="description" content="Skontaktuj się z Królewskim Kebabem 24h na Pradze-Południe. Adres, godziny otwarcia i formularz zamówienia z odbiorem na miejscu.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">Królewski<span>Kebab</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#about">O nas</a></li>
+      <li><a href="index.html#menu">Menu</a></li>
+      <li><a href="gallery.html">Galeria</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+    <div class="nav-burger" id="navBurger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="section-tag">Kontakt</span>
+    <h1>Zamów odbiór na miejscu</h1>
+    <p>Otwarte 24 godziny na dobę — wypełnij formularz, a przygotujemy Twoje zamówienie na wybraną godzinę.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container contact-grid">
+
+    <div>
+      <div class="contact-info-card reveal">
+        <h4>Adres</h4>
+        <p>ul. Płowiecka 5, 04-221 Warszawa<br>Praga-Południe, przy węźle Marsa</p>
+      </div>
+      <div class="contact-info-card reveal">
+        <h4>Godziny otwarcia</h4>
+        <p>Poniedziałek – Niedziela: 24 godziny na dobę<br>Non-stop, bez dni wolnych</p>
+      </div>
+      <div class="contact-info-card reveal">
+        <h4>Opinie</h4>
+        <p>Ponad 280 opinii stałych klientów na Google Maps.</p>
+      </div>
+      <div class="map-frame reveal">
+        <iframe src="https://www.google.com/maps?q=P%C5%82owiecka%205%2C%2004-221%20Warszawa&output=embed" loading="lazy" allowfullscreen title="Mapa — Płowiecka 5, Warszawa"></iframe>
+      </div>
+    </div>
+
+    <form class="order-form reveal" id="orderForm" novalidate>
+      <h3 style="margin-bottom:24px;">Formularz zamówienia</h3>
+
+      <div class="form-row">
+        <label for="name">Imię i nazwisko</label>
+        <input type="text" id="name" name="name" placeholder="np. Jan Kowalski" required>
+        <span class="form-error">Podaj swoje imię i nazwisko.</span>
+      </div>
+
+      <div class="form-row two-col">
+        <div>
+          <label for="phone">Telefon</label>
+          <input type="tel" id="phone" name="phone" placeholder="np. 500 100 200" required>
+          <span class="form-error">Podaj poprawny numer telefonu.</span>
+        </div>
+        <div>
+          <label for="pickupTime">Godzina odbioru</label>
+          <input type="time" id="pickupTime" name="pickupTime" required>
+          <span class="form-error">Wybierz godzinę odbioru.</span>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="orderDetails">Co zamawiasz?</label>
+        <textarea id="orderDetails" name="orderDetails" rows="4" placeholder="np. 2x kebab wołowo-barani na talerzu, sos ostry"></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Wyślij zamówienie</button>
+      <div class="form-success" id="formSuccess">✓ Dziękujemy! Zamówienie przyjęte — czekamy na Ciebie o wybranej godzinie.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-bottom">© 2026 Królewski Kebab 24h. Wszelkie prawa zastrzeżone. — Strona demonstracyjna.</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
