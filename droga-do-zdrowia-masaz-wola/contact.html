@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt i rezerwacja — Droga do Zdrowia, Gabinet Masażu Wola</title>
+<meta name="description" content="Skontaktuj się z gabinetem masażu Droga do Zdrowia na Woli w Warszawie lub zarezerwuj wizytę online. Ul. Ludwiki 4A, tel. +48 511 409 418.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">DROGA<span>://</span>ZDROWIA</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="index.html#uslugi">Zabiegi</a></li>
+      <li><a href="index.html#o-nas">O gabinecie</a></li>
+      <li><a href="gallery.html">Galeria</a></li>
+      <li><a href="contact.html" class="active">Kontakt</a></li>
+      <li><a href="contact.html#rezerwacja" class="nav-cta">Zarezerwuj</a></li>
+    </ul>
+    <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <span class="hero-eyebrow">// Kontakt</span>
+  <h1>Zarezerwuj swój reset</h1>
+  <p>Wypełnij formularz rezerwacji lub skontaktuj się bezpośrednio — odpowiadamy tego samego dnia.</p>
+</header>
+
+<section id="rezerwacja">
+  <div class="container contact-grid">
+
+    <div class="fade-in">
+      <div class="info-block">
+        <h3>// Adres</h3>
+        <p>Droga do Zdrowia — Gabinet Masażu Wola</p>
+        <p>ul. Ludwiki 4A</p>
+        <p>01-226 Warszawa, Wola</p>
+      </div>
+      <div class="info-block">
+        <h3>// Kontakt</h3>
+        <p>Tel: +48 511 409 418</p>
+        <p>WhatsApp: dostępny pod tym samym numerem</p>
+        <p>Facebook: Gabinet Masażu Wola</p>
+      </div>
+      <div class="info-block">
+        <h3>// Godziny otwarcia</h3>
+        <p>Poniedziałek – Sobota: 9:00 – 21:30</p>
+        <p>Niedziela: 11:00 – 19:00</p>
+      </div>
+      <div class="map-frame">
+        <iframe src="https://maps.google.com/maps?q=ul.%20Ludwiki%204A%2C%2001-226%20Warszawa&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa dojazdu do gabinetu Droga do Zdrowia"></iframe>
+      </div>
+    </div>
+
+    <div class="fade-in">
+      <form data-validate novalidate>
+        <div class="form-row">
+          <label for="name">Imię i nazwisko *</label>
+          <input type="text" id="name" name="name" required placeholder="Jan Kowalski">
+          <span class="error-msg">Podaj imię i nazwisko.</span>
+        </div>
+        <div class="form-row two">
+          <div>
+            <label for="phone">Telefon *</label>
+            <input type="tel" id="phone" name="phone" required placeholder="+48 600 000 000">
+            <span class="error-msg">Podaj poprawny numer telefonu.</span>
+          </div>
+          <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="jan@example.com">
+            <span class="error-msg">Podaj poprawny adres e-mail.</span>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="service">Wybierz zabieg *</label>
+          <select id="service" name="service" required>
+            <option value="">— wybierz —</option>
+            <option>Masaż tkanek głębokich</option>
+            <option>Drenaż limfatyczny</option>
+            <option>Masaż sportowy</option>
+            <option>Masaż klasyczny (szwedzki)</option>
+            <option>Masaż karku i pleców</option>
+            <option>Masaż gorącymi kamieniami</option>
+            <option>Masaż dla par</option>
+            <option>Masaż chiński (Tui Na)</option>
+            <option>Masaż dla kobiet w ciąży</option>
+          </select>
+          <span class="error-msg">Wybierz rodzaj zabiegu.</span>
+        </div>
+        <div class="form-row two">
+          <div>
+            <label for="date">Preferowana data *</label>
+            <input type="date" id="date" name="date" required>
+            <span class="error-msg">Wybierz datę wizyty.</span>
+          </div>
+          <div>
+            <label for="time">Preferowana godzina *</label>
+            <input type="time" id="time" name="time" required min="09:00" max="21:30">
+            <span class="error-msg">Wybierz godzinę wizyty.</span>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="message">Dodatkowe informacje</label>
+          <textarea id="message" name="message" placeholder="Np. konkretne miejsce bólu, kontuzja, alergia na olejki..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-solid submit-btn">Wyślij zapytanie o rezerwację</button>
+        <div class="form-success">// Zgłoszenie wysłane. Skontaktujemy się w celu potwierdzenia terminu w ciągu 24 godzin.</div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">DROGA://ZDROWIA</div>
+        <p>Gabinet Masażu Wola<br>ul. Ludwiki 4A<br>01-226 Warszawa</p>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="#00d4ff"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.2-1.5 1.6-1.5h1.6V3.7C15.9 3.6 15 3.5 14 3.5c-2.4 0-4 1.5-4 4.2v2.3H7.3V13H10v8h3.5z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3.4"/><circle cx="16.6" cy="7.4" r="0.9" fill="#00d4ff" stroke="none"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Nawigacja</h4>
+        <p><a href="index.html">Start</a></p>
+        <p><a href="gallery.html">Galeria</a></p>
+        <p><a href="contact.html">Kontakt</a></p>
+      </div>
+      <div>
+        <h4>Godziny</h4>
+        <p>Pon–Sob: 9:00–21:30</p>
+        <p>Niedz: 11:00–19:00</p>
+        <p>Tel. +48 511 409 418</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Droga do Zdrowia — Gabinet Masażu Wola</span>
+      <span>Projekt demonstracyjny strony</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/48511409418" target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.8 14.3c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-5-4.3-5.1-4.5-.2-.2-1.2-1.6-1.2-3s.8-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.2.1.4 0 .6-.1.2-.2.4-.4.6l-.5.6c-.2.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.6.3.2.5.1.7-.1l.6-.7c.2-.3.4-.2.7-.1l1.7.8c.2.1.4.2.5.3.1.2.1.9-.1 1.6z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
