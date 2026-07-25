@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt — Mokolodo, Lodziarnia Rzemieślnicza</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">MOKO<span>LODO</span></a>
+    <div class="nav__links">
+      <a href="index.html#about">O nas</a>
+      <a href="index.html#flavors">Lody</a>
+      <a href="gallery.html">Galeria</a>
+      <a href="contact.html">Kontakt</a>
+    </div>
+    <button class="nav__toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="page-header">
+  <h1>KON<span>TAKT</span></h1>
+  <p>Zapytaj o tort lodowy, catering na wydarzenie lub po prostu wpadnij na miejscu</p>
+</header>
+
+<section class="contact">
+  <div class="wrap contact__grid">
+    <div class="contact__info reveal">
+      <h2>Odwiedź nas</h2>
+      <div class="contact__row">
+        <span class="deco-label">Adres</span>
+        <p>ul. Batalionu AK „Bałtyk” 9/U7<br>00-713 Warszawa, Siekierki (Mokotów)</p>
+      </div>
+      <div class="contact__row">
+        <span class="deco-label">E-mail</span>
+        <p><a href="mailto:mokolodoo@gmail.com">mokolodoo@gmail.com</a></p>
+      </div>
+      <div class="contact__row">
+        <span class="deco-label">Social media</span>
+        <p><a href="https://www.instagram.com/lodziarnia_mokolodo/" target="_blank" rel="noopener">@lodziarnia_mokolodo</a> · <a href="https://www.facebook.com/lodziarniamokolodo" target="_blank" rel="noopener">Facebook</a></p>
+      </div>
+      <div class="contact__row">
+        <span class="deco-label">Sezon</span>
+        <p>Kwiecień – wrzesień. Aktualne godziny otwarcia sprawdzisz na Instagramie i Facebooku.</p>
+      </div>
+      <div class="contact__map">
+        <iframe src="https://www.google.com/maps?q=ul.+Batalionu+AK+Ba%C5%82tyk+9,+Warszawa&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa — Mokolodo, ul. Batalionu AK Bałtyk 9"></iframe>
+      </div>
+    </div>
+
+    <form class="form reveal" id="eventForm" novalidate>
+      <h2>Zapytanie o tort lodowy / wydarzenie</h2>
+
+      <div class="field">
+        <label for="fullName">Imię i nazwisko</label>
+        <input type="text" id="fullName" name="fullName" placeholder="np. Anna Kowalska">
+        <span class="error-msg" id="err-fullName">Proszę podać imię i nazwisko.</span>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="ty@przyklad.pl">
+          <span class="error-msg" id="err-email">Podaj prawidłowy adres e-mail.</span>
+        </div>
+        <div class="field">
+          <label for="guests">Liczba gości</label>
+          <input type="number" id="guests" name="guests" min="1" placeholder="np. 20">
+          <span class="error-msg" id="err-guests">Podaj liczbę gości.</span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="date">Data wydarzenia</label>
+        <input type="date" id="date" name="date">
+        <span class="error-msg" id="err-date">Wybierz datę.</span>
+      </div>
+
+      <div class="field">
+        <label for="message">Wiadomość</label>
+        <textarea id="message" name="message" rows="3" placeholder="np. tort lodowy na urodziny, preferowane smaki"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn--solid" style="width:100%;">Wyślij zapytanie</button>
+      <div class="success-msg" id="successMsg">Dziękujemy! Twoje zapytanie zostało wysłane — odpowiemy najszybciej jak to możliwe.</div>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__name">MOKOLODO</div>
+  <p>ul. Batalionu AK „Bałtyk” 9/U7, 00-713 Warszawa · Siekierki, Mokotów</p>
+  <small>© 2026 Mokolodo — Lodziarnia Rzemieślnicza · Wszelkie prawa zastrzeżone</small>
+</footer>
+
+<a class="social-float" href="https://www.instagram.com/lodziarnia_mokolodo/" target="_blank" rel="noopener" aria-label="Instagram">
+  <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
