@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt — Zegarmistrz Romanek, Saska Kępa Warszawa</title>
+<meta name="description" content="Zakład Zegarmistrzowski Romanek — ul. Francuska 31, Saska Kępa, Warszawa. Telefon 22 616 01 50, czynne pon.–pt. 9:30–16:00.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav scrolled">
+  <div class="container">
+    <a href="index.html" class="logo">ROMANEK <span>ZEGARMISTRZ</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">O nas</a></li>
+      <li><a href="index.html#services">Usługi</a></li>
+      <li><a href="gallery.html">Nasze Rzemiosło</a></li>
+      <li><a href="index.html#booking">Umów naprawę</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="contact-hero">
+  <div class="container">
+    <div class="section-eyebrow">Odwiedź nas</div>
+    <h1 class="section-title">Kontakt</h1>
+  </div>
+</header>
+
+<section class="container contact-grid">
+  <div>
+    <div class="info-block">
+      <h4>Adres</h4>
+      <p>Zakład Zegarmistrzowski Romanek<br>ul. Francuska 31, lok. 10U<br>03-905 Warszawa · Saska Kępa</p>
+    </div>
+    <div class="info-block">
+      <h4>Telefon</h4>
+      <p><a href="tel:+48226160150">22 616 01 50</a></p>
+    </div>
+    <div class="info-block">
+      <h4>Godziny otwarcia</h4>
+      <p>Poniedziałek – Piątek: 9:30 – 16:00<br>Sobota – Niedziela: nieczynne</p>
+    </div>
+    <div class="info-block">
+      <h4>Dojazd</h4>
+      <p>Kilka minut spacerem od ronda Waszyngtona, w samym sercu Saskiej Kępy — jedna z najstarszych tego typu placówek w tej części Warszawy.</p>
+    </div>
+  </div>
+  <div>
+    <iframe class="map-frame" src="https://www.google.com/maps?q=ul.+Francuska+31,+03-905+Warszawa&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa — ul. Francuska 31, Warszawa"></iframe>
+  </div>
+</section>
+
+<div class="wave">
+  <svg viewBox="0 0 1200 80" preserveAspectRatio="none"><path d="M0,40 C300,-10 900,90 1200,40 L1200,0 L0,0 Z" fill="#023e5c"/></svg>
+</div>
+
+<section class="booking" id="booking">
+  <div class="container">
+    <div class="section-eyebrow">Masz pytanie?</div>
+    <h2 class="section-title">Napisz do nas</h2>
+    <form class="booking-box" id="contact-form" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="c-name">Imię i nazwisko</label>
+          <input type="text" id="c-name" required>
+          <div class="error-msg">Podaj imię i nazwisko</div>
+        </div>
+        <div class="form-group">
+          <label for="c-phone">Telefon</label>
+          <input type="tel" id="c-phone" required>
+          <div class="error-msg">Podaj poprawny numer telefonu</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="c-message">Wiadomość</label>
+        <textarea id="c-message" rows="4" required></textarea>
+        <div class="error-msg">Napisz kilka słów o zegarku lub sprawie</div>
+      </div>
+      <div class="form-submit">
+        <button type="submit" class="btn btn-solid">Wyślij wiadomość</button>
+      </div>
+      <div class="form-success">Dziękujemy za wiadomość! Odpowiemy najszybciej, jak to możliwe.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-logo">Zegarmistrz Romanek</div>
+    <p>ul. Francuska 31, lok. 10U, 03-905 Warszawa · Saska Kępa</p>
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/zegarmistrz.warszawa/" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0022 12z"/></svg>
+      </a>
+    </div>
+    <small>&copy; 2026 Zakład Zegarmistrzowski Romanek · Wszelkie prawa zastrzeżone</small>
+  </div>
+</footer>
+
+<a class="call-float" href="tel:+48226160150" aria-label="Zadzwoń">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.5 21 3 13.5 3 4c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.2 1.1z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
