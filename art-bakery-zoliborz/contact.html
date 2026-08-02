@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt — Art Bakery Żoliborz</title>
+<meta name="description" content="Skontaktuj się z Art Bakery Żoliborz. Adres: ul. Ludwika Rydygiera 12/U11, Warszawa. Telefon: +48 693 742 010. Godziny otwarcia i formularz kontaktowy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500;1,600;1,700&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Art <span>Bakery</span></a>
+    <nav class="links">
+      <a href="index.html">Strona główna</a>
+      <a href="index.html#o-nas">O nas</a>
+      <a href="index.html#wypieki">Wypieki</a>
+      <a href="index.html#zamowienie">Zamówienia</a>
+      <a href="gallery.html">Nasze wypieki</a>
+      <a href="contact.html">Kontakt</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Kontakt</span>
+    <h1>Odwiedź nas na Żoliborzu</h1>
+    <p class="subtitle" style="margin:0 auto;">Zapraszamy codziennie oprócz niedziel — najświeższe wypieki prosto z pieca.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container contact-grid">
+    <div>
+      <div class="info-card fade-in">
+        <h3>Dane kontaktowe</h3>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <div>ul. Ludwika Rydygiera 12/U11<br>01-793 Warszawa, Żoliborz Artystyczny</div>
+        </div>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5c0-1 1-2 2-2h2l2 5-2 1a11 11 0 0 0 6 6l1-2 5 2v2c0 1-1 2-2 2C10 19 4 13 4 5Z"/></svg>
+          <div><a href="tel:+48693742010">+48 693 742 010</a></div>
+        </div>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18v12H3z"/><path d="m3 7 9 6 9-6"/></svg>
+          <div><a href="mailto:artbakery.zoliborz@gmail.com">artbakery.zoliborz@gmail.com</a></div>
+        </div>
+      </div>
+
+      <div class="info-card fade-in">
+        <h3>Godziny otwarcia</h3>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          <div>
+            Poniedziałek – Piątek: 7:00 – 19:00<br>
+            Sobota: 7:00 – 16:00<br>
+            Niedziela: nieczynne
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="map-wrap fade-in">
+      <iframe
+        src="https://www.google.com/maps?q=ul.+Ludwika+Rydygiera+12,+01-793+Warszawa&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <div class="section-head fade-in">
+      <span class="eyebrow">Napisz do nas</span>
+      <h2>Masz pytanie? Odezwiemy się szybko</h2>
+    </div>
+
+    <form class="order-form fade-in" data-validate data-success-msg="Dziękujemy za wiadomość! Odpowiemy najszybciej, jak to możliwe.">
+      <div class="form-grid">
+        <div>
+          <label for="c-name">Imię i nazwisko</label>
+          <input type="text" id="c-name" name="name" required placeholder="Anna Nowak">
+          <div class="field-error"></div>
+        </div>
+        <div>
+          <label for="c-email">Adres e-mail</label>
+          <input type="email" id="c-email" name="email" required placeholder="ty@przyklad.pl">
+          <div class="field-error"></div>
+        </div>
+        <div class="full">
+          <label for="c-subject">Temat</label>
+          <input type="text" id="c-subject" name="subject" required placeholder="Np. zamówienie firmowe, pytanie o alergeny...">
+          <div class="field-error"></div>
+        </div>
+        <div class="full">
+          <label for="c-message">Wiadomość</label>
+          <textarea id="c-message" name="message" rows="4" required placeholder="Treść wiadomości..."></textarea>
+          <div class="field-error"></div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" style="margin-top:1.6rem;">Wyślij wiadomość</button>
+      <div class="form-msg"></div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Art Bakery Żoliborz</h4>
+        <p>ul. Ludwika Rydygiera 12/U11<br>01-793 Warszawa, Żoliborz Artystyczny</p>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.7 0 3.1 0 4.1.1 1.1 0 1.8.2 2.4.5.6.3 1.2.6 1.7 1.2.5.5.9 1.1 1.2 1.7.3.6.4 1.3.5 2.4 0 1 .1 1.4.1 4.1s0 3.1-.1 4.1c0 1.1-.2 1.8-.5 2.4-.3.6-.6 1.2-1.2 1.7-.5.5-1.1.9-1.7 1.2-.6.3-1.3.4-2.4.5-1 0-1.4.1-4.1.1s-3.1 0-4.1-.1c-1.1 0-1.8-.2-2.4-.5-.6-.3-1.2-.6-1.7-1.2-.5-.5-.9-1.1-1.2-1.7-.3-.6-.4-1.3-.5-2.4C2 15.1 2 14.7 2 12s0-3.1.1-4.1c0-1.1.2-1.8.5-2.4.3-.6.6-1.2 1.2-1.7.5-.5 1.1-.9 1.7-1.2.6-.3 1.3-.4 2.4-.5C8.9 2 9.3 2 12 2Zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4Zm5.2-8.4a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0Z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Nawigacja</h4>
+        <p><a href="index.html#wypieki">Wypieki</a></p>
+        <p><a href="gallery.html">Nasze wypieki</a></p>
+        <p><a href="contact.html">Kontakt</a></p>
+      </div>
+      <div>
+        <h4>Godziny otwarcia</h4>
+        <p>Pon–Pt: 7:00–19:00<br>Sob: 7:00–16:00<br>Niedziela: nieczynne</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Art Bakery Żoliborz. Wszelkie prawa zastrzeżone.</span>
+      <span>ul. Ludwika Rydygiera 12/U11, Warszawa · +48 693 742 010</span>
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp-fab" href="https://wa.me/48693742010" target="_blank" rel="noopener" aria-label="Napisz na WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.35.62 4.55 1.7 6.46L3 29l7.7-2.62A11.9 11.9 0 0 0 16.02 27C22.65 27 28 21.6 28 15.02 28 8.4 22.65 3 16.02 3Zm7.02 16.9c-.3.83-1.68 1.6-2.36 1.7-.6.1-1.36.14-2.2-.14-.5-.16-1.15-.36-1.98-.7-3.48-1.5-5.75-5-5.93-5.24-.17-.24-1.4-1.87-1.4-3.56 0-1.7.9-2.53 1.2-2.87.3-.35.68-.43.9-.43h.65c.2 0 .48-.04.75.57.3.7 1 2.4 1.1 2.57.1.17.16.37.03.6-.13.24-.2.38-.4.6-.2.2-.4.46-.58.62-.2.17-.4.36-.17.7.22.35 1 1.65 2.16 2.68 1.5 1.33 2.75 1.75 3.13 1.94.37.2.6.17.82-.1.23-.28.96-1.12 1.22-1.5.26-.4.5-.32.85-.2.35.13 2.2 1.04 2.58 1.23.37.2.62.28.7.44.1.16.1.9-.2 1.72Z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
