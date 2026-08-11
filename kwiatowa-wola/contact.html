@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt — Kwiatowa Wola | Warszawa</title>
+<meta name="description" content="Skontaktuj się z Kwiatową Wolą — ul. Siedmiogrodzka 1/U16, Warszawa. Zamów bukiet telefonicznie, przez WhatsApp lub formularz.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="dot"></span>Kwiatowa Wola</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#o-nas">O nas</a></li>
+      <li><a href="index.html#oferta">Oferta</a></li>
+      <li><a href="gallery.html">Nasze kompozycje</a></li>
+      <li><a href="contact.html" class="active">Kontakt</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Zamów bukiet</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <span class="eyebrow">Kontakt</span>
+  <h1>Zamów bukiet</h1>
+  <p>Zadzwoń, napisz przez WhatsApp albo wypełnij formularz — odpowiemy i dobierzemy kwiaty na Twoją okazję.</p>
+</header>
+
+<section>
+  <div class="container contact-grid">
+    <div class="fade-in">
+      <div class="info-card">
+        <h3>Adres</h3>
+        <p>ul. Siedmiogrodzka 1/U16<br>Wola, 01-204 Warszawa<br>(róg Grzybowskiej i Karolkowej)</p>
+      </div>
+      <div class="info-card">
+        <h3>Godziny otwarcia</h3>
+        <p>Poniedziałek: 10:30 – 18:00<br>Wtorek – Piątek: 10:00 – 19:00<br>Sobota: 10:00 – 15:00<br>Niedziela: nieczynne</p>
+      </div>
+      <div class="info-card">
+        <h3>Telefon i e-mail</h3>
+        <p><a href="tel:+48608378111">608 378 111</a><br><a href="mailto:kwiatowawola@gmail.com">kwiatowawola@gmail.com</a></p>
+      </div>
+      <div class="map-wrap">
+        <iframe src="https://www.google.com/maps?q=Siedmiogrodzka+1,+01-204+Warszawa&output=embed" loading="lazy" allowfullscreen title="Mapa — Kwiatowa Wola"></iframe>
+      </div>
+    </div>
+
+    <form class="order-form fade-in" id="orderForm" novalidate>
+      <div class="form-row">
+        <label for="name">Imię i nazwisko *</label>
+        <input type="text" id="name" name="name" required>
+        <div class="form-error" id="err-name">Podaj imię i nazwisko.</div>
+      </div>
+      <div class="form-two">
+        <div class="form-row">
+          <label for="phone">Telefon *</label>
+          <input type="tel" id="phone" name="phone" required>
+          <div class="form-error" id="err-phone">Podaj numer telefonu.</div>
+        </div>
+        <div class="form-row">
+          <label for="date">Data odbioru / dostawy *</label>
+          <input type="date" id="date" name="date" required>
+          <div class="form-error" id="err-date">Wybierz datę.</div>
+        </div>
+      </div>
+      <div class="form-two">
+        <div class="form-row">
+          <label for="occasion">Okazja</label>
+          <select id="occasion" name="occasion">
+            <option value="">Wybierz okazję</option>
+            <option value="urodziny">Urodziny</option>
+            <option value="rocznica">Rocznica</option>
+            <option value="slub">Ślub</option>
+            <option value="kondolencje">Kondolencje</option>
+            <option value="bez-okazji">Bez okazji</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="budget">Budżet</label>
+          <select id="budget" name="budget">
+            <option value="">Wybierz przedział</option>
+            <option value="60-100">60–100 zł</option>
+            <option value="100-200">100–200 zł</option>
+            <option value="200+">200 zł i więcej</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="message">Wiadomość</label>
+        <textarea id="message" name="message" rows="4" placeholder="Opisz, jaki bukiet sobie wyobrażasz — kolory, kwiaty, na kogo lub dla kogo."></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Wyślij zapytanie</button>
+      <div class="form-success" id="formSuccess">Dziękujemy! Odezwiemy się najszybciej jak to możliwe, aby potwierdzić szczegóły bukietu.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo"><span class="dot"></span>Kwiatowa Wola</a>
+        <p style="margin-top:14px; max-width:320px;">Kameralna kwiaciarnia na rogu Grzybowskiej i Karolkowej, w sercu Woli.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">ig</a>
+        </div>
+      </div>
+      <div>
+        <h4>Nawigacja</h4>
+        <ul>
+          <li><a href="index.html#o-nas">O nas</a></li>
+          <li><a href="index.html#oferta">Oferta</a></li>
+          <li><a href="gallery.html">Nasze kompozycje</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li>ul. Siedmiogrodzka 1/U16, Wola, 01-204 Warszawa</li>
+          <li><a href="tel:+48608378111">608 378 111</a></li>
+          <li><a href="mailto:kwiatowawola@gmail.com">kwiatowawola@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Kwiatowa Wola. Wszelkie prawa zastrzeżone.</span>
+      <span>Projekt demonstracyjny strony</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/48608378111" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2m0 1.67c2.25 0 4.36.88 5.95 2.46a8.3 8.3 0 0 1 2.45 5.78c0 4.51-3.67 8.19-8.2 8.19a8.2 8.2 0 0 1-4.17-1.14l-.3-.18-3.14.82.84-3.06-.2-.32a8.15 8.15 0 0 1-1.25-4.35c0-4.53 3.68-8.2 8.02-8.2m-4.52 4.6c-.15 0-.4.06-.6.29-.21.23-.8.78-.8 1.9 0 1.12.82 2.2.93 2.35.11.15 1.6 2.45 3.87 3.43 1.92.83 2.31.67 2.72.63.42-.04 1.35-.55 1.54-1.08.19-.53.19-.98.13-1.08-.06-.1-.21-.15-.44-.27-.23-.11-1.35-.67-1.56-.74-.21-.08-.36-.11-.51.11-.15.23-.58.74-.71.9-.13.15-.26.16-.49.05-.23-.11-.96-.36-1.83-1.14-.68-.6-1.13-1.35-1.27-1.58-.13-.23-.01-.35.1-.47.1-.1.23-.26.34-.4.11-.13.15-.23.23-.38.08-.15.04-.29-.02-.4-.06-.11-.51-1.28-.72-1.75-.18-.42-.37-.38-.51-.39z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
