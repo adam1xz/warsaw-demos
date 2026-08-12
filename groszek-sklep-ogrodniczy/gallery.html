@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeria — Sklep Ogrodniczy „Groszek” | Warszawa</title>
+<meta name="description" content="Galeria Sklepu Ogrodniczego „Groszek” na Grochowskiej 131 w Warszawie — zobacz, co znajdziesz na półkach: nasiona, narzędzia, doniczki, rośliny sezonowe i świąteczne ozdoby.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="css/style.css" rel="stylesheet">
+<style>
+  .lightbox{
+    position:fixed; inset:0; background:rgba(47,42,34,.82); z-index:200;
+    display:none; align-items:center; justify-content:center; padding:24px;
+  }
+  .lightbox.open{display:flex;}
+  .lightbox-panel{
+    background:var(--cream); border-radius:var(--radius-lg); padding:48px;
+    max-width:420px; text-align:center; position:relative;
+  }
+  .lightbox-panel svg{width:140px; height:140px; margin:0 auto 18px;}
+  .lightbox-close{
+    position:absolute; top:16px; right:20px; font-size:1.4rem; cursor:pointer; color:var(--ink-soft); background:none; border:none;
+  }
+  .plate-card{cursor:pointer;}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><span class="dot"></span>Groszek</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#o-nas">O nas</a></li>
+      <li><a href="index.html#oferta">Oferta</a></li>
+      <li><a href="gallery.html" class="active">Galeria</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Zapytaj o dostępność</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">&#9776;</button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <span class="eyebrow">Galeria</span>
+  <h1>Zajrzyj do „Groszka”</h1>
+  <p>Sklep na Grochowskiej 131 od 1993 roku — regały z nasionami, narzędziami, doniczkami i sezonowymi roślinami. Kliknij kartę, aby zobaczyć opis.</p>
+</header>
+
+<section>
+  <div class="container full-gallery">
+    <div class="plate-grid" id="galleryGrid">
+
+      <div class="plate-card fade-in" data-desc="Regały z nasionami warzyw, kwiatów i ziół — dziesiątki odmian na cały sezon.">
+        <svg viewBox="0 0 100 100" fill="none" stroke="#c4622d" stroke-width="2.4"><circle cx="50" cy="40" r="16" fill="#c4622d" fill-opacity=".12"/><path d="M50 56v28M36 84h28"/></svg>
+        <h4>Kącik z nasionami</h4><span>dziesiątki odmian</span>
+      </div>
+
+      <div class="plate-card fade-in" data-desc="Cebulki kwiatowe na jesienne i wiosenne sadzenie — tulipany, narcyzy, krokusy.">
+        <svg viewBox="0 0 100 100" fill="none" stroke="#5a7a52" stroke-width="2.4"><circle cx="40" cy="55" r="10" fill="#5a7a52" fill-opacity=".2"/><circle cx="60" cy="55" r="10" fill="#5a7a52" fill-opacity=".2"/><path d="M40 45v-14M60 45v-14"/></svg>
+        <h4>Cebulki kwiatowe</h4><span>tulipany, narcyzy, krokusy</span>
+      </div>
+
+      <div class="plate-card fade-in" data-desc="Regał z doniczkami ceramicznymi i plastikowymi w wielu rozmiarach.">
+        <svg viewBox="0 0 100 100" fill="none" stroke="#c4622d" stroke-width="2.4"><rect x="24" y="40" width="52" height="40" rx="8" fill="#c4622d" fill-opacity=".12"/><path d="M50 40v-14M38 26h24"/></svg>
+        <h4>Doniczki i podłoża</h4><span>ceramika, plastik, ziemia</span>
+      </div>
+
+      <div class="plate-card fade-in" data-desc="Stojak z narzędziami ogrodniczymi — sekatory, łopatki, konewki i rękawice.">
+        <svg viewBox="0 0 100 100" fill="none" stroke="#5a7a52" stroke-width="2.4"><path d="M30 82c0-30 8-46 20-46s20 16 20 46" fill="#5a7a52" fill-opacity=".1"/><circle cx="50" cy="30" r="10" fill="#5a7a52" fill-opacity=".3"/></svg>
+        <h4>Narzędzia ogrodnicze</h4><span>sekatory, łopatki, konewki</span>
+      </div>
+
+      <div class="plate-card fade-in" data-desc="Środki ochrony roślin i nawozy — na szkodniki, choroby i wzrost.">
+        <svg viewBox="0 0 100 100" fill="none" stroke="#c4622d" stroke-width="2.4"><path d="M50 18c14 10 24 24 24 38a24 24 0 1 1-48 0c0-14 10-28 24-38z" fill="#c4622d" fill-opacity=".12"/></svg>
+        <h4>Środki ochrony roślin</h4><span>na szkodniki i choroby</span>
+      </div>
+
+      <div class="plate-card fade-in" data-desc="Świeże pelargonie i surfinie na wystawie przed sklepem — dostawy wiosną i latem.">
+        <svg viewBox="0 0 100 100" fill="none" stroke="#5a7a52" stroke-width="2.4"><circle cx="36" cy="52" r="12" fill="#5a7a52" fill-opacity=".22"/><circle cx="62" cy="42" r="10" fill="#5a7a52" fill-opacity=".16"/><circle cx="56" cy="66" r="9" fill="#5a7a52" fill-opacity=".26"/></svg>
+        <h4>Pelargonie i surfinie</h4><span>sezon wiosna–lato</span>
+      </div>
+
+      <div class="plate-card fade-in" data-desc="Zioła i warzywa w doniczkach gotowe do przesadzenia na balkon.">
+        <svg viewBox="0 0 100 100" fill="none" stroke="#c4622d" stroke-width="2.4"><path d="M40 80V50M60 80V50M50 80V40" stroke-width="4"/><circle cx="40" cy="46" r="6" fill="#c4622d" fill-opacity=".2"/><circle cx="60" cy="46" r="6" fill="#c4622d" fill-opacity=".2"/><circle cx="50" cy="36" r="6" fill="#c4622d" fill-opacity=".2"/></svg>
+        <h4>Zioła i warzywa</h4><span>gotowe do przesadzenia</span>
+      </div>
+
+      <div class="plate-card fade-in" data-desc="Ręcznie malowane, polskiej produkcji ozdoby świąteczne — dostępne przed sezonem zimowym.">
+        <svg viewBox="0 0 100 100" fill="none" stroke="#5a7a52" stroke-width="2.4"><path d="M50 20l6 12h12l-9 9 3 12-12-6-12 6 3-12-9-9h12z" fill="#5a7a52" fill-opacity=".16"/></svg>
+        <h4>Ozdoby świąteczne</h4><span>ręcznie malowane</span>
+      </div>
+
+      <div class="plate-card fade-in" data-desc="Witryna sklepu na Grochowskiej 131 — w tym miejscu od 1993 roku.">
+        <svg viewBox="0 0 100 100" fill="none" stroke="#c4622d" stroke-width="2.4"><rect x="20" y="30" width="60" height="46" rx="10" fill="#c4622d" fill-opacity=".08"/><path d="M30 76V30M50 76V30M70 76V30"/></svg>
+        <h4>Witryna od Grochowskiej</h4><span>32 lata w tym miejscu</span>
+      </div>
+
+      <div class="plate-card fade-in" data-desc="Kącik z nawozami mineralnymi i organicznymi dobranymi do rodzaju gleby.">
+        <svg viewBox="0 0 100 100" fill="none" stroke="#5a7a52" stroke-width="2.4"><rect x="30" y="34" width="16" height="24" rx="3" fill="#5a7a52" fill-opacity=".18"/><rect x="54" y="34" width="16" height="24" rx="3" fill="#5a7a52" fill-opacity=".18"/></svg>
+        <h4>Nawozy do roślin</h4><span>mineralne i organiczne</span>
+      </div>
+
+      <div class="plate-card fade-in" data-desc="Rękawice, sznurki, podpórki i drobny sprzęt do prac w ogrodzie i na balkonie.">
+        <svg viewBox="0 0 100 100" fill="none" stroke="#c4622d" stroke-width="2.4"><path d="M30 70c0-20 8-34 20-34s20 14 20 34" fill="none"/><circle cx="50" cy="30" r="8" fill="#c4622d" fill-opacity=".2"/></svg>
+        <h4>Drobny sprzęt</h4><span>rękawice, podpórki, sznurki</span>
+      </div>
+
+      <div class="plate-card fade-in" data-desc="Stały klienci i sąsiedzka rozmowa przy kasie — u nas doradzamy, nie tylko sprzedajemy.">
+        <svg viewBox="0 0 100 100" fill="none" stroke="#5a7a52" stroke-width="2.4"><circle cx="38" cy="42" r="12" fill="#5a7a52" fill-opacity=".16"/><circle cx="64" cy="46" r="10" fill="#5a7a52" fill-opacity=".12"/><path d="M24 78c4-14 12-20 20-20M56 78c3-12 9-18 16-18"/></svg>
+        <h4>Sąsiedzkie doradztwo</h4><span>od 32 lat na Grochowie</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-panel">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Zamknij">&times;</button>
+    <div id="lightboxIcon"></div>
+    <h3 id="lightboxTitle"></h3>
+    <p id="lightboxDesc" style="color:var(--ink-soft);"></p>
+  </div>
+</div>
+
+<section class="section-organic">
+  <div class="container">
+    <div class="cta-band fade-in" style="margin:0; background:var(--sage);">
+      <h2>Chcesz wiedzieć, co akurat mamy na stanie?</h2>
+      <p>Zadzwoń przed przyjazdem, zwłaszcza po rośliny sezonowe — rozchodzą się szybko.</p>
+      <a href="contact.html" class="btn btn-outline">Napisz do nas</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo"><span class="dot"></span>Groszek</a>
+        <p style="margin-top:14px; max-width:320px;">Rodzinny sklep ogrodniczy na Grochowskiej 131 w Warszawie, od 1993 roku.</p>
+        <div class="social-row">
+          <a href="https://www.facebook.com/p/Sklep-Ogrodniczy-Groszek-100063633965250/" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+          <a href="https://www.instagram.com/sklep_ogrodniczy_groszek/" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+        </div>
+      </div>
+      <div>
+        <h4>Nawigacja</h4>
+        <ul>
+          <li><a href="index.html#o-nas">O nas</a></li>
+          <li><a href="index.html#oferta">Oferta</a></li>
+          <li><a href="gallery.html">Galeria</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li>ul. Grochowska 131, 04-139 Warszawa</li>
+          <li><a href="tel:+48226100925">22 610 09 25</a></li>
+          <li>Pon–Pt 9:00–17:00 · Sob 9:00–14:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Sklep Ogrodniczy „Groszek”. Wszelkie prawa zastrzeżone.</span>
+      <span>Projekt demonstracyjny strony</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
