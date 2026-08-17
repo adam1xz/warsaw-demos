@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Galeria — AIR SERWIS Warsztat Rowerowy</title>
+<meta name="description" content="Zajrzyj do warsztatu AIR SERWIS na Targowej 66 — narzędzia, usługi i sprzęt, którym zajmujemy się na co dzień.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="brand">AIR<span>_</span>SERWIS</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="index.html#o-nas">O warsztacie</a></li>
+      <li><a href="index.html#uslugi">Usługi</a></li>
+      <li><a href="gallery.html" class="active">Galeria</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Galeria</span>
+    <h1>Warsztat w skrócie</h1>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Co zobaczysz w pawilonie 30</span>
+      <h2>Sprzęt i usługi warsztatu</h2>
+      <p>Kliknij kartę, by zobaczyć powiększenie. Pełna dokumentacja fotograficzna warsztatu — na miejscu, przy Targowej 66.</p>
+    </div>
+    <div class="gallery-grid reveal">
+
+      <div class="gallery-item">
+        <div class="art"><svg viewBox="0 0 100 100" fill="none" stroke="#39ff14" stroke-width="1.4"><circle cx="50" cy="50" r="30"/><circle cx="50" cy="50" r="6"/><path d="M50 20v10M50 70v10M20 50h10M70 50h10M29 29l7 7M64 64l7 7M71 29l-7 7M36 64l-7 7"/></svg></div>
+        <span class="tag">Centrowanie koła</span>
+      </div>
+
+      <div class="gallery-item">
+        <div class="art"><svg viewBox="0 0 100 100" fill="none" stroke="#39ff14" stroke-width="1.4"><path d="M20 78 46 34l7 7-26 44z"/><path d="M46 34l6-12 10 4-4 10z"/><circle cx="24" cy="74" r="4"/></svg></div>
+        <span class="tag">Zestaw kluczy warsztatowych</span>
+      </div>
+
+      <div class="gallery-item">
+        <div class="art"><svg viewBox="0 0 100 100" fill="none" stroke="#39ff14" stroke-width="1.4"><circle cx="30" cy="70" r="14"/><circle cx="70" cy="70" r="14"/><path d="M30 70 50 30 70 70M50 30 40 50h20M30 70h40"/></svg></div>
+        <span class="tag">Rower miejski przed przeglądem</span>
+      </div>
+
+      <div class="gallery-item">
+        <div class="art"><svg viewBox="0 0 100 100" fill="none" stroke="#39ff14" stroke-width="1.4"><rect x="22" y="40" width="56" height="28" rx="2"/><circle cx="34" cy="54" r="6"/><circle cx="66" cy="54" r="6"/><path d="M22 40l10-14h36l10 14"/></svg></div>
+        <span class="tag">Stojak z częściami zamiennymi</span>
+      </div>
+
+      <div class="gallery-item">
+        <div class="art"><svg viewBox="0 0 100 100" fill="none" stroke="#39ff14" stroke-width="1.4"><path d="M50 20a20 20 0 110 40 20 20 0 010-40z"/><path d="M50 60v20M40 80h20"/><circle cx="50" cy="40" r="6"/></svg></div>
+        <span class="tag">Naprawa łańcucha i kasety</span>
+      </div>
+
+      <div class="gallery-item">
+        <div class="art"><svg viewBox="0 0 100 100" fill="none" stroke="#39ff14" stroke-width="1.4"><path d="M25 65c0-18 12-32 25-32s25 14 25 32"/><path d="M25 65h50M35 65v10M65 65v10"/><circle cx="50" cy="33" r="5"/></svg></div>
+        <span class="tag">Widelec MTB na stanowisku serwisowym</span>
+      </div>
+
+      <div class="gallery-item">
+        <div class="art"><svg viewBox="0 0 100 100" fill="none" stroke="#39ff14" stroke-width="1.4"><rect x="18" y="18" width="64" height="64" rx="3"/><path d="M18 34h64M34 18v64"/></svg></div>
+        <span class="tag">Wejście do pawilonu 30, Targowa 66</span>
+      </div>
+
+      <div class="gallery-item">
+        <div class="art"><svg viewBox="0 0 100 100" fill="none" stroke="#39ff14" stroke-width="1.4"><path d="M50 78c-16-10-26-22-26-34 0-9 7-16 15-16 6 0 9 4 11 8 2-4 5-8 11-8 8 0 15 7 15 16 0 12-10 24-26 34z"/></svg></div>
+        <span class="tag">Klienci polecający warsztat</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" aria-label="Zamknij">&times;</button>
+    <div class="lightbox-content"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand" style="font-size:1.4rem;">AIR<span>_</span>SERWIS</a>
+        <p style="margin-top:1rem;max-width:320px;">Warsztat i sklep rowerowy — ul. Targowa 66, pawilon 30, 03-734 Warszawa, Praga Północ.</p>
+      </div>
+      <div>
+        <h4>Nawigacja</h4>
+        <ul>
+          <li><a href="index.html">Start</a></li>
+          <li><a href="gallery.html">Galeria</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="tel:+48226183963">22 618 39 63</a></li>
+          <li><a href="tel:+48501607366">501 607 366</a></li>
+          <li><a href="contact.html">Targowa 66, paw. 30</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="hairline">
+    <div class="footer-bottom">
+      <span>© 2026 Air Serwis — Ryszard Prusaczyk</span>
+      <span>Targowa 66, paw. 30, 03-734 Warszawa</span>
+    </div>
+  </div>
+</footer>
+
+<div class="fab-wrap">
+  <a class="fab-option" href="tel:+48226183963">Zadzwoń: 22 618 39 63</a>
+  <a class="fab-option" href="tel:+48501607366">Kom: 501 607 366</a>
+  <button class="fab-main" aria-label="Kontakt szybki">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+  </button>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
