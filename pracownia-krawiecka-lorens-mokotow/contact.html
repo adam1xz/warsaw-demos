@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Kontakt — Pracownia Krawiecka Stanisław Lorens</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar scrolled" id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">Lorens<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#about">O nas</a></li>
+      <li><a href="index.html#services">Usługi</a></li>
+      <li><a href="gallery.html">Pracownia</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="contact-hero">
+  <div class="container">
+    <span class="section-label" style="display:block;">Kontakt</span>
+    <h1 class="section-title">Umów się na przymiarkę</h1>
+    <p class="section-intro" style="margin:0 auto;">Odwiedź nas na Spacerowej 18 lub zarezerwuj termin online — odpowiadamy najszybciej jak to możliwe.</p>
+  </div>
+</header>
+
+<section class="form-section" id="booking">
+  <div class="container form-wrap">
+    <div class="contact-info-card">
+      <h3>Dane kontaktowe</h3>
+      <div class="contact-line">
+        <div class="ic">📍</div>
+        <div><strong>Adres</strong><span>ul. Spacerowa 18 lok. 12/13, 00-592 Warszawa, Mokotów</span></div>
+      </div>
+      <div class="contact-line">
+        <div class="ic">📞</div>
+        <div><strong>Telefon</strong><span>+48 600 717 000 · (22) 848 24 64</span></div>
+      </div>
+      <div class="contact-line">
+        <div class="ic">🕒</div>
+        <div><strong>Godziny otwarcia</strong><span>Pon–Pt: 9:00–18:00 · Sob: 9:00–14:00</span></div>
+      </div>
+      <div class="contact-line">
+        <div class="ic">⭐</div>
+        <div><strong>Ocena</strong><span>4.9 / 5 na podstawie 93 opinii Google</span></div>
+      </div>
+      <div class="map-embed">
+        <iframe src="https://www.google.com/maps?q=Spacerowa+18,+Warszawa&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="section-title" style="font-size:1.6rem;">Formularz rezerwacji</h3>
+      <form id="bookingForm" novalidate>
+        <div class="form-row">
+          <div>
+            <label for="name">Imię i nazwisko</label>
+            <input type="text" id="name" name="name" placeholder="Jan Kowalski">
+            <div class="error-msg" id="nameError"></div>
+          </div>
+          <div>
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone" placeholder="600 000 000">
+            <div class="error-msg" id="phoneError"></div>
+          </div>
+        </div>
+        <div>
+          <label for="service">Rodzaj usługi</label>
+          <select id="service" name="service">
+            <option value="">Wybierz usługę</option>
+            <option value="skracanie">Skracanie i przeróbki</option>
+            <option value="miara">Szycie na miarę</option>
+            <option value="zamek">Wymiana zamków</option>
+            <option value="garnitur">Dopasowanie garnituru</option>
+            <option value="naprawa">Drobne naprawy</option>
+            <option value="konsultacja">Konsultacja i pomiary</option>
+          </select>
+          <div class="error-msg" id="serviceError"></div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="date">Preferowana data</label>
+            <input type="date" id="date" name="date">
+            <div class="error-msg" id="dateError"></div>
+          </div>
+          <div>
+            <label for="time">Preferowana godzina</label>
+            <input type="time" id="time" name="time" min="09:00" max="18:00">
+            <div class="error-msg" id="timeError"></div>
+          </div>
+        </div>
+        <div>
+          <label for="message">Wiadomość (opcjonalnie)</label>
+          <textarea id="message" name="message" rows="3" placeholder="Opisz krótko czego dotyczy zlecenie..."></textarea>
+        </div>
+        <button type="submit" class="btn submit-btn">Wyślij zgłoszenie</button>
+        <div class="success-box" id="successBox">✔ Dziękujemy! Twoje zgłoszenie zostało przyjęte. Skontaktujemy się w celu potwierdzenia terminu.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Pracownia Krawiecka Stanisław Lorens</h3>
+        <p>ul. Spacerowa 18 lok. 12/13<br>00-592 Warszawa, Mokotów</p>
+      </div>
+      <div>
+        <h3>Godziny otwarcia</h3>
+        <ul>
+          <li>Pon–Pt: 9:00–18:00</li>
+          <li>Sobota: 9:00–14:00</li>
+          <li>Niedziela: nieczynne</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <ul>
+          <li>+48 600 717 000</li>
+          <li>(22) 848 24 64</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Pracownia Krawiecka Stanisław Lorens. Wszelkie prawa zastrzeżone.</div>
+  </div>
+</footer>
+
+<a href="https://wa.me/48600717000" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
