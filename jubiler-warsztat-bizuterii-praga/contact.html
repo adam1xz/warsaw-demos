@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Kontakt — Warsztat Biżuterii „JUBILER”</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar scrolled" id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">Jubiler<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#about">O warsztacie</a></li>
+      <li><a href="index.html#services">Usługi</a></li>
+      <li><a href="gallery.html">Pracownia</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="contact-hero">
+  <div class="container">
+    <span class="section-label" style="display:block;">Kontakt</span>
+    <h1 class="section-title">Umów wizytę w warsztacie</h1>
+    <p class="section-intro" style="margin:0 auto;">Odwiedź nas na Jagiellońskiej 12 lub zarezerwuj termin online — odpiszemy najszybciej jak to możliwe.</p>
+  </div>
+</header>
+
+<section class="form-section" id="booking">
+  <div class="container form-wrap">
+    <div class="contact-info-card">
+      <h3>Dane kontaktowe</h3>
+      <div class="contact-line">
+        <div class="ic">📍</div>
+        <div><strong>Adres</strong><span>ul. Jagiellońska 12 lok. 69, 03-721 Warszawa, Praga-Północ</span></div>
+      </div>
+      <div class="contact-line">
+        <div class="ic">📞</div>
+        <div><strong>Telefon</strong><span>+48 501 224 638</span></div>
+      </div>
+      <div class="contact-line">
+        <div class="ic">🕒</div>
+        <div><strong>Godziny otwarcia</strong><span>Pon–Pt: 10:00–18:00 · Sob: 10:00–14:00</span></div>
+      </div>
+      <div class="contact-line">
+        <div class="ic">⭐</div>
+        <div><strong>Ocena</strong><span>5.0 / 5 na podstawie ponad 700 opinii Google</span></div>
+      </div>
+      <div class="map-embed">
+        <iframe src="https://www.google.com/maps?q=Jagiello%C5%84ska+12,+Warszawa&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="section-title" style="font-size:1.6rem;text-align:left;">Formularz rezerwacji</h3>
+      <form id="bookingForm" novalidate>
+        <div class="form-row">
+          <div>
+            <label for="name">Imię i nazwisko</label>
+            <input type="text" id="name" name="name" placeholder="Anna Nowak">
+            <div class="error-msg" id="nameError"></div>
+          </div>
+          <div>
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone" placeholder="600 000 000">
+            <div class="error-msg" id="phoneError"></div>
+          </div>
+        </div>
+        <div>
+          <label for="service">Rodzaj usługi</label>
+          <select id="service" name="service">
+            <option value="">Wybierz usługę</option>
+            <option value="czyszczenie">Czyszczenie i polerowanie</option>
+            <option value="rozmiar">Powiększanie / zmniejszanie pierścionka</option>
+            <option value="skracanie">Skracanie bransoletki lub łańcuszka</option>
+            <option value="kamien">Wymiana lub osadzenie kamienia</option>
+            <option value="lutowanie">Lutowanie i renowacja</option>
+            <option value="zegarek">Wymiana baterii w zegarku</option>
+          </select>
+          <div class="error-msg" id="serviceError"></div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="date">Preferowana data</label>
+            <input type="date" id="date" name="date">
+            <div class="error-msg" id="dateError"></div>
+          </div>
+          <div>
+            <label for="time">Preferowana godzina</label>
+            <input type="time" id="time" name="time" min="10:00" max="18:00">
+            <div class="error-msg" id="timeError"></div>
+          </div>
+        </div>
+        <div>
+          <label for="message">Wiadomość (opcjonalnie)</label>
+          <textarea id="message" name="message" rows="3" placeholder="Opisz krótko, co wymaga naprawy lub renowacji..."></textarea>
+        </div>
+        <button type="submit" class="btn submit-btn">Wyślij zgłoszenie</button>
+        <div class="success-box" id="successBox">✔ Dziękujemy! Twoje zgłoszenie zostało przyjęte. Skontaktujemy się w celu potwierdzenia terminu.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Warsztat Biżuterii „JUBILER”</h3>
+        <p>ul. Jagiellońska 12 lok. 69<br>03-721 Warszawa, Praga-Północ</p>
+      </div>
+      <div>
+        <h3>Godziny otwarcia</h3>
+        <ul>
+          <li>Pon–Pt: 10:00–18:00</li>
+          <li>Sobota: 10:00–14:00</li>
+          <li>Niedziela: nieczynne</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <ul>
+          <li>+48 501 224 638</li>
+          <li>Praga-Północ, Warszawa</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Warsztat Biżuterii „JUBILER”. Wszelkie prawa zastrzeżone.</div>
+  </div>
+</footer>
+
+<a href="https://wa.me/48501224638" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
