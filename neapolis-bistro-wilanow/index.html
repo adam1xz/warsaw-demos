@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neapolis Bistro — Kuchnia Śródziemnomorska w Wilanowie</title>
+<meta name="description" content="Neapolis Bistro — grecko-śródziemnomorska taberna w Royal Wilanów. Mezze, świeże owoce morza, greckie wina i słoneczny klimat wybrzeża Peloponezu w sercu Warszawy.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="brand"><span class="dot"></span>Neapolis Bistro</a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Start</a></li>
+    <li><a href="index.html#o-nas">O nas</a></li>
+    <li><a href="index.html#menu">Menu</a></li>
+    <li><a href="gallery.html">Galeria</a></li>
+    <li><a href="index.html#rezerwacja">Rezerwacja</a></li>
+    <li><a href="contact.html">Kontakt</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Menu">☰</button>
+</nav>
+
+<header class="hero" data-img="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1920&q=80">
+  <div class="hero-inner">
+    <span class="eyebrow">Royal Wilanów · Warszawa</span>
+    <h1>Neapolis Bistro</h1>
+    <p class="tagline">Smak greckiego wybrzeża w sercu Wilanowa — mezze, świeże owoce morza i taras jak z Peloponezu.<br>
+    <span style="font-size:0.95rem;opacity:0.85;">A taste of the Greek coast in the heart of Wilanów.</span></p>
+    <div class="hero-ctas">
+      <a href="#rezerwacja" class="btn btn-primary">Zarezerwuj stolik</a>
+      <a href="#menu" class="btn btn-outline">Zobacz menu</a>
+    </div>
+  </div>
+  <div class="hero-scroll">Przewiń ↓</div>
+</header>
+
+<div class="wave wave-top-white"><svg viewBox="0 0 1200 80" preserveAspectRatio="none"><path d="M0,40 C150,90 350,0 600,40 C850,80 1050,10 1200,40 L1200,80 L0,80 Z"></path></svg></div>
+
+<section class="about" id="o-nas">
+  <div class="container about-grid">
+    <div class="about-photo reveal" data-img="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80">
+      <div class="badge">
+        <div class="avatar">NB</div>
+        <div>
+          <strong>Zespół Neapolis</strong>
+          <small>Kuchnia grecka od 2025 r.</small>
+        </div>
+      </div>
+    </div>
+    <div class="about-text reveal">
+      <span class="eyebrow">O nas</span>
+      <h2>Taberna, jakiej brakowało Wilanowowi</h2>
+      <p>Neapolis Bistro to hołd złożony kuchni śródziemnomorskiej w jej greckiej odsłonie. Jasne wnętrza, naturalne materiały i przestronny układ sali przywołują klimat tawern znad wybrzeża Peloponezu — z widokiem na słońce, dobre wino i talerz pełen mezze do dzielenia się przy wspólnym stole.</p>
+      <p>Nasza karta łączy klasyki — tzatziki, hummus, labne, carpaccio z ośmiornicy — z daniami głównymi prosto z greckiego grilla: musaka jagnięca, pieczona dorada, souvlaki z kurczaka i cielęciny. W weekendy serwujemy śniadania inspirowane Grecją, a wieczorami — koktajle i greckie wina przy dźwiękach śródziemnomorskiego lata.</p>
+      <div class="about-stats">
+        <div><strong>2025</strong><span>Rok otwarcia</span></div>
+        <div><strong>120+</strong><span>Miejsc na sali i tarasie</span></div>
+        <div><strong>4.8★</strong><span>Ocena gości</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave wave-top-sand"><svg viewBox="0 0 1200 80" preserveAspectRatio="none"><path d="M0,20 C200,70 400,0 600,30 C800,60 1000,10 1200,30 L1200,80 L0,80 Z"></path></svg></div>
+
+<section class="menu-section" id="menu">
+  <div class="container">
+    <div class="center reveal">
+      <span class="eyebrow">Nasza karta</span>
+      <h2>Menu Neapolis</h2>
+      <p style="max-width:560px;margin:0 auto 1rem;">Sezonowe, śródziemnomorskie smaki — od chrupiących przystawek po dania z greckiego grilla.</p>
+    </div>
+
+    <div class="menu-tabs reveal">
+      <button class="menu-tab active" data-tab="tab-mezze">Mezze</button>
+      <button class="menu-tab" data-tab="tab-glowne">Dania główne</button>
+      <button class="menu-tab" data-tab="tab-sniadania">Śniadania</button>
+      <button class="menu-tab" data-tab="tab-bar">Bar &amp; wina</button>
+    </div>
+
+    <div id="tab-mezze" class="menu-panel active reveal">
+      <div class="menu-card"><span class="icon">🥒</span><h3>Tzatziki <span class="price">29 zł</span></h3><p>Jogurt grecki, ogórek, czosnek, koperek, oliwa z pierwszego tłoczenia.</p></div>
+      <div class="menu-card"><span class="icon">🐙</span><h3>Carpaccio z ośmiornicy <span class="price">47 zł</span></h3><p>Cienko krojona ośmiornica, kapary, cytryna, oliwa chili.</p></div>
+      <div class="menu-card"><span class="icon">🐟</span><h3>Chrupiące sardynki <span class="price">33 zł</span></h3><p>Panierowane w semolinie, sos tzatziki, cytryna.</p></div>
+      <div class="menu-card"><span class="icon">🦑</span><h3>Chrupiące kalmary <span class="price">37 zł</span></h3><p>Kalmary w chrupiącej panierce, aioli czosnkowe.</p></div>
+      <div class="menu-card"><span class="icon">🧆</span><h3>Hummus &amp; labne <span class="price">31 zł</span></h3><p>Duet dipów z pieczywem pita prosto z pieca.</p></div>
+      <div class="menu-card"><span class="icon">🥑</span><h3>Avocado z grecką fetą <span class="price">34 zł</span></h3><p>Awokado, feta PDO, pomidorki, oliwki kalamata.</p></div>
+    </div>
+
+    <div id="tab-glowne" class="menu-panel">
+      <div class="menu-card"><span class="icon">🍆</span><h3>Musaka jagnięca <span class="price">62 zł</span></h3><p>Warstwy bakłażana, jagnięciny duszonej i beszamelu.</p></div>
+      <div class="menu-card"><span class="icon">🐙</span><h3>Grillowana ośmiornica <span class="price">89 zł</span></h3><p>Puree z bobu, oliwa cytrynowa, kapary.</p></div>
+      <div class="menu-card"><span class="icon">🐠</span><h3>Pieczona dorada <span class="price">78 zł</span></h3><p>Cała ryba, zioła śródziemnomorskie, warzywa z grilla.</p></div>
+      <div class="menu-card"><span class="icon">🍢</span><h3>Souvlaki z kurczaka <span class="price">49 zł</span></h3><p>Marynowany kurczak, pita, tzatziki, frytki.</p></div>
+      <div class="menu-card"><span class="icon">🥩</span><h3>Souvlaki z cielęciny <span class="price">58 zł</span></h3><p>Szaszłyki cielęce, sos ziołowy, ryż z cytryną.</p></div>
+      <div class="menu-card"><span class="icon">🦐</span><h3>Krewetki saganaki <span class="price">64 zł</span></h3><p>Krewetki w sosie pomidorowym z fetą, pieczywo pita.</p></div>
+    </div>
+
+    <div id="tab-sniadania" class="menu-panel">
+      <div class="menu-card"><span class="icon">🧀</span><h3>Feta saganaki <span class="price">28 zł</span></h3><p>Smażona feta w miodzie i sezamie.</p></div>
+      <div class="menu-card"><span class="icon">🥣</span><h3>Grecka granola <span class="price">26 zł</span></h3><p>Jogurt grecki, miód, orzechy, sezonowe owoce.</p></div>
+      <div class="menu-card"><span class="icon">🥞</span><h3>Naleśniki z serem i miodem <span class="price">27 zł</span></h3><p>Ser myzithra, miód tymiankowy, orzechy.</p></div>
+      <div class="menu-card"><span class="icon">🍳</span><h3>Jajka Benedict <span class="price">33 zł</span></h3><p>Jajka poszetowe, sos holenderski, muffin.</p></div>
+      <div class="menu-card"><span class="icon">🥚</span><h3>Çılbır <span class="price">31 zł</span></h3><p>Jajka w jogurcie czosnkowym, masło chili.</p></div>
+    </div>
+
+    <div id="tab-bar" class="menu-panel">
+      <div class="menu-card"><span class="icon">🍷</span><h3>Greckie wina <span class="price">od 24 zł</span></h3><p>Assyrtiko, Agiorgitiko i inne winnice Santorini.</p></div>
+      <div class="menu-card"><span class="icon">🍸</span><h3>Koktajle autorskie <span class="price">32 zł</span></h3><p>Ouzo, cytrusy, miód tymiankowy, świeże zioła.</p></div>
+      <div class="menu-card"><span class="icon">🍨</span><h3>Lody gorgonzola <span class="price">29 zł</span></h3><p>Kremowe lody serowe z orzechami i miodem.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="wave wave-top-azure"><svg viewBox="0 0 1200 80" preserveAspectRatio="none"><path d="M0,50 C200,10 400,80 600,40 C800,0 1000,60 1200,20 L1200,80 L0,80 Z"></path></svg></div>
+
+<section class="strip">
+  <div class="container">
+    <blockquote class="reveal">„Jakby ktoś przeniósł tawernę z Naksos wprost do Wilanowa — ośmiornica z grilla i taras w słońcu robią robotę.”</blockquote>
+    <cite>— Gość Neapolis Bistro, Google</cite>
+  </div>
+</section>
+
+<section class="gallery-section" id="galeria-podglad">
+  <div class="container">
+    <div class="center reveal">
+      <span class="eyebrow">Klimat Neapolis</span>
+      <h2>Zajrzyj do środka</h2>
+    </div>
+    <div class="gallery-grid reveal" style="margin-top:2.5rem;">
+      <div class="gallery-item" data-img="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" data-caption="Wybrzeże Peloponezu — inspiracja Neapolis"><div class="overlay"><span>Wybrzeże inspiracji</span></div></div>
+      <div class="gallery-item" data-img="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" data-caption="Sałatka grecka z fetą i oliwkami"><div class="overlay"><span>Sałatka grecka</span></div></div>
+      <div class="gallery-item" data-img="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" data-caption="Owoce morza z grilla"><div class="overlay"><span>Owoce morza</span></div></div>
+      <div class="gallery-item" data-img="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" data-caption="Wnętrze Neapolis Bistro"><div class="overlay"><span>Sala Neapolis</span></div></div>
+    </div>
+    <div class="center" style="margin-top:2.5rem;">
+      <a href="gallery.html" class="btn btn-dark-outline">Pełna galeria →</a>
+    </div>
+  </div>
+</section>
+
+<div class="wave wave-top-ink"><svg viewBox="0 0 1200 80" preserveAspectRatio="none"><path d="M0,30 C200,70 400,0 600,30 C800,60 1000,10 1200,40 L1200,80 L0,80 Z"></path></svg></div>
+
+<section class="contact-section" id="rezerwacja" style="background:var(--azure-deep);">
+  <div class="container">
+    <div class="center reveal">
+      <span class="eyebrow" style="color:var(--sand);">Rezerwacja stolika</span>
+      <h2 style="color:var(--white);">Zarezerwuj miejsce w Neapolis</h2>
+      <p style="color:var(--sand-soft);max-width:560px;margin:0 auto 1rem;">Wypełnij formularz, a potwierdzimy rezerwację telefonicznie w ciągu 30 minut od zgłoszenia.</p>
+    </div>
+
+    <div class="form-card reveal" style="max-width:720px;margin:2.5rem auto 0;">
+      <form id="reservation-form" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="res-name">Imię i nazwisko</label>
+            <input type="text" id="res-name" name="res-name" placeholder="Jan Kowalski">
+            <span class="error-msg">Podaj imię i nazwisko.</span>
+          </div>
+          <div class="field">
+            <label for="res-phone">Telefon</label>
+            <input type="tel" id="res-phone" name="res-phone" placeholder="+48 600 000 000">
+            <span class="error-msg">Podaj poprawny numer telefonu.</span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="res-date">Data</label>
+            <input type="date" id="res-date" name="res-date">
+            <span class="error-msg">Wybierz datę rezerwacji.</span>
+          </div>
+          <div class="field">
+            <label for="res-time">Godzina</label>
+            <select id="res-time" name="res-time">
+              <option value="">Wybierz godzinę</option>
+              <option>12:00</option><option>13:00</option><option>14:00</option>
+              <option>17:00</option><option>18:00</option><option>19:00</option>
+              <option>20:00</option><option>21:00</option><option>22:00</option>
+            </select>
+            <span class="error-msg">Wybierz godzinę.</span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="res-guests">Liczba gości</label>
+            <select id="res-guests" name="res-guests">
+              <option value="">Wybierz liczbę gości</option>
+              <option>1 osoba</option><option>2 osoby</option><option>3 osoby</option>
+              <option>4 osoby</option><option>5–6 osób</option><option>7+ osób (event)</option>
+            </select>
+            <span class="error-msg">Podaj liczbę gości.</span>
+          </div>
+          <div class="field">
+            <label for="res-notes">Uwagi (opcjonalnie)</label>
+            <input type="text" id="res-notes" name="res-notes" placeholder="np. taras, urodziny, alergeny">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;">Wyślij rezerwację</button>
+        <div class="form-success"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Neapolis Bistro</div>
+        <p>Kuchnia śródziemnomorska w sercu Wilanowa. Mezze, owoce morza z grilla, greckie wina i słoneczny taras przez cały rok.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/neapolis.bistro/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+          <a href="https://wa.me/48570115118" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+          <a href="tel:+48570115118" aria-label="Telefon">☎</a>
+        </div>
+      </div>
+      <div>
+        <h4>Nawigacja</h4>
+        <p><a href="index.html#o-nas">O nas</a></p>
+        <p><a href="index.html#menu">Menu</a></p>
+        <p><a href="gallery.html">Galeria</a></p>
+        <p><a href="index.html#rezerwacja">Rezerwacja</a></p>
+        <p><a href="contact.html">Kontakt</a></p>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <p>Royal Wilanów, ul. Franciszka Klimczaka 1<br>02-727 Warszawa</p>
+        <p><a href="tel:+48570115118">+48 570 115 118</a></p>
+        <p>Pon–Czw 12:00–22:00 · Pt 12:00–24:00<br>Sob 10:00–24:00 · Nd 10:00–22:00</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Neapolis Bistro · Miasteczko Wilanów, Warszawa · Strona demonstracyjna</div>
+  </div>
+</footer>
+
+<div class="lightbox">
+  <div class="lightbox-content"></div>
+  <button class="lightbox-close" aria-label="Zamknij">✕</button>
+  <button class="lightbox-prev" aria-label="Poprzednie">‹</button>
+  <button class="lightbox-next" aria-label="Następne">›</button>
+  <p class="lightbox-caption"></p>
+</div>
+
+<a class="whatsapp-fab" href="https://wa.me/48570115118?text=Dzie%C5%84%20dobry%2C%20chcia%C5%82bym%20zarezerwowa%C4%87%20stolik%20w%20Neapolis%20Bistro" target="_blank" rel="noopener" aria-label="Napisz na WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 32 32" fill="currentColor"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.4.66 4.65 1.9 6.6L4 29l7.55-1.98a11.9 11.9 0 0 0 4.47.87h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3zm0 21.8c-1.6 0-3.16-.43-4.5-1.24l-.32-.19-4.48 1.17 1.2-4.36-.21-.34a9.7 9.7 0 0 1-1.5-5.22c0-5.4 4.4-9.8 9.82-9.8 5.42 0 9.82 4.4 9.82 9.8 0 5.42-4.4 10.18-9.83 10.18zm5.4-7.34c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.35.2 1.86.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
