@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Kontakt i zamówienia &middot; Rurki z Wolskiej</title>
+<meta name="description" content="Wolska 50a pawilon 7B, Warszawa. Godziny otwarcia, dojazd i formularz zamówienia z odbiorem.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="demobar">PROJEKT KONCEPCYJNY &middot; To nie jest oficjalna strona lokalu. Makieta przygotowana jako propozycja dla właścicieli.</div>
+<nav class="nav"><div class="wrap">
+<a class="brand" href="index.html">RURKI<span>.</span> z Wolskiej</a>
+<ul><li><a class="" href="index.html">Start</a></li><li><a class="" href="gallery.html">Galeria</a></li><li><a class="on" href="contact.html">Kontakt i zamówienia</a></li></ul>
+<button class="burger" aria-label="Menu">&#9776;</button>
+</div></nav>
+
+<section style="padding-top:4.5rem"><div class="wrap">
+<p class="eyebrow reveal">Kontakt</p>
+<h2 class="reveal">Wolska 50a, pawilon 7B</h2>
+<p class="lead reveal">Jesteśmy w pawilonie przy Wolskiej, kilka kroków od przystanku. Najłatwiej po prostu przyjść, ale jeśli potrzebujesz większej ilości na konkretną godzinę, zostaw zamówienie poniżej.</p>
+
+<div class="info">
+<div class="ibox reveal"><h3>Adres</h3><p>Wolska 50a, pawilon 7B<br>01-187 Warszawa<br>dzielnica Wola</p><p style="margin-top:.9rem"><a href="https://www.google.com/maps/search/Pracownia+Cukiernicza+Wolska+50a+Warszawa/" target="_blank" rel="noopener" style="color:var(--gold)">Otwórz w Mapach Google &rarr;</a></p></div>
+<div class="ibox reveal"><h3>Godziny otwarcia</h3><ul><li><span>Poniedziałek</span><span>10:00 &ndash; 18:00</span></li><li><span>Wtorek</span><span>10:00 &ndash; 18:00</span></li><li><span>Środa</span><span>10:00 &ndash; 18:00</span></li><li><span>Czwartek</span><span>10:00 &ndash; 18:00</span></li><li><span>Piątek</span><span>10:00 &ndash; 18:00</span></li><li><span>Sobota</span><span>10:00 &ndash; 14:00</span></li><li><span>Niedziela</span><span>12:00 &ndash; 17:00</span></li></ul><p style="margin-top:.8rem;font-size:.84rem">Bywa, że zamykamy wcześniej, gdy rurki się skończą.</p></div>
+<div class="ibox reveal"><h3>Napisz do nas</h3><p>Nie prowadzimy infolinii. Najszybciej złapiesz nas przez Facebooka albo formularzem obok.</p><p style="margin-top:.9rem"><a href="https://www.facebook.com/p/Wolskie-Rurki-z-Prawdziw%C4%85-Bit%C4%85-%C5%9Amietan%C4%85-100049241751807/" target="_blank" rel="noopener" style="color:var(--gold)">Facebook / Messenger &rarr;</a></p><p style="margin-top:.6rem">Na wynos &middot; dostawa</p></div>
+</div>
+
+<div class="mapbox reveal"><iframe title="Mapa dojazdu" src="https://www.google.com/maps?q=Wolska%2050a,%2001-187%20Warszawa&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<p class="eyebrow reveal">Zamówienie</p>
+<h2 class="reveal">Zarezerwuj rurki z odbiorem</h2>
+<p class="lead reveal" style="margin-bottom:2.2rem">Wybierz dzień i godzinę, a przygotujemy zamówienie na ten moment. Większe partie prosimy zgłaszać z jednodniowym wyprzedzeniem.</p>
+<div class="formwrap reveal">
+<form id="orderForm" novalidate>
+<div class="frow">
+<div><label for="f-name">Imię i nazwisko</label><input id="f-name" name="name" data-req type="text" placeholder="Anna Kowalska"><span class="err">Podaj imię i nazwisko.</span></div>
+<div><label for="f-mail">E-mail</label><input id="f-mail" name="email" data-req type="email" placeholder="anna@example.com"><span class="err">Podaj poprawny adres e-mail.</span></div>
+</div>
+<div class="frow">
+<div><label for="f-date">Dzień odbioru</label><input id="f-date" name="date" data-req type="date"><span class="err">Wybierz dzień odbioru.</span></div>
+<div><label for="f-time">Godzina odbioru</label><select id="f-time" name="time" data-req>
+<option value="">Wybierz godzinę</option><option>10:00</option><option>11:00</option><option>12:00</option><option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option>
+</select><span class="err">Wybierz godzinę odbioru.</span></div>
+</div>
+<div class="frow">
+<div><label for="f-qty">Liczba rurek</label><input id="f-qty" name="qty" data-req type="number" min="1" max="60" value="6"><span class="err">Podaj liczbę od 1 do 60.</span></div>
+<div><label for="f-kind">Pakowanie</label><select id="f-kind" name="kind"><option>Pudełko na wynos</option><option>Do zjedzenia od razu</option><option>Na imprezę, większa partia</option></select></div>
+</div>
+<label for="f-note">Uwagi</label><textarea id="f-note" name="note" rows="3" placeholder="Np. odbiór punktualnie o 12:00, zamówienie na urodziny."></textarea>
+<button class="btn btn-p" type="submit">Wyślij zamówienie</button>
+<div class="ok">Dziękujemy, zamówienie zostało zapisane. Uwaga: to makieta demonstracyjna &mdash; formularz nie wysyła nic do lokalu. W działającej wersji treść trafiałaby na skrzynkę cukierni.</div>
+</form>
+</div>
+</div></section>
+<footer><div class="wrap">
+<div class="fgrid">
+<div>
+<h4>Pracownia Cukiernicza</h4>
+<p>Rurki z prawdziwą bitą śmietaną. Wolska 50a, pawilon 7B, 01-187 Warszawa (Wola). Robimy jedną rzecz od 1984 roku i robimy ją dobrze.</p>
+</div>
+<div>
+<h4>Nawigacja</h4>
+<ul><li><a href="index.html">Start</a></li><li><a href="gallery.html">Galeria</a></li><li><a href="contact.html">Kontakt i zamówienia</a></li></ul>
+</div>
+<div>
+<h4>Znajdź nas</h4>
+<ul><li><a href="https://www.facebook.com/p/Wolskie-Rurki-z-Prawdziw%C4%85-Bit%C4%85-%C5%9Amietan%C4%85-100049241751807/" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.google.com/maps/search/Pracownia+Cukiernicza+Wolska+50a+Warszawa/" target="_blank" rel="noopener">Google Maps &middot; 4,9 / 193 opinie</a></li><li><span>Instagram &middot; wkrótce</span></li></ul>
+</div>
+</div>
+<div class="fbot">
+<span>&copy; 2026 Pracownia Cukiernicza &middot; Wolska 50a, Warszawa</span>
+<span>Makieta demonstracyjna. Zdjęcia pochodzą z publicznego profilu Google i należą do ich autorów.</span>
+</div>
+</div></footer>
+<a class="float" href="https://www.facebook.com/p/Wolskie-Rurki-z-Prawdziw%C4%85-Bit%C4%85-%C5%9Amietan%C4%85-100049241751807/" target="_blank" rel="noopener">Napisz na Messengerze</a>
+<script src="js/main.js"></script>
+</body></html>
