@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang="pl"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="css/style.css">
+<title>Kontakt i rezerwacja &mdash; Studio Ostrze</title></head><body>
+<div class="demo">Projekt demonstracyjny / Design concept &mdash; fikcyjna marka, strona pokazowa studia webowego</div>
+<nav class="nav"><div class="nav-in">
+<a class="brand" href="index.html">Studio<span>Ostrze</span></a>
+<button class="burger" aria-label="Menu">&#9776;</button>
+<ul class="nav-links">
+<li><a href="index.html">Start</a></li>
+<li><a href="gallery.html">Galeria</a></li>
+<li><a href="contact.html" class="on">Kontakt</a></li>
+<li><a href="contact.html#booking" class="cta">Rezerwuj</a></li>
+</ul>
+</div></nav>
+<main>
+<section class="sec">
+  <div class="wm">06</div>
+  <div class="wrap">
+    <div class="label">Kontakt</div>
+    <h2>Znajd&#378;<br>nas</h2>
+    <div class="cts">
+      <div class="ct"><h3>Adres</h3><p>ul. Z&#261;bkowska<br>03-735 Warszawa<br>Praga P&oacute;&#322;noc</p></div>
+      <div class="ct"><h3>Kontakt</h3><p>tel. 22 123 45 67<br>kontakt@studioostrze.pl</p></div>
+      <div class="ct"><h3>Godziny</h3><p>pn&ndash;pt 10:00&ndash;20:00<br>sob 09:00&ndash;16:00<br>niedziela nieczynne</p></div>
+    </div>
+    <div class="map"><iframe title="Mapa" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=21.030%2C52.250%2C21.060%2C52.262&amp;layer=mapnik"></iframe></div>
+  </div>
+</section>
+
+<section class="sec" id="booking" style="border-bottom:none">
+  <div class="wm">07</div>
+  <div class="wrap">
+    <div class="label">Rezerwacja</div>
+    <h2>Um&oacute;w<br>wizyt&#281;</h2>
+    <p style="max-width:620px;font-size:18px;margin-bottom:38px">Wybierz us&#322;ug&#281; i termin. Potwierdzenie wysy&#322;amy SMS-em w ci&#261;gu godziny.</p>
+    <form id="booking" novalidate>
+      <div class="form-grid">
+        <div class="f"><label for="n">Imi&#281; i nazwisko</label><input id="n" name="name" required><span class="err">Podaj imi&#281; i nazwisko</span></div>
+        <div class="f"><label for="p">Telefon</label><input id="p" name="phone" type="tel" required placeholder="+48 600 000 000"><span class="err">Podaj poprawny numer telefonu</span></div>
+        <div class="f"><label for="s">Us&#322;uga</label><select id="s" name="service" required>
+          <option value="">&mdash; wybierz &mdash;</option>
+          <option>Strzy&#380;enie klasyczne &mdash; 90 z&#322;</option>
+          <option>Broda &amp; brzytwa &mdash; 70 z&#322;</option>
+          <option>Komplet &mdash; 140 z&#322;</option>
+          <option>Ma&#322;y klient &mdash; 55 z&#322;</option>
+          <option>Golenie na g&#322;adko &mdash; 80 z&#322;</option>
+          <option>Korekta konturu &mdash; 40 z&#322;</option>
+        </select><span class="err">Wybierz us&#322;ug&#281;</span></div>
+        <div class="f"><label for="b">Barber</label><select id="b" name="barber">
+          <option>Dowolny</option><option>Fotel 1</option><option>Fotel 2</option><option>Fotel 3</option><option>Fotel 4</option>
+        </select></div>
+        <div class="f"><label for="d">Data</label><input id="d" name="date" type="date" required><span class="err">Wybierz dat&#281;</span></div>
+        <div class="f"><label for="t">Godzina</label><select id="t" name="time" required>
+          <option value="">&mdash; wybierz &mdash;</option>
+          <option>10:00</option><option>11:00</option><option>12:00</option><option>13:00</option>
+          <option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option>
+          <option>18:00</option><option>19:00</option>
+        </select><span class="err">Wybierz godzin&#281;</span></div>
+        <div class="f full"><label for="m">Uwagi</label><textarea id="m" name="msg" placeholder="Pierwsza wizyta? Napisz czego oczekujesz."></textarea></div>
+      </div>
+      <div class="btns" style="margin-top:30px"><button class="btn" type="submit">Wy&#347;lij rezerwacj&#281;</button></div>
+    </form>
+    <div class="ok">Dzi&#281;kujemy. Rezerwacja przyj&#281;ta &mdash; potwierdzenie SMS w ci&#261;gu godziny.<br><span style="font-size:15px;font-family:'IBM Plex Sans',sans-serif;font-weight:400;text-transform:none;letter-spacing:0">To wersja demonstracyjna &mdash; formularz nie wysy&#322;a danych na serwer.</span></div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">
+<div class="fgrid">
+<div>
+<div class="fbrand">Studio Ostrze</div>
+<p style="opacity:.8;max-width:420px;font-size:15.5px">Barber studio na warszawskiej Pradze. Klasyczne rzemios&#322;o, ostra brzytwa, zero po&#347;piechu.</p>
+</div>
+<div><h4>Nawigacja</h4>
+<a href="index.html">Start</a><a href="gallery.html">Galeria</a><a href="contact.html">Kontakt</a><a href="contact.html#booking">Rezerwacja</a></div>
+<div><h4>Social</h4>
+<a href="#">Instagram</a><a href="#">Facebook</a><a href="#">Google Maps</a></div>
+</div>
+<div class="fbot"><span>&copy; 2026 Studio Ostrze &mdash; projekt demonstracyjny</span><span>Warszawa, Praga P&oacute;&#322;noc</span></div>
+</div></footer>
+<a class="wa" href="#" aria-label="WhatsApp">WA</a>
+<script src="js/main.js"></script>
+</body></html>
