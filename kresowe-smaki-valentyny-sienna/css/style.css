@@ -1,4 +1,5 @@
 :root{
+  color-scheme:light;
   --navy:#0b1426;
   --navy-2:#101d33;
   --champagne:#d4af37;
@@ -58,7 +59,7 @@ nav.solid{background:rgba(11,20,38,.97);box-shadow:0 1px 0 rgba(212,175,55,.35);
   background-size:cover;background-position:center;
 }
 nav.solid + .hero{margin-top:0}
-.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,20,38,.86),rgba(11,20,38,.72) 45%,rgba(11,20,38,.94))}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,20,38,.74),rgba(11,20,38,.56) 45%,rgba(11,20,38,.93))}
 .hero-inner{position:relative;max-width:820px;animation:rise 1.2s cubic-bezier(.2,.7,.3,1) both}
 .hero .eyebrow{color:var(--champagne);font-size:12px;letter-spacing:.42em;text-transform:uppercase;margin-bottom:26px}
 .hero h1{color:var(--ivory);font-size:clamp(2.1rem,5.4vw,4.1rem);line-height:1.18;text-transform:uppercase}
