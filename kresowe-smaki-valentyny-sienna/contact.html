@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontakt i zamówienia — Kresowe Smaki Valentyny | Sienna 89, Warszawa</title>
+<meta name="description" content="Kresowe Smaki Valentyny, Sienna 89, Warszawa. Godziny otwarcia, telefon, dojazd i formularz zamówienia obiadu na wynos.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="demo-bar">
+  <b>Projekt demonstracyjny</b> &nbsp;·&nbsp; niezależna propozycja strony dla lokalu &nbsp;·&nbsp; formularz poniżej nic nie wysyła
+</div>
+
+<nav class="solid">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">Kresowe Smaki <span>Valentyny</span></a>
+    <button class="nav-toggle" aria-label="Menu">Menu</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="index.html#kuchnia">Kuchnia</a></li>
+      <li><a href="gallery.html">Galeria</a></li>
+      <li><a href="contact.html" class="active">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="dark" style="padding-top:74px;padding-bottom:74px">
+  <div class="wrap narrow">
+    <p class="section-label">Kontakt</p>
+    <h2 class="section-title">Zapraszamy na Sienną</h2>
+    <div class="ornament"><span class="line"></span><span class="dia sm"></span><span class="dia"></span><span class="dia sm"></span><span class="line r"></span></div>
+    <p class="lede" style="text-align:center">Najprościej po prostu zadzwonić — odbieramy w godzinach otwarcia.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="info-grid reveal">
+      <div class="info">
+        <h3>Adres</h3>
+        <p>Sienna 89<br>00-809 Warszawa<br>Wola / Rondo Daszyńskiego</p>
+      </div>
+      <div class="info">
+        <h3>Telefon</h3>
+        <p><a href="tel:+48796820030" style="border-bottom:1px solid rgba(212,175,55,.6)">796 820 030</a><br>Na miejscu i na wynos</p>
+      </div>
+      <div class="info">
+        <h3>Godziny</h3>
+        <ul class="hours">
+          <li><span>pon.–pt.</span><span>12:00–18:00</span></li>
+          <li><span>sobota</span><span class="cl">nieczynne</span></li>
+          <li><span>niedziela</span><span class="cl">nieczynne</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div style="border:1px solid rgba(212,175,55,.4);line-height:0">
+      <iframe
+        title="Mapa dojazdu — Sienna 89, Warszawa"
+        src="https://www.google.com/maps?q=Sienna%2089,%2000-809%20Warszawa&hl=pl&output=embed"
+        width="100%" height="420" style="border:0" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<svg class="chev" viewBox="0 0 1200 38" preserveAspectRatio="none" aria-hidden="true">
+  <polygon points="0,0 1200,0 1200,38 600,4 0,38" fill="#0b1426"></polygon>
+</svg>
+
+<section class="dark">
+  <div class="wrap">
+    <p class="section-label">Zamówienie</p>
+    <h2 class="section-title">Obiad na wynos<br>z odbiorem o wyznaczonej godzinie</h2>
+    <div class="ornament"><span class="line"></span><span class="dia"></span><span class="line r"></span></div>
+
+    <form data-validate novalidate>
+      <div class="row">
+        <div class="field">
+          <label for="imie">Imię i nazwisko</label>
+          <input type="text" id="imie" name="imie" autocomplete="name" placeholder="np. Anna Kowalska">
+          <span class="err"></span>
+        </div>
+        <div class="field">
+          <label for="telefon">Telefon</label>
+          <input type="tel" id="telefon" name="telefon" autocomplete="tel" placeholder="np. 600 100 200">
+          <span class="err"></span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="email">E-mail (opcjonalnie)</label>
+        <input type="email" id="email" name="email" autocomplete="email" placeholder="np. anna@example.com">
+        <span class="err"></span>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="data">Dzień odbioru</label>
+          <input type="date" id="data" name="data">
+          <span class="err"></span>
+        </div>
+        <div class="field">
+          <label for="godzina">Godzina odbioru</label>
+          <select id="godzina" name="godzina">
+            <option value="">— wybierz —</option>
+            <option>12:00</option><option>12:30</option><option>13:00</option>
+            <option>13:30</option><option>14:00</option><option>14:30</option>
+            <option>15:00</option><option>15:30</option><option>16:00</option>
+            <option>16:30</option><option>17:00</option><option>17:30</option>
+          </select>
+          <span class="err"></span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="osoby">Liczba porcji</label>
+          <select id="osoby" name="osoby">
+            <option>1</option><option>2</option><option>3</option><option>4</option>
+            <option>5</option><option>6</option><option>7</option><option>8 lub więcej</option>
+          </select>
+          <span class="err"></span>
+        </div>
+        <div class="field">
+          <label for="danie">Danie główne</label>
+          <select id="danie" name="danie">
+            <option>Pierogi ruskie</option>
+            <option>Pierogi z mięsem</option>
+            <option>Pierogi z kapustą i grzybami</option>
+            <option>Pielmieni</option>
+            <option>Barszcz ukraiński</option>
+            <option>Gołąbki</option>
+            <option>Zestaw obiadowy dnia</option>
+          </select>
+          <span class="err"></span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="uwagi">Uwagi</label>
+        <textarea id="uwagi" name="uwagi" rows="4" placeholder="np. bez skwarek, dodatkowa śmietana, wersja wegetariańska"></textarea>
+      </div>
+
+      <div style="text-align:center">
+        <button type="submit" class="btn">Wyślij zamówienie</button>
+      </div>
+      <p class="form-note">Zamówienie potwierdzamy telefonicznie. Kuchnia przyjmuje zamówienia do 17:30.</p>
+      <div class="ok-msg" role="status"></div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="fbrand">Kresowe Smaki Valentyny</div>
+  <div class="ornament"><span class="line"></span><span class="dia"></span><span class="line r"></span></div>
+  <p>Sienna 89, 00-809 Warszawa &nbsp;·&nbsp; tel. 796 820 030</p>
+  <p>pon.–pt. 12:00–18:00 &nbsp;·&nbsp; sob.–niedz. nieczynne</p>
+  <ul class="socials">
+    <li><a href="#">Facebook</a></li>
+    <li><a href="#">Instagram</a></li>
+    <li><a href="gallery.html">Galeria</a></li>
+  </ul>
+  <p class="fine">
+    © 2026 Kresowe Smaki Valentyny. Wszelkie prawa zastrzeżone.<br>
+    Strona demonstracyjna (koncepcja projektowa) — nie jest oficjalnym serwisem lokalu.
+    Formularz nie wysyła danych na żaden serwer.
+  </p>
+</footer>
+
+<a class="call-fab" href="tel:+48796820030">Zadzwoń · 796 820 030</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
