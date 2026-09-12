@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt i zamówienia — DEJ Piekarnia | Stare Bielany</title>
+<meta name="description" content="Skontaktuj się z piekarnią DEJ na Starych Bielanach — adres, telefon, godziny otwarcia i formularz zapytania o zamówienie lub catering.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav scrolled">
+  <a href="index.html" class="brand">DEJ <span>Piekarnia</span></a>
+  <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+  <ul class="nav-links">
+    <li><a href="index.html">Start</a></li>
+    <li><a href="index.html#o-nas">O nas</a></li>
+    <li><a href="index.html#oferta">Oferta</a></li>
+    <li><a href="gallery.html">Galeria</a></li>
+    <li><a href="contact.html" class="active">Kontakt</a></li>
+  </ul>
+</nav>
+
+<header class="page-hero">
+  <svg class="hero-blob b2" viewBox="0 0 400 400" style="bottom:-90px;right:-90px;width:340px"><path fill="#eadfc2" d="M300 40Q380 90 370 190Q360 290 270 340Q180 390 90 340Q0 290 20 190Q40 90 140 50Q240 10 300 40Z"/></svg>
+  <div>
+    <div class="hero-eyebrow">Kontakt</div>
+    <h1>Zajrzyj do nas na Płatniczą</h1>
+    <p class="tagline" style="margin:0 auto">Albo napisz z zapytaniem o zamówienie — odpowiadamy szybko.</p>
+  </div>
+</header>
+
+<section id="zamowienie">
+  <div class="container contact-wrap">
+
+    <div class="contact-info fade-in">
+      <div class="section-label">Dane kontaktowe</div>
+      <h2>DEJ — Piekarnia Rzemieślnicza</h2>
+
+      <div class="info-line">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#c4622d" stroke-width="1.8"><path d="M12 22s7-7.4 7-13a7 7 0 10-14 0c0 5.6 7 13 7 13Z"/><circle cx="12" cy="9" r="2.6"/></svg>
+        <div><strong>ul. Płatnicza 57</strong><br>01-832 Warszawa, Stare Bielany</div>
+      </div>
+      <div class="info-line">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#c4622d" stroke-width="1.8"><path d="M4 5c0-1 1-2 2-2h2l2 5-2 2c1 3 3 5 6 6l2-2 5 2v2c0 1-1 2-2 2C10 20 4 14 4 5Z"/></svg>
+        <div><strong>574 134 754</strong><br>piekarniadej@gmail.com</div>
+      </div>
+      <div class="info-line">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#c4622d" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        <div>
+          <table class="hours-table">
+            <tr><td>Wtorek – Piątek</td><td>8:00 – 18:00</td></tr>
+            <tr><td>Sobota – Niedziela</td><td>9:00 – 17:00</td></tr>
+            <tr><td>Poniedziałek</td><td>nieczynne</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="map-embed">
+        <iframe src="https://www.google.com/maps?q=P%C5%82atnicza+57,+01-832+Warszawa&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa — DEJ Piekarnia, ul. Płatnicza 57"></iframe>
+      </div>
+    </div>
+
+    <div class="form-card fade-in">
+      <div class="section-label">Zapytanie o zamówienie</div>
+      <h3 style="font-size:1.7rem">Zamów chleb lub catering</h3>
+      <p style="margin-bottom:1.4rem">Wypełnij formularz, a oddzwonimy lub napiszemy, by potwierdzić szczegóły odbioru.</p>
+
+      <form id="order-form" novalidate>
+        <div class="field-row">
+          <div class="field">
+            <label for="name">Imię i nazwisko</label>
+            <input type="text" id="name" required>
+            <div class="error-msg">Podaj imię i nazwisko.</div>
+          </div>
+          <div class="field">
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" required>
+            <div class="error-msg">Podaj numer telefonu.</div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" required>
+          <div class="error-msg">Podaj poprawny adres e-mail.</div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="pickup-date">Data odbioru</label>
+            <input type="date" id="pickup-date" required>
+            <div class="error-msg">Wybierz przyszłą datę.</div>
+          </div>
+          <div class="field">
+            <label for="pickup-time">Godzina odbioru</label>
+            <input type="time" id="pickup-time" required>
+            <div class="error-msg">Wybierz godzinę odbioru.</div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="product">Rodzaj zamówienia</label>
+          <select id="product" required>
+            <option value="">Wybierz...</option>
+            <option>Pieczywo na zakwasie</option>
+            <option>Wypieki słodkie / francuskie</option>
+            <option>Catering firmowy</option>
+            <option>Zamówienie okolicznościowe</option>
+            <option>Inne</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Wiadomość</label>
+          <textarea id="message" rows="4" placeholder="Np. dwa bochenki żytnie, sześć croissantów..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-solid" style="width:100%">Wyślij zapytanie</button>
+        <div class="success-msg" id="form-success">Dziękujemy! Twoje zapytanie zostało wysłane — skontaktujemy się wkrótce.</div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div>
+      <div class="brand">DEJ</div>
+      <p>ul. Płatnicza 57, 01-832 Warszawa &middot; Stare Bielany</p>
+      <p>tel. 574 134 754 &middot; piekarniadej@gmail.com</p>
+    </div>
+    <div>
+      <div class="section-label">Godziny otwarcia</div>
+      <p>Wt&ndash;Pt: 8:00&ndash;18:00</p>
+      <p>Sob&ndash;Ndz: 9:00&ndash;17:00</p>
+      <p>Poniedziałek: nieczynne</p>
+    </div>
+  </div>
+  <div class="copyright">&copy; 2026 DEJ — Piekarnia Rzemieślnicza. Wszystkie prawa zastrzeżone.</div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/48574134754" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M20.5 3.5A11 11 0 003.7 17.2L2 22l4.9-1.7A11 11 0 1020.5 3.5zM12 20a9 9 0 01-4.6-1.3l-.3-.2-3 1 1-2.9-.2-.3A9 9 0 1112 20zm5-6.7c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.6.9-.8 1-.1.2-.3.2-.6.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.6-1.5-.8-2-.2-.5-.5-.4-.6-.5h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.9-1.3.2-.6.2-1.1.2-1.3 0-.1-.2-.2-.5-.3z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
