@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontakt i zamówienia — Kwiaciarenka</title>
+<meta name="description" content="Zamów bukiet w Kwiaciarence — Targowa 84, Praga Północ, Warszawa. Telefon, godziny otwarcia, formularz zamówienia.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav scrolled">
+  <a href="index.html" class="logo">Kwiaciarenka</a>
+  <ul>
+    <li><a href="index.html#o-nas">O nas</a></li>
+    <li><a href="index.html#oferta">Oferta</a></li>
+    <li><a href="gallery.html">Galeria</a></li>
+    <li><a href="contact.html">Kontakt</a></li>
+  </ul>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Kontakt</span>
+    <h1>Zamów bukiet</h1>
+    <p class="en">Get in touch — tell us the story, we'll bring the flowers</p>
+  </div>
+</header>
+
+<section>
+  <div class="container contact-wrap">
+    <div class="reveal">
+      <div class="info-block">
+        <span class="label">Adres</span>
+        <p>ul. Targowa 84 lok. 33<br>03-488 Warszawa · Praga Północ</p>
+      </div>
+      <div class="info-block">
+        <span class="label">Telefon</span>
+        <p><a href="tel:+48787330471">+48 787 330 471</a></p>
+      </div>
+      <div class="info-block">
+        <span class="label">E-mail</span>
+        <p><a href="mailto:tu.kwiaciarenka@gmail.com">tu.kwiaciarenka@gmail.com</a></p>
+      </div>
+      <div class="info-block">
+        <span class="label">Godziny otwarcia</span>
+        <p>Poniedziałek – piątek: 9:00 – 18:00<br>Sobota: 9:00 – 14:00<br>Niedziela: zamknięte</p>
+      </div>
+      <div class="info-block">
+        <span class="label">Znajdziesz nas też na</span>
+        <p><a href="https://www.facebook.com/p/Kwiaciarenka-100083420916711/" target="_blank" rel="noopener">Facebook — Kwiaciarenka</a></p>
+      </div>
+      <div class="map-frame">
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=21.0430%2C52.2540%2C21.0490%2C52.2575&layer=mapnik&marker=52.2557%2C21.0460"
+          loading="lazy" title="Mapa — Kwiaciarenka, ul. Targowa 84, Warszawa"></iframe>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <form class="inquiry" novalidate>
+        <h3>Formularz zamówienia</h3>
+        <p style="font-size:0.88rem;color:#6b5f64;margin-bottom:1.6rem">Opowiedz nam o okazji — odpowiemy z propozycją bukietu i ceną.</p>
+
+        <div class="two-col">
+          <div class="field">
+            <label for="name">Imię i nazwisko</label>
+            <input type="text" id="name" name="name" required>
+            <span class="error">Podaj imię i nazwisko</span>
+          </div>
+          <div class="field">
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone" required placeholder="+48 ...">
+            <span class="error">Podaj poprawny numer telefonu</span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+          <span class="error">Podaj poprawny adres e-mail</span>
+        </div>
+
+        <div class="two-col">
+          <div class="field">
+            <label for="occasion">Okazja</label>
+            <select id="occasion" name="occasion" required>
+              <option value="">Wybierz…</option>
+              <option>Urodziny / imieniny</option>
+              <option>Ślub / wesele</option>
+              <option>Kondolencje</option>
+              <option>Rocznica</option>
+              <option>Po prostu tak</option>
+              <option>Inna</option>
+            </select>
+            <span class="error">Wybierz okazję</span>
+          </div>
+          <div class="field">
+            <label for="budget">Budżet</label>
+            <select id="budget" name="budget" required>
+              <option value="">Wybierz…</option>
+              <option>do 100 zł</option>
+              <option>100 – 200 zł</option>
+              <option>200 – 400 zł</option>
+              <option>powyżej 400 zł</option>
+            </select>
+            <span class="error">Wybierz budżet</span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="date">Preferowany termin odbioru</label>
+          <input type="date" id="date" name="date" required>
+          <span class="error">Podaj termin</span>
+        </div>
+
+        <div class="field">
+          <label for="message">Kilka słów o bukiecie</label>
+          <textarea id="message" name="message" placeholder="Dla kogo są kwiaty? Jakie kolory lubi?"></textarea>
+        </div>
+
+        <button type="submit" class="btn filled" style="width:100%;border:none">Wyślij zapytanie</button>
+      </form>
+
+      <div class="form-success">
+        <span style="font-size:2.4rem">🌷</span>
+        <h3>Dziękujemy!</h3>
+        <p>Twoje zapytanie zostało wysłane. Odezwiemy się telefonicznie lub e-mailem w ciągu 24 godzin.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="logo">Kwiaciarenka</div>
+    <p>ul. Targowa 84 lok. 33, 03-488 Warszawa · Praga Północ</p>
+    <div class="socials">
+      <a href="tel:+48787330471" aria-label="Zadzwoń" title="Zadzwoń">☏</a>
+      <a href="https://www.facebook.com/p/Kwiaciarenka-100083420916711/" aria-label="Facebook" title="Facebook" target="_blank" rel="noopener">f</a>
+      <a href="mailto:tu.kwiaciarenka@gmail.com" aria-label="E-mail" title="E-mail">✉</a>
+    </div>
+    <small>&copy; 2026 Kwiaciarenka — Małgorzata Galińska. Wszystkie prawa zastrzeżone.</small>
+    <span class="made">Projekt strony — demo koncepcyjne</span>
+  </div>
+</footer>
+
+<a href="tel:+48787330471" class="float-btn" aria-label="Zadzwoń do nas" title="Zadzwoń: +48 787 330 471">☏</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
