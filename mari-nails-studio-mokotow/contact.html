@@ -1,1 +1,159 @@
-PLACEHOLDER
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt &amp; Rezerwacja — Mari Nails Studio</title>
+<meta name="description" content="Zarezerwuj wizytę w Mari Nails Studio — ul. Krasickiego 16, Mokotów, Warszawa. Telefon: 508 560 750.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500;1,600&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav scrolled">
+  <a href="index.html" class="nav-logo">Mari Nails Studio</a>
+  <div class="nav-links">
+    <a href="index.html#o-nas">O nas</a>
+    <a href="index.html#uslugi">Usługi</a>
+    <a href="gallery.html">Stylizacje</a>
+    <a href="contact.html" class="active">Kontakt</a>
+    <a href="contact.html#rezerwacja" class="nav-cta">Umów wizytę</a>
+  </div>
+  <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<header class="page-header">
+  <svg class="blob-bg blob-1" viewBox="0 0 400 400" style="opacity:0.3">
+    <path fill="#5a7a52" d="M320,60 C380,120 390,220 330,290 C270,360 150,370 90,310 C30,250 20,140 90,80 C160,20 260,0 320,60 Z"/>
+  </svg>
+  <div class="container">
+    <span class="hero-eyebrow" style="color:var(--sage-dark);">Zapraszamy</span>
+    <h1>Kontakt &amp; rezerwacja</h1>
+    <p>Umów się telefonicznie, przez Instagram lub wypełnij formularz poniżej — oddzwonimy, aby potwierdzić termin.</p>
+  </div>
+</header>
+
+<section id="rezerwacja">
+  <div class="container">
+    <div class="contact-wrap">
+      <div class="contact-info reveal">
+        <div class="item">
+          <div class="icon">📍</div>
+          <div>
+            <h4>Adres</h4>
+            <p>ul. Krasickiego 16<br>02-611 Mokotów, Warszawa</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icon">📞</div>
+          <div>
+            <h4>Telefon</h4>
+            <p><a href="tel:+48508560750">508 560 750</a></p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icon">🕐</div>
+          <div>
+            <h4>Godziny otwarcia</h4>
+            <p>Pon–Pt: 10:00–19:00<br>Sobota: 10:00–15:00<br>Niedziela: nieczynne (wizyty na telefon)</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="icon">💬</div>
+          <div>
+            <h4>Social media</h4>
+            <p><a href="https://www.instagram.com/mari_nails_studio_warszawa/" target="_blank" rel="noopener">@mari_nails_studio_warszawa</a></p>
+          </div>
+        </div>
+
+        <div class="map-frame">
+          <iframe
+            src="https://www.google.com/maps?q=ul.+Krasickiego+16,+Warszawa&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa — Mari Nails Studio, ul. Krasickiego 16, Warszawa">
+          </iframe>
+        </div>
+      </div>
+
+      <form class="booking-form reveal" id="booking-form" novalidate>
+        <h3>Zarezerwuj wizytę</h3>
+        <p style="color:var(--ink-soft);font-size:0.92rem;margin-top:-0.6rem;margin-bottom:1.6rem;">Wypełnij formularz, a nasz zespół potwierdzi dostępność terminu telefonicznie.</p>
+
+        <div class="form-success">Dziękujemy! Twoje zgłoszenie zostało wysłane — skontaktujemy się wkrótce, aby potwierdzić termin.</div>
+
+        <div class="form-row">
+          <label for="name">Imię i nazwisko</label>
+          <input type="text" id="name" name="name" placeholder="Jan Kowalski" required>
+          <span class="field-error">Podaj swoje imię i nazwisko (min. 2 znaki).</span>
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Numer telefonu</label>
+          <input type="tel" id="phone" name="phone" placeholder="+48 600 000 000" required>
+          <span class="field-error">Podaj prawidłowy numer telefonu.</span>
+        </div>
+
+        <div class="form-row">
+          <label for="service">Wybierz usługę</label>
+          <select id="service" name="service" required>
+            <option value="">— wybierz —</option>
+            <option value="manicure">Manicure hybrydowy</option>
+            <option value="pedicure">Pedicure spa</option>
+            <option value="brwi">Regulacja i henna brwi</option>
+            <option value="nailart">Nail art / zdobienia</option>
+            <option value="inne">Inne / nie jestem pewna</option>
+          </select>
+          <span class="field-error">Wybierz usługę z listy.</span>
+        </div>
+
+        <div class="form-row two">
+          <div>
+            <label for="date">Data</label>
+            <input type="date" id="date" name="date" required>
+            <span class="field-error">Wybierz datę wizyty.</span>
+          </div>
+          <div>
+            <label for="time">Godzina</label>
+            <input type="time" id="time" name="time" required>
+            <span class="field-error">Wybierz godzinę.</span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="notes">Uwagi (opcjonalnie)</label>
+          <textarea id="notes" name="notes" rows="3" placeholder="Np. preferowany kolor, alergie, wzór inspiracji..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-sage" style="width:100%;">Wyślij zgłoszenie</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <span class="nav-logo">Mari Nails Studio</span>
+    <div class="foot-links">
+      <a href="index.html#o-nas">O nas</a>
+      <a href="index.html#uslugi">Usługi</a>
+      <a href="gallery.html">Stylizacje</a>
+      <a href="contact.html">Kontakt</a>
+    </div>
+    <div class="foot-social">
+      <a href="https://www.instagram.com/mari_nails_studio_warszawa/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+      <a href="https://www.facebook.com/people/Mari-Nails-Studio/61560367055779/" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
+      <a href="tel:+48508560750" aria-label="Telefon">☎</a>
+    </div>
+    <small>&copy; 2026 Mari Nails Studio · ul. Krasickiego 16, Mokotów, Warszawa · Wszelkie prawa zastrzeżone</small>
+  </div>
+</footer>
+
+<a href="https://wa.me/48508560750" class="whatsapp-fab" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
