@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt — Pracownia Lutnicza Mateusz Halicki</title>
+<meta name="description" content="Umów wizytę w pracowni lutniczej przy Koszykowej 35 w Warszawie. Adres, telefon, godziny otwarcia i formularz kontaktowy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo">HALICKI<span>.</span>LUTNIK</a>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Start</a>
+    <a href="index.html#uslugi">Usługi</a>
+    <a href="gallery.html">Pracownia</a>
+    <a href="contact.html" class="active">Kontakt</a>
+  </div>
+  <a href="contact.html" class="nav-cta">Umów wizytę</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <span class="crumb">// Kontakt</span>
+    <h1>Umów<br>wizytę</h1>
+  </div>
+</header>
+
+<section>
+  <div class="container contact-grid">
+    <div class="contact-info">
+      <div class="info-row">
+        <span class="k">Adres</span>
+        <span class="v">ul. Koszykowa 35, lok. 130<br><small>00-553 Warszawa, Śródmieście</small></span>
+      </div>
+      <div class="info-row">
+        <span class="k">Telefon</span>
+        <span class="v"><a href="tel:+48606555039">+48 606 555 039</a><br><small>Prosimy o kontakt telefoniczny przed wizytą</small></span>
+      </div>
+      <div class="info-row">
+        <span class="k">Facebook</span>
+        <span class="v"><a href="https://www.facebook.com/lutnikwarszawa/" target="_blank" rel="noopener">facebook.com/lutnikwarszawa</a><br><small>Aktualności z pracowni i prac w toku</small></span>
+      </div>
+      <div class="info-row">
+        <span class="k">Godziny otwarcia</span>
+        <table class="hours-table">
+          <tr><td>Poniedziałek – Piątek</td><td>10:00 – 18:00</td></tr>
+          <tr><td>Sobota – Niedziela</td><td>Nieczynne</td></tr>
+        </table>
+      </div>
+      <div class="map-frame">
+        <iframe src="https://www.google.com/maps?q=Koszykowa+35,+00-553+Warszawa&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa — Koszykowa 35, Warszawa"></iframe>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <span class="section-label">// Formularz zgłoszeniowy</span>
+      <h2 class="section-title" style="font-size:2rem;">Opisz instrument<br>i termin</h2>
+      <form id="bookingForm" novalidate>
+        <div class="form-two">
+          <div class="form-row" data-field="name">
+            <label for="f-name">Imię i nazwisko *</label>
+            <input type="text" id="f-name" name="name" placeholder="Jan Kowalski">
+            <span class="field-error">Podaj imię i nazwisko.</span>
+          </div>
+          <div class="form-row" data-field="phone">
+            <label for="f-phone">Telefon *</label>
+            <input type="tel" id="f-phone" name="phone" placeholder="+48 600 000 000">
+            <span class="field-error">Podaj poprawny numer telefonu.</span>
+          </div>
+        </div>
+
+        <div class="form-two">
+          <div class="form-row" data-field="instrument">
+            <label for="f-instrument">Instrument *</label>
+            <select id="f-instrument" name="instrument">
+              <option value="">Wybierz instrument</option>
+              <option value="skrzypce">Skrzypce</option>
+              <option value="altowka">Altówka</option>
+              <option value="wiolonczela">Wiolonczela</option>
+              <option value="luk">Łuk / smyczek</option>
+              <option value="inny">Inny</option>
+            </select>
+            <span class="field-error">Wybierz rodzaj instrumentu.</span>
+          </div>
+          <div class="form-row" data-field="date">
+            <label for="f-date">Preferowany termin *</label>
+            <input type="date" id="f-date" name="date">
+            <span class="field-error">Wybierz preferowaną datę.</span>
+          </div>
+        </div>
+
+        <div class="form-row" data-field="message">
+          <label for="f-message">Opis sprawy</label>
+          <textarea id="f-message" name="message" placeholder="Np. pękniecie płyty wierzchniej, potrzebna regulacja duszy, wycena renowacji..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-red">Wyślij zgłoszenie</button>
+
+        <div class="form-success" id="formSuccess">
+          ✓ Dziękujemy! Zgłoszenie zostało przyjęte. Skontaktujemy się telefonicznie w celu potwierdzenia terminu.
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">HALICKI<span>.</span>LUTNIK</div>
+        <p>Pracownia Lutnicza Mateusz Halicki<br>ul. Koszykowa 35, lok. 130<br>00-553 Warszawa, Śródmieście</p>
+      </div>
+      <div class="footer-col">
+        <h4>Nawigacja</h4>
+        <a href="index.html">Start</a>
+        <a href="gallery.html">Pracownia</a>
+        <a href="contact.html">Kontakt</a>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <a href="tel:+48606555039">+48 606 555 039</a>
+        <a href="https://www.facebook.com/lutnikwarszawa/" target="_blank" rel="noopener">Facebook</a>
+        <p>Pon–Pt 10:00–18:00</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Pracownia Lutnicza Mateusz Halicki</span>
+      <span>Strona demonstracyjna</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/48606555039" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32" fill="white"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.4.7 4.6 1.8 6.6L3 29l7-2c1.9 1 4 1.6 6 1.6 7 0 12.7-5.6 12.7-12.6C28.7 8.6 23 3 16 3zm0 2.1c5.8 0 10.6 4.7 10.6 10.5S21.8 26.1 16 26.1c-1.9 0-3.7-.5-5.3-1.4l-.4-.2-4.1 1.1 1.1-4-.2-.4c-1-1.7-1.5-3.6-1.5-5.6C5.5 9.8 10.2 5.1 16 5.1zm-4.8 5.6c-.2 0-.5 0-.7.3-.2.3-1 1-1 2.3s1 2.7 1.1 2.9c.1.2 2 3.1 4.9 4.2 2.4 1 2.9.8 3.4.7.5 0 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.5-.3l-2-1c-.3-.1-.5-.2-.7.1-.2.3-.8 1-1 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
